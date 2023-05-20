@@ -1,52 +1,224 @@
 <script>
-	let screenSize;
+  import { each } from "svelte/internal";
+
+  let screenSize;
+  const links = {
+    primero: {
+      url: "/semestres/1primero/",
+      name: "1<span class='sup'>er</span> Semestre",
+      materias: {
+        algebra: {
+          name: "Álgebra",
+        },
+        compu1: {
+          name: "Computación Básica <span class='bold'>I</span>",
+        },
+        orientacion1: {
+          name: "Orientación <span class='bold'>I</span>",
+        },
+        filo1: {
+          name: "Filosofía <span class='bold'>I</span>",
+        },
+        historia1: {
+          name: "Historia de México <span class='bold'>I</span>",
+        },
+        ingles1: {
+          name: "Inglés <span class='bold'>I</span>",
+        },
+        dhp: {
+          name: "D.H.P.",
+        },
+        dp: {
+          name: "Desarrollo Personal",
+        },
+        expresion1: {
+          name: "Expresión Oral y Escrita <span class='bold'>I</span>",
+        },
+      },
+    },
+    segundo: {
+      url: "2segundo",
+      name: "2<span class='sup'>do</span> Semestre",
+      materias: {
+        trigo: {
+          name: "Geometría y Trigonometría",
+        },
+        compu2: {
+          name: "Computación Básica <span class='bold'>II</span>",
+        },
+        orientacion2: {
+          name: "Orientación <span class='bold'>II</span>",
+        },
+        filo2: {
+          name: "Filosofía <span class='bold'>II</span>",
+        },
+        historia2: {
+          name: "Historia de México <span class='bold'>II</span>",
+        },
+        ingles2: {
+          name: "Inglés <span class='bold'>II</span>",
+        },
+        expresion2: {
+          name: "Expresión Oral y Escrita <span class='bold'>II</span>",
+        },
+        tic: {
+          name: "T.I.C.",
+        },
+      },
+    },
+    tercero: {
+      url: "3tercero",
+      name: "3<span class='sup'>er</span> Semestre",
+      materias: {
+        analitica: {
+          name: "Geometría Analítica",
+        },
+        fisica1: {
+          name: "Física <span class='bold'>I</span>",
+        },
+        quimica1: {
+          name: "Química <span class='bold'>I</span>",
+        },
+        dibujo1: {
+          name: "Dibujo <span class='bold'>I</span>",
+        },
+        socioeco: {
+          name: "Entorno Socieconómico de México",
+        },
+        ingles3: {
+          name: "Inglés <span class='bold'>III</span>",
+        },
+      },
+    },
+    cuarto: {
+      url: "4cuarto",
+      name: "4<span class='sup'>to</span> Semestre",
+      materias: {
+        diferencial: {
+          name: "Cálculo Diferencial",
+        },
+        fisica2: {
+          name: "Física <span class='bold'>II</span>",
+        },
+        quimica2: {
+          name: "Química <span class='bold'>II</span>",
+        },
+        dibujo2: {
+          name: "Dibujo <span class='bold'>II</span>",
+        },
+        ingles4: {
+          name: "Inglés <span class='bold'>IV</span>",
+        },
+      },
+    },
+    quinto: {
+      url: "5quinto",
+      name: "5<span class='sup'>to</span> Semestre",
+      materias: {
+        integral: {
+          name: "Cálculo Integral",
+        },
+        fisica3: {
+          name: "Física <span class='bold'>III</span>",
+        },
+        quimica3: {
+          name: "Química <span class='bold'>III</span>",
+        },
+        orientacion3: {
+          name: "Orientación <span class='bold'>III</span>",
+        },
+        ingles5: {
+          name: "Inglés <span class='bold'>V</span>",
+        },
+      },
+    },
+    sexto: {
+      url: "6sexto",
+      name: "6<span class='sup'>to</span> Semestre",
+      materias: {
+        probabilidad: {
+          name: "Probabilidad y Estadística",
+        },
+        fisica4: {
+          name: "Física <span class='bold'>IV</span>",
+        },
+        quimica4: {
+          name: "Química <span class='bold'>IV</span>",
+        },
+        orientacion4: {
+          name: "Orientación <span class='bold'>IV</span>",
+        },
+        ingles6: {
+          name: "Inglés <span class='bold'>VI</span>",
+        },
+      },
+    },
+  };
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
-<header>
-	{#if screenSize < 790}
-		<span>This content is only visible on screens less than 768px wide.</span>
-	{/if}
-	{#if screenSize >= 790}
-		<span style="position:absolute">This content is only visible on screens wider than 768px.</span>
-		<div id="logotitle">
-			<img
-				src="/imgs/sillymilly.webp"
-				height="50px"
-				width="50px"
-				alt="Foto del gato Milly"
-				id="logo"
-			/>
-			<span id="titulo">Compendio Bátiz</span>
-		</div>
-	{/if}
+<header id="header">
+  <div id="logotitle">
+    <img
+      src="/imgs/sillymilly.webp"
+      height="50px"
+      width="50px"
+      alt="Foto del gato Milly"
+      id="logo"
+    />
+    <span id="titulo">Compendio Bátiz</span>
+  </div>
+  <button id="mobilenavopen">
+    <svg
+      class="svg-icon"
+      width="40"
+      height="40"
+      viewBox="0 0 420 420"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="10" y="50" width="400" height="80" rx="40" fill="currentColor" />
+      <rect
+        x="10"
+        y="170"
+        width="400"
+        height="80"
+        rx="40"
+        fill="currentColor"
+      />
+      <rect
+        x="10"
+        y="290"
+        width="400"
+        height="80"
+        rx="40"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+  {#if screenSize < 790}
+    <span class="testtext">
+      {screenSize + "<"}790px.
+    </span>
+  {/if}
+  {#if screenSize >= 790}
+    <nav id="navigationheader">
+      <ul class="nolist-style">
+        <li><a href="/">Inicio</a></li>
+        {#each Object.entries(links) as [key, uwulink]}
+          <li><a href={uwulink.url}>{@html uwulink.name}</a></li>
+        {/each}
+      </ul>
+    </nav>
+
+    <span class="testtext">
+      {">"}790px
+    </span>
+  {/if}
 </header>
+
 <!--
 <header id="header">
-	<div id="logotitle">
-		<img
-			src="/imgs/sillymilly.webp"
-			height="50px"
-			width="50px"
-			alt="Foto del gato Milly"
-			id="logo"
-		/>
-		<span id="titulo">Compendio Bátiz</span>
-	</div>
-	<button id="mobilenavopen">
-		<svg
-			class="svg-icon"
-			width="40"
-			height="40"
-			viewBox="0 0 420 420"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<rect x="10" y="50" width="400" height="80" rx="40" fill="currentColor" />
-			<rect x="10" y="170" width="400" height="80" rx="40" fill="currentColor" />
-			<rect x="10" y="290" width="400" height="80" rx="40" fill="currentColor" />
-		</svg>
-	</button>
 	<nav id="navigationheader">
 		<ul class="nolist-style">
 			<button id="mobilenavclose">
@@ -264,3 +436,12 @@
 	</nav>
 </header>
 -->
+
+<style>
+  .testtext {
+    color: red;
+    position: absolute;
+    z-index: 10;
+    right: 50%;
+  }
+</style>

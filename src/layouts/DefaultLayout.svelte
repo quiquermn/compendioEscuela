@@ -52,7 +52,6 @@
 </svelte:head>
 <div id="mainpage">
 	<Header />
-
 	<slot />
 	<footer id="footer">
 		<span>
@@ -71,5 +70,4 @@
 			</a>
 		</div>
 	</footer>
-	<script src="/js/main.js"></script>
 </div>
