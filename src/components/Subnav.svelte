@@ -4,6 +4,8 @@
   import { fade, draw, scale } from "svelte/transition";
   import { bounceOut, linear } from "svelte/easing";
 
+  const varToString = (varObj) => Object.keys(varObj)[0];
+
   function openSubMenu() {
     isOpen = !isOpen;
   }
@@ -28,9 +30,12 @@
   </button>
   {#if isOpen}
     <ul class={"dropdown"} transition:spin={{ duration: 200 }}>
-      {#each Object.entries(uwulink.materias) as [key, uwumateria]}
+      {#each Object.entries(uwulink.materias) as [key, uwumateria], index}
         <li>
-          <a href={uwumateria.url} class="subnavlink">
+          <a
+            href={uwulink.url + "/" + Object.keys(uwulink.materias)[index]}
+            class="subnavlink"
+          >
             {@html uwumateria.name}
           </a>
         </li>
