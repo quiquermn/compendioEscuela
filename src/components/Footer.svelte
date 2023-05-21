@@ -16,7 +16,12 @@
         src="/imgs/CC-BY-NC-SA-4.svg"
       />
     </a>
-    <img aria-hidden="true" id="winkymilly" src="imgs/winkymilly.webp" alt="" />
+    <img
+      aria-hidden="true"
+      id="winkymilly"
+      src="/imgs/winkymilly.webp"
+      alt=""
+    />
   </div>
 </footer>
 
