@@ -115,7 +115,8 @@ p {
 /* Contenidos genéricos de la Página principal */
 main h1,
 main h2,
-main h3 {
+main h3,
+main h4 {
   color: rgb(255, 255, 255);
 }
 main h2 {
@@ -124,7 +125,9 @@ main h2 {
 main h3 {
   font-weight: 600;
 }
-
+main h4 {
+  margin-bottom: 0.25em;
+}
 .mainpart {
   padding: var(--padding);
   padding-top: calc(var(--padding) / 2);
@@ -374,19 +377,14 @@ a:focus {
 @media (max-width: 990px) {
   header {
     flex-direction: column;
-    padding: 20px;
+    padding: 3em;
     padding-top: 0.5em;
     gap: 0.5em;
     padding-left: var(--padding);
     padding-right: var(--padding);
   }
-  .nolist-style > li {
-    width: auto;
-    padding-top: 1.5em;
-  }
-  .nolist-style > li > a {
-    display: block;
-    padding-bottom: 1.5em;
+  #navigationheader > ul {
+    margin-top: 1em;
   }
 }
 
@@ -401,86 +399,6 @@ a:focus {
   }
   .indicebox {
     display: none;
-  }
-  .nolist-style {
-    overflow-y: hidden;
-    height: auto;
-    margin: 0;
-    justify-content: center;
-    gap: 1.5em;
-
-    height: 1.5em;
-
-    align-items: center;
-  }
-
-  .nolist-style > li {
-    display: flex;
-    width: 100%;
-    gap: 0.5em;
-    padding: 0.5em;
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  .nolist-style > li:first-of-type {
-    display: block;
-  }
-
-  .nolist-style > li > a {
-    display: inline;
-    padding-bottom: 0;
-  }
-
-  .expandbutton,
-  .expandbutton:hover,
-  .expandbutton:focus {
-    margin: auto 0;
-    border-color: transparent;
-    background-color: transparent;
-    color: var(--linkcolor);
-
-    display: flex;
-    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .subsectionsnav {
-    display: none;
-    align-self: flex-start;
-    position: relative;
-    left: 0;
-    top: 0;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0 0.5em;
-    margin: 0 auto;
-    font-size: 0.75em;
-    background-color: transparent;
-    color: var(--linkcolor);
-  }
-  .subsectionsnav > li {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-  .subsectionsnav > li > a:focus,
-  .subsectionsnav > li > a:active,
-  .subsectionsnav > li > a:visited,
-  .subsectionsnav > li > a {
-    font-size: 1em;
-    font-weight: 400;
-    color: var(--linkcolor);
-  }
-
-  .subsectionsnav > li:is(.bold):not(:first-child) {
-    margin-top: 1em;
   }
 
   article {
@@ -507,36 +425,6 @@ a:focus {
     flex-direction: row;
   }
 
-  #navigationheader > ul {
-    --blur: 5px;
-
-    border-left: var(--linkcolor) 4px solid;
-    border-right: var(--linkcolor) 4px solid;
-
-    background-color: #ffffffb4;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-
-    height: 100%;
-    width: min(60%, 300px);
-    top: 0;
-    right: 0;
-
-    position: absolute;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    font-size: 1.5em;
-    padding-top: 2em;
-
-    transform: translateX(100%);
-    transition: transform 0.2s ease-in-out;
-  }
-  #navigationheader > ul:not(.subsectionsnav) > li:nth-child(2) {
-    width: 90%;
-    padding-bottom: 1em;
-    border-bottom: 2px solid var(--linkcolor);
-  }
   #mobilenavopen,
   #mobilenavopen:hover,
   #mobilenavopen:focus,

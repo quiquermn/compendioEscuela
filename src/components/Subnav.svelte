@@ -1,8 +1,7 @@
 <script>
   export let uwulink;
   let isOpen = false;
-  import { fade, draw, scale } from "svelte/transition";
-  import { bounceOut, linear } from "svelte/easing";
+  import { cubicOut } from "svelte/easing";
 
   const varToString = (varObj) => Object.keys(varObj)[0];
 
@@ -14,7 +13,7 @@
     return {
       duration,
       css: (t) => {
-        const eased = linear(t);
+        const eased = cubicOut(t);
         const o = +getComputedStyle(node)
           .getPropertyValue("height")
           .replace("px", "");
@@ -29,7 +28,7 @@
     <span class="naventry">{@html uwulink.name}</span>
   </button>
   {#if isOpen}
-    <ul class={"dropdown"} transition:spin={{ duration: 200 }}>
+    <ul class={"dropdown"} transition:spin={{ duration: 400 }}>
       {#each Object.entries(uwulink.materias) as [key, uwumateria], index}
         <li>
           <a
@@ -62,7 +61,7 @@
     padding: 0;
     font-weight: 700;
     font-size: 1em;
-    width: 110px;
+    width: 100%;
     overflow: hidden;
   }
   .dropdown {
@@ -72,9 +71,9 @@
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 2em;
+    top: 100%;
     transform: translate(-50%, 0);
-    width: 125%;
+    width: 8em;
     padding: 0.5em 0.5em;
     height: auto;
 
