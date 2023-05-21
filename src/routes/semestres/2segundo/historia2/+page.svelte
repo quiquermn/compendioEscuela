@@ -107,8 +107,6 @@
       <h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Regionalización en el contexto de la globalización:</h3>
-      <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
-      <h3>El neoliberalismo y la globalización en México (1994-2018):</h3>
       <p class="justificar samesubtopic">
         La década de los 90s fueron una conyuntura Mundial y un cambio de
         estructuras en las actividades económicos en todo el mundo derivados de
@@ -153,6 +151,13 @@
           </li>
         </ul>
       </section>
+      <h3>El neoliberalismo y la globalización en México (1994-2018):</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quos aut
+        repudiandae esse accusamus inventore asperiores accusantium voluptatem!
+        Nobis et reiciendis nam animi illum facilis vero expedita itaque dolorem
+        sint.
+      </p>
       <p class="justificar samesubtopic">
         Estos acuerdos se desarrollaron como parte de implementación del
         Neoliberalismo iniciado en el sexenio de Gorari. El primero de ellos fue
@@ -175,12 +180,7 @@
       <h3>Gobierno de Felipe Calderón Hinojosa (2006-2012):</h3>
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Enrique Peña Nieto (2012-2018) (2006-2012):</h3>
-      <p class="justificar samesubtopic">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt unde
-        quas quis officiis sint impedit voluptatibus assumenda laudantium
-        commodi dicta, minima, incidunt iste tenetur mollitia saepe libero
-        labore voluptatum animi.
-      </p>
+      <p class="justificar samesubtopic">porno putas</p>
     </article>
   </main>
 </DefaultLayout>
