@@ -1,5 +1,6 @@
 <script>
   import { each } from "svelte/internal";
+  import Subnav from "./Subnav.svelte";
 
   let isMillyPressed = false;
 
@@ -170,6 +171,11 @@
       },
     },
   };
+  function openSubMenu(elemento) {
+    let dropdown =
+      elemento.target.parentElement.parentElement.querySelector(".dropdown");
+    dropdown.classList.toggle("dropdown-open");
+  }
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
@@ -237,20 +243,7 @@
       <ul class="nolist-style">
         <li><a href="/">Inicio</a></li>
         {#each Object.entries(links) as [key, uwulink]}
-          <li class="dropdowncontainer">
-            <button on:click={console.log(uwulink.name)}>
-              <span class="naventry">{@html uwulink.name}</span>
-            </button>
-            <ul class="dropdown">
-              {#each Object.entries(uwulink.materias) as [key, uwumateria]}
-                <li>
-                  <a class="subnavlink" href={uwumateria.url}>
-                    {@html uwumateria.name}
-                  </a>
-                </li>
-              {/each}
-            </ul>
-          </li>
+          <Subnav {uwulink} />
         {/each}
       </ul>
     </nav>
@@ -494,62 +487,5 @@
     position: absolute;
     z-index: 10;
     right: 50%;
-  }
-  .naventry {
-    color: var(--linkcolor);
-    display: block;
-    padding: 0;
-    font-weight: 700;
-    font-size: 1em;
-    width: 120px;
-    overflow: hidden;
-  }
-  .dropdown {
-    background-color: var(--subnavcolor);
-    border-radius: 0.75em;
-    color: var(--headercolor);
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 1.6em;
-    transform: translate(-50%, 0);
-    width: 120%;
-    padding: 0.5em 0.5em;
-    height: auto;
-
-    list-style: none;
-
-    display: flex;
-    display: none;
-
-    gap: 1em;
-    flex-direction: column;
-  }
-  .dropdowncontainer {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown > li {
-    padding-bottom: 0.25em;
-    border-bottom: solid 1px #fff;
-  }
-  .dropdown > li:last-child {
-    border-bottom: none;
-  }
-
-  .dropdown > li a:focus,
-  .dropdown > li a:active,
-  .dropdown > li a:visited,
-  .dropdown > li a {
-    font-weight: 400;
-    color: var(--headercolor);
-    font-size: 1em;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .dropdown > li a:hover {
-    color: var(--textcolor);
   }
 </style>
