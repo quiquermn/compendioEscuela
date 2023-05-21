@@ -237,7 +237,7 @@
     </svg>
   </button>
 
-  {#if ((screenSize < mobilesize) & isMobileNavOpen) | true}
+  {#if (screenSize < mobilesize) & (isMobileNavOpen | true)}
     <span class="testtext">
       {screenSize + "<" + mobilesize}px.
     </span>
