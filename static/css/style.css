@@ -110,6 +110,7 @@ header {
 
 p {
   margin-bottom: 1.25em;
+  text-align: justify;
 }
 
 /* Contenidos genéricos de la Página principal */
@@ -370,11 +371,7 @@ a:focus {
   user-select: none;
 }
 
-#navigationheader > ul {
-  transition: right 0.5s ease;
-}
-
-@media (max-width: 990px) {
+@media (max-width: 1046px) {
   header {
     flex-direction: column;
     padding: 3em;
@@ -383,8 +380,8 @@ a:focus {
     padding-left: var(--padding);
     padding-right: var(--padding);
   }
-  #navigationheader > ul {
-    margin-top: 1em;
+  #navigationheader {
+    margin: 0 auto;
   }
 }
 
@@ -498,6 +495,17 @@ a:focus {
   width: fit-content;
   max-width: min(90vw, 800px);
   color: white;
+}
+button {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
 }
 /*prefers light mode
 @media (prefers-color-scheme: light) {

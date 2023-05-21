@@ -9,7 +9,7 @@
     isOpen = !isOpen;
   }
 
-  function spin(node, { duration }) {
+  function estirar(node, { duration }) {
     return {
       duration,
       css: (t) => {
@@ -28,7 +28,7 @@
     <span class="naventry">{@html uwulink.name}</span>
   </button>
   {#if isOpen}
-    <ul class={"dropdown"} transition:spin={{ duration: 400 }}>
+    <ul class={"dropdown"} transition:estirar={{ duration: 400 }}>
       {#each Object.entries(uwulink.materias) as [key, uwumateria], index}
         <li>
           <a
@@ -44,17 +44,6 @@
 </li>
 
 <style>
-  button {
-    font: inherit;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    padding: 0;
-    position: relative;
-    z-index: 1;
-  }
   .naventry {
     color: var(--linkcolor);
     display: block;

@@ -1,6 +1,8 @@
 <script>
   import { each } from "svelte/internal";
+  import { cubicOut } from "svelte/easing";
   import Subnav from "./Subnav.svelte";
+  import MobileSubnav from "./MobileSubnav.svelte";
 
   const mobilesize = 790;
   let isMillyPressed = false;
@@ -180,6 +182,19 @@
     isMobileNavOpen = !isMobileNavOpen;
     console.log("open");
   }
+
+  function estirar(node, { duration }) {
+    return {
+      duration,
+      css: (t) => {
+        const eased = cubicOut(t);
+        const o = +getComputedStyle(node)
+          .getPropertyValue("width")
+          .replace("px", "");
+        return `width: ${o * eased}px`;
+      },
+    };
+  }
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
@@ -237,15 +252,26 @@
     </svg>
   </button>
 
-  {#if (screenSize < mobilesize) & (isMobileNavOpen | true)}
-    <span class="testtext">
-      {screenSize + "<" + mobilesize}px.
-    </span>
-    <nav id="navigationheader" class="mobilenav">
-      <ul class="nolist-style">
-        <li><a href="/">Inicio</a></li>
+  {#if (screenSize < mobilesize) & isMobileNavOpen}
+    <nav
+      id="navigationheader"
+      class="mobilenav"
+      transition:estirar={{ duration: 200 }}
+    >
+      <button class="back-icon" on:click={() => openMobile()}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <ul class="rmlist mobilenavlist">
+        <li class="bottomborder naventry"><a href="/">Inicio</a></li>
         {#each Object.entries(links) as [key, uwulink]}
-          <li>{@html uwulink.name}</li>
+          <li class="naventry">
+            <MobileSubnav {uwulink} />
+          </li>
         {/each}
       </ul>
     </nav>
@@ -274,18 +300,13 @@
     position: relative;
     z-index: 1;
   }
-  .testtext {
-    color: red;
-    position: absolute;
-    z-index: 10;
-    right: 50%;
-  }
 
   .mobilenav {
     position: absolute;
     right: 0;
     top: 0;
-    width: min(65%, 300px);
+
+    width: min(70%, 300px);
     height: 100%;
     --blur: 5px;
 
@@ -294,6 +315,55 @@
 
     background-color: #ffffffb4;
     backdrop-filter: blur(var(--blur));
+    z-index: 1;
     -webkit-backdrop-filter: blur(var(--blur));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .rmlist {
+    list-style: none;
+  }
+  .mobilenavlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 0;
+    width: 0;
+
+    height: max-content;
+
+    padding: 0;
+    margin: 0 auto;
+
+    gap: 1em;
+    font-size: 1.5em;
+    padding-bottom: 2em;
+  }
+  .naventry {
+    color: var(--linkcolor);
+    display: block;
+    padding: 0;
+    font-weight: 700;
+    font-size: 1em;
+    width: 200px;
+    overflow: hidden;
+    height: max-content;
+  }
+  .naventry:first-child {
+    padding-bottom: 0.5em;
+  }
+  .back-icon {
+    color: var(--linkcolor);
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    margin: 1em 0 1em 1em;
+  }
+  .bottomborder {
+    border-bottom: var(--linkcolor) 2px solid;
   }
 </style>
