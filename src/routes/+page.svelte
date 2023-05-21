@@ -78,8 +78,8 @@
         consectetur adipiscing elit. Aliquam a vestibulum tortor, at consequat
         mi.
       </p>
-      <h2>si</h2>
-      <p class="justificar">si</p>
+      <h2>Dato curioso</h2>
+      <p class="justificar">Pasa tu cursor y da clic a los gatos que veas.</p>
     </article>
   </main>
 </DefaultLayout>

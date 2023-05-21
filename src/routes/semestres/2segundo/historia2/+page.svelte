@@ -166,8 +166,8 @@
         <li>Adelgazamiento del Estado.</li>
       </ul>
       <h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
+      <h4>Política Interna</h4>
       <ul class="orderedlist">
-        <h4>Política Interna</h4>
         <li>Reformas Constitucinales</li>
         <li>
           Artículo 3: sube nivel escolar a secundaria obligatoria, impartida por
@@ -192,7 +192,26 @@
           Creación del IFE, TFE, COFIPE, búsqueda de legitimidad en elecciones
           formadas por ciudadanos independientes
         </li>
-        <li />
+        <li>
+          Modernización industrial, capacitación a obreros, disminución de la
+          fuerza sindical
+        </li>
+      </ul>
+      <h4>Politica Agropecuaria</h4>
+      <ul class="orderedlist">
+        <li>
+          PROCAMPO: impulsa la productividad del campo, fortalecer al campo
+          frente al TLC
+        </li>
+        <li>Apoyo al campo mediante PRONASOL</li>
+        <li>
+          Fracaso de PROCAMPO en siguientes sexenios al no atacar causas
+          importantes
+        </li>
+      </ul>
+      <h4>Movimiento Guerrillero/Zapatista</h4>
+      <ul class="orderedlist">
+        <li>Levantamiento del E</li>
       </ul>
       <h3>Regionalización en el contexto de la globalización:</h3>
       <p class="justificar samesubtopic">
@@ -287,9 +306,9 @@
           criminal en el país.
         </li>
       </ul>
-      <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Enrique Peña Nieto (2012-2018) (2006-2012):</h3>
-      <p class="justificar samesubtopic" />
+      <li>Se firma "Pacto por México" con el PAN y PRD,</li>
+      <li>Se aprueba la Reforma Laboral,</li>
     </article>
   </main>
 </DefaultLayout>
