@@ -4,5 +4,5 @@
 </script>
 
 <svelte:head>
-  <meta http-equiv="refresh" content="0; url=/404" />
+  <meta http-equiv="refresh" content="0; url=/errorpage" />
 </svelte:head>
