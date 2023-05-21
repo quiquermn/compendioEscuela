@@ -87,9 +87,6 @@
     gap: 0.5em;
     flex-direction: column;
   }
-  .dropdown-open {
-    display: flex;
-  }
   .dropdowncontainer {
     position: relative;
     display: inline-block;
