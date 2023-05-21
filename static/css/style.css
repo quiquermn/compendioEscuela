@@ -416,11 +416,6 @@ a:focus {
     font-weight: bolder;
     margin: 0 auto;
   }
-  #navigationheader {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
   header {
     flex-direction: row;
   }
