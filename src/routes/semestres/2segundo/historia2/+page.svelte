@@ -87,21 +87,23 @@
         los sentidos posibles entre los países.
       </p>
       <h3>Neoliberalismo en México (1982-1994):</h3>
-      <ul class="orderedlist">
-        <li>
-          Modelo del Estado Benefactor llega a su fin debido a mala
-          administración de recursos del páis.
-        </li>
-        <li>
-          La política económica cambió en todo el mundo y México tuvo que
-          transitar hacia el neoliberalismo.
-        </li>
-        <li>
-          El modelo de crecimiento hacia adentro dejó al país en bancarrota y se
-          da el crecimiento hacia afuera.
-        </li>
-        <li>Fronteras se abren pero no en el mejor momento.</li>
-      </ul>
+      <section>
+        <ul class="orderedlist">
+          <li>
+            Modelo del Estado Benefactor llega a su fin debido a mala
+            administración de recursos del páis.
+          </li>
+          <li>
+            La política económica cambió en todo el mundo y México tuvo que
+            transitar hacia el neoliberalismo.
+          </li>
+          <li>
+            El modelo de crecimiento hacia adentro dejó al país en bancarrota y
+            se da el crecimiento hacia afuera.
+          </li>
+          <li>Fronteras se abren pero no en el mejor momento.</li>
+        </ul>
+      </section>
       <h3>Gobierno de Miguel de la Madrid Hurtado (1982-1988):</h3>
       <p class="justificar samesubtopic">L.</p>
       <h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
@@ -123,11 +125,6 @@
         países subdesarrollados significó aumentar dependencia hacia los países
         desarrollados y relaciones comerciales aprovechadas por un pequeño
         sector empresarial.
-      </p>
-      <p class="justificar samesubtopic">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
-        quasi, officia non sit molestiae quia doloribus modi saepe natus nostrum
-        sint sapiente qui delectus, aliquam ad atque hic beatae consequatur?
       </p>
       <section>
         <strong> Etapas:</strong>
@@ -151,13 +148,6 @@
           </li>
         </ul>
       </section>
-      <h3>El neoliberalismo y la globalización en México (1994-2018):</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quos aut
-        repudiandae esse accusamus inventore asperiores accusantium voluptatem!
-        Nobis et reiciendis nam animi illum facilis vero expedita itaque dolorem
-        sint.
-      </p>
       <p class="justificar samesubtopic">
         Estos acuerdos se desarrollaron como parte de implementación del
         Neoliberalismo iniciado en el sexenio de Gorari. El primero de ellos fue
@@ -173,14 +163,39 @@
         avanzó en la integración de personas, ni el tránsito de fronteras como
         en la Unión Europea, por la disparidad de las economías.
       </p>
+      <h3>El neoliberalismo y la globalización en México (1994-2018):</h3>
+      <p lass="justificar samesubtopic">
+        En 1994 el entorno económico mundial se encontraba inserto en la
+        globalización y el modelo económico predominante era el Neoliberalismo.
+        La imposicion de las circunstancias economicas en Mexico causo serios
+        estragos como en sectores sociales vulnerables, que en 30 anos no han
+        tenido ninguna oportunidad de desarrollo y sus condiciones se han
+        complicado considerablemente
+      </p>
+      <p lass="justificar samesubtopic">
+        Tras la falta de oportunidades de empleo, la perdida de derechos
+        colectivos y la crisis del campo mexicano, la migracion hacia EU ha sido
+        cada vez mayor, la pobreza y la pobreza extrema ha crecido
+        significativamente, una elite empresasrial (nacional y extranjera) en
+        conubernio con la elite politica se enriquecen desproporcionalmente.
+      </p>
       <h3>Gobierno de Ernesto Zedillo Ponce de León (1994-2000):</h3>
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Vicente Fox Quesada (2000-2006):</h3>
+      <h4>Politica Economica</h4>
+      <section>
+        <ul class="orderedlist">
+          <li>Continua proyecta Neoliberal</li>
+          <li>Mexico enfoca comercio con EU y descuida a otros paises</li>
+          <li />
+          <li />
+        </ul>
+      </section>
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Felipe Calderón Hinojosa (2006-2012):</h3>
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Enrique Peña Nieto (2012-2018) (2006-2012):</h3>
-      <p class="justificar samesubtopic">porno putas</p>
+      <p class="justificar samesubtopic" />
     </article>
   </main>
 </DefaultLayout>
