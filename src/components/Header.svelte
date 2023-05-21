@@ -245,7 +245,7 @@
       <ul class="nolist-style">
         <li><a href="/">Inicio</a></li>
         {#each Object.entries(links) as [key, uwulink]}
-          <li>{uwulink.name}</li>
+          <li>{@html uwulink.name}</li>
         {/each}
       </ul>
     </nav>
@@ -263,15 +263,6 @@
 </header>
 
 <style>
-  #header {
-    position: relative;
-  }
-  .mobilenav {
-    position: absolute;
-    right: 0;
-    top: 50%;
-  }
-
   button {
     font: inherit;
     background-color: transparent;
@@ -288,5 +279,21 @@
     position: absolute;
     z-index: 10;
     right: 50%;
+  }
+
+  .mobilenav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: min(65%, 300px);
+    height: 100%;
+    --blur: 5px;
+
+    border-left: var(--linkcolor) 4px solid;
+    border-right: var(--linkcolor) 4px solid;
+
+    background-color: #ffffffb4;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
   }
 </style>
