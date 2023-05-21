@@ -1,6 +1,22 @@
 <script>
   import { each } from "svelte/internal";
 
+  let isMillyPressed = false;
+
+  const millyimages = {
+    silly: "/imgs/sillymilly.webp",
+    serious: "/imgs/seriousmilly.webp",
+    jolly: "/imgs/jollymilly.webp",
+  };
+
+  let defaultmilly = millyimages.silly;
+  let currentmilly = defaultmilly;
+
+  function changeMilly() {
+    currentmilly = isMillyPressed ? millyimages.jolly : millyimages.serious;
+    isMillyPressed = !isMillyPressed;
+  }
+
   let screenSize;
   const links = {
     primero: {
@@ -159,12 +175,26 @@
 <svelte:window bind:innerWidth={screenSize} />
 <header id="header">
   <div id="logotitle">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <img
-      src="/imgs/sillymilly.webp"
+      src={currentmilly}
       height="50px"
       width="50px"
       alt="Foto del gato Milly"
       id="logo"
+      on:mouseenter={() => {
+        if (!isMillyPressed) {
+          currentmilly = millyimages.jolly;
+        }
+      }}
+      on:mouseleave={() => {
+        if (!isMillyPressed) {
+          currentmilly = defaultmilly;
+        }
+      }}
+      on:click={() => {
+        changeMilly();
+      }}
     />
     <span id="titulo">Compendio Bátiz</span>
   </div>
@@ -196,6 +226,7 @@
       />
     </svg>
   </button>
+
   {#if screenSize < 790}
     <span class="testtext">
       {screenSize + "<"}790px.
@@ -206,14 +237,23 @@
       <ul class="nolist-style">
         <li><a href="/">Inicio</a></li>
         {#each Object.entries(links) as [key, uwulink]}
-          <li><a href={uwulink.url}>{@html uwulink.name}</a></li>
+          <li class="dropdowncontainer">
+            <button on:click={console.log(uwulink.name)}>
+              <span class="naventry">{@html uwulink.name}</span>
+            </button>
+            <ul class="dropdown">
+              {#each Object.entries(uwulink.materias) as [key, uwumateria]}
+                <li>
+                  <a class="subnavlink" href={uwumateria.url}>
+                    {@html uwumateria.name}
+                  </a>
+                </li>
+              {/each}
+            </ul>
+          </li>
         {/each}
       </ul>
     </nav>
-
-    <span class="testtext">
-      {">"}790px
-    </span>
   {/if}
 </header>
 
@@ -233,7 +273,7 @@
 			</li>
 			<li>
 				<a href="/semestres/1primero/">1<sup>er</sup> Semestre</a>
-				<ul class="subsectionsnav">
+				<ul class="dropdown">
 					<li><a href="/semestres/1primero/algebra">Álgebra</a></li>
 					<li>
 						<a href="/semestres/1primero/compu">Computación Básica <em>I</em></a>
@@ -261,7 +301,7 @@
 			</li>
 			<li>
 				<a href="/semestres/2segundo">2<sup>do</sup> Semestre</a>
-				<ul class="subsectionsnav">
+				<ul class="dropdown">
 					<li>
 						<a href="/semestres/2segundo/trigo">Geometría y Trigonometría</a>
 					</li>
@@ -294,7 +334,7 @@
 			</li>
 			<li>
 				<a href="/semestres/3tercero">3<sup>er</sup> Semestre</a>
-				<ul class="subsectionsnav">
+				<ul class="dropdown">
 					<li class="bold">Materias Compartidas:</li>
 					<li>
 						<a href="/semestres/3tercero/analitica">Geometría Analítica</a>
@@ -332,7 +372,7 @@
 			</li>
 			<li>
 				<a href="/semestres/4cuarto">4<sup>to</sup> Semestre</a>
-				<ul class="subsectionsnav">
+				<ul class="dropdown">
 					<li class="bold">Materias Compartidas:</li>
 					<li>
 						<a href="/semestres/4cuarto/diferencial">Cálculo Diferencial</a>
@@ -366,7 +406,7 @@
 			</li>
 			<li>
 				<a href="/semestres/5quinto">5<sup>to</sup> Semestre</a>
-				<ul class="subsectionsnav">
+				<ul class="dropdown">
 					<li class="bold">Materias Compartidas:</li>
 					<li>
 						<a href="/semestres/5quinto/integral">Cálculo Integral</a>
@@ -400,7 +440,7 @@
 			</li>
 			<li>
 				<a href="/semestres/6sexto">6<sup>to</sup> Semestre</a>
-				<ul class="subsectionsnav">
+				<ul class="dropdown">
 					<li class="bold">Materias Compartidas:</li>
 					<li>
 						<a href="/semestres/6sexto/probabilidad">Probabilidad y Estadística</a>
@@ -438,10 +478,78 @@
 -->
 
 <style>
+  button {
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
   .testtext {
     color: red;
     position: absolute;
     z-index: 10;
     right: 50%;
+  }
+  .naventry {
+    color: var(--linkcolor);
+    display: block;
+    padding: 0;
+    font-weight: 700;
+    font-size: 1em;
+    width: 120px;
+    overflow: hidden;
+  }
+  .dropdown {
+    background-color: var(--subnavcolor);
+    border-radius: 0.75em;
+    color: var(--headercolor);
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 1.6em;
+    transform: translate(-50%, 0);
+    width: 120%;
+    padding: 0.5em 0.5em;
+    height: auto;
+
+    list-style: none;
+
+    display: flex;
+    display: none;
+
+    gap: 1em;
+    flex-direction: column;
+  }
+  .dropdowncontainer {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown > li {
+    padding-bottom: 0.25em;
+    border-bottom: solid 1px #fff;
+  }
+  .dropdown > li:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown > li a:focus,
+  .dropdown > li a:active,
+  .dropdown > li a:visited,
+  .dropdown > li a {
+    font-weight: 400;
+    color: var(--headercolor);
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .dropdown > li a:hover {
+    color: var(--textcolor);
   }
 </style>

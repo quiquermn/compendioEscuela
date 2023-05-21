@@ -5,7 +5,7 @@
   import Katex from "svelte-katex";
 </script>
 
-<DefaultLayout title="Página de inicio">
+<DefaultLayout title="Álgebra">
   <main class="mainpart">
     <div class="indicebox">
       <ul class="indice">

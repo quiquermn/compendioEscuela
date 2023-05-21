@@ -1,4 +1,4 @@
-<!-- src/routes/404/+page.svelte -->
+<!-- src/routes/+error.svelte -->
 <script>
   import DefaultLayout from "/src/layouts/DefaultLayout.svelte";
 </script>
