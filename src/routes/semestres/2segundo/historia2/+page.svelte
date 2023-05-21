@@ -60,18 +60,22 @@
         En el siglo XX, a causa del socialismo, se conformó un nuevo orden
         político y económico regido por bloques hegemónicos, uno por EU, y el
         otro por la Unión Soviética, quienes se confrontan en toodos los órdenes
-        durante la posguerra. <strong>Surgimiento de bloques económicos:</strong
-        >
+        durante la posguerra.
       </p>
-      <p class="justificar samesubtopic">
-        <strong>Capitalista:</strong> bajo el creciente liderazgo de EU, países como
-        Gran Bretaña, Canadá, Francia, Italia, Japón y entre otros, se consituyeron
-        en las naciones más poderosas.
+      <p class="samesubtopic">
+        <strong>Surgimiento de bloques económicos:</strong>
       </p>
-      <p class="justificar samesubtopic">
-        <strong>Socialista:</strong> conformado por la Unión Soviética, Alemania
-        Democrática, China, Vietna, Corea de Norte, Cuba y entre otros países.
-      </p>
+      <ul class="orderedlist">
+        <li>
+          <strong>Capitalista:</strong> bajo el creciente liderazgo de EU, países
+          como Gran Bretaña, Canadá, Francia, Italia, Japón y entre otros, se consituyeron
+          en las naciones más poderosas.
+        </li>
+        <li>
+          <strong>Socialista:</strong> conformado por la Unión Soviética, Alemania
+          Democrática, China, Vietna, Corea de Norte, Cuba y entre otros países.
+        </li>
+      </ul>
       <p class="justificar samesubtopic">
         El neoliberalismo es una doctrina filosófica que sostiene que la libre
         competencia garantiza mejor resultado económico, por lo que el mercado
@@ -87,27 +91,109 @@
         los sentidos posibles entre los países.
       </p>
       <h3>Neoliberalismo en México (1982-1994):</h3>
-      <section>
-        <ul class="orderedlist">
-          <li>
-            Modelo del Estado Benefactor llega a su fin debido a mala
-            administración de recursos del páis.
-          </li>
-          <li>
-            La política económica cambió en todo el mundo y México tuvo que
-            transitar hacia el neoliberalismo.
-          </li>
-          <li>
-            El modelo de crecimiento hacia adentro dejó al país en bancarrota y
-            se da el crecimiento hacia afuera.
-          </li>
-          <li>Fronteras se abren pero no en el mejor momento.</li>
-        </ul>
-      </section>
+      <ul class="orderedlist">
+        <li>
+          Modelo del Estado Benefactor llega a su fin debido a mala
+          administración de recursos del páis.
+        </li>
+        <li>
+          La política económica cambió en todo el mundo y México tuvo que
+          transitar hacia el neoliberalismo.
+        </li>
+        <li>
+          El modelo de crecimiento hacia adentro dejó al país en bancarrota y se
+          da el crecimiento hacia afuera.
+        </li>
+        <li>Fronteras se abren pero no en el mejor momento.</li>
+      </ul>
       <h3>Gobierno de Miguel de la Madrid Hurtado (1982-1988):</h3>
-      <p class="justificar samesubtopic">L.</p>
+      <h4>Politica Economica</h4>
+      <ul class="orderedlist">
+        <li>
+          Superar crisis económica para integrar un modelo de apertura comercial
+          en un mundo globalizado.
+        </li>
+        <li>Renovación Moral (lema).</li>
+        <li>
+          Crea el Programa Intensivo de Recuperación Económica (PIRE) para
+          controlar la crisis del país.
+        </li>
+        <li>Programa de Aliento y Crecimiento (PAC).</li>
+        <li>
+          Pacto de solaridad (PSE) proponía detener la inflación mediante la
+          restricción de aumentos salariales y disminución de precios de la
+          canasta básica.
+        </li>
+        <li>Desincorporación de empresas públicas.</li>
+        <li>
+          Adhesión de México al GATT (Acuerdo General sobre Aranceles Aduaneros
+          y Comercio) y cambia nombre a OMC (Organización Mundial de Comercio).
+        </li>
+        <li>Se reducen barreras al comercio internacional.</li>
+      </ul>
+      <h4>Politica Interna:</h4>
+      <ul class="orderedlist">
+        <li>
+          En el temblor del 85, sociedad civil se hace cargo del desastre debido
+          a parálisis en el gobierno.
+        </li>
+        <li>
+          Dudas de legitimidad en elecciones presidenciales por la caida del
+          sistema.
+        </li>
+        <li>
+          Surge corriente democratizadora, se exigían métodos más democráticos
+          para elegir a candidatos del partido
+        </li>
+        <li>Surge Partido Minoritarios de Izquierda.</li>
+      </ul>
+      <h4>Politica Laboral:</h4>
+      <ul class="orderedlist">
+        <li>Cambio de modelo económico "Neoliberalismo".</li>
+        <li>Privatización de la economía.</li>
+        <li>
+          Se deiblita el Corporativismo: El estado ya no inteviene como mediador
+          y salvaguarda de los derechos obreros.
+        </li>
+        <li>Relación directa de sindicatos con las empresas</li>
+        <li>Debilidad de organizaciones sindicales.</li>
+      </ul>
+      <h4>Aspectos clave</h4>
+      <ul class="orderedlist">
+        <li>Reconversión industrial.</li>
+        <li>Desincorporación de empresas paraestatales.</li>
+        <li>Privatización de empresas públicas.</li>
+        <li>Adelgazamiento del Estado.</li>
+      </ul>
       <h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
-      <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
+      <ul class="orderedlist">
+        <h4>Política Interna</h4>
+        <li>Reformas Constitucinales</li>
+        <li>
+          Artículo 3: sube nivel escolar a secundaria obligatoria, impartida por
+          el Estado, laica y gratuita
+        </li>
+        <li>
+          Artículo 27: promovió la extinción del "ejido", justo que los
+          campesinos tuvieran propiedad de la tierras que cultivaban
+        </li>
+        <li>
+          Artículo 130: reconocimeinto de personalidad jurídica de la iglesia,
+          miembros pueden opinar y votar.
+        </li>
+        <li>
+          Se crea Programa Nacional de Solaridad (PRONASOL), que compromete el
+          desarrollo de obras de infraestructura a la población, mientras que el
+          Estado ponia una parte, la comunidad se comprometia con la mano de
+          obra.
+        </li>
+        <li>Se privatiza la Banca</li>
+        <li>
+          Creación del IFE, TFE, COFIPE, búsqueda de legitimidad en elecciones
+          formadas por ciudadanos independientes
+        </li>
+        <li />
+      </ul>
       <h3>Regionalización en el contexto de la globalización:</h3>
       <p class="justificar samesubtopic">
         La década de los 90s fueron una conyuntura Mundial y un cambio de
@@ -126,28 +212,26 @@
         desarrollados y relaciones comerciales aprovechadas por un pequeño
         sector empresarial.
       </p>
-      <section>
-        <strong> Etapas:</strong>
-        <ul class="orderedlist">
-          <li>
-            Primera: Incorporación una zona libre de aranceles o una zona de
-            impuestos, donde los Estados signatarios establecen los sectores
-            libres de impuestos.
-          </li>
-          <li>
-            Segunda: Unión Aduanera, la cual se expresa a través de un arancel
-            común ante el resto del mundo.
-          </li>
-          <li>
-            Tercera: Mercado Común, no se establece libertad en intercambio de
-            bienes y servicios, libre movilidad de trabajo y capital. La
-            expresión más avanzada del mercado común es unión económica donde
-            existe una moneda común y la culminación de integración sería la
-            integración total, donde ya hay unidad en criterios de política
-            económica, cambiaria, tributaria y de precios.
-          </li>
-        </ul>
-      </section>
+      <strong> Etapas:</strong>
+      <ul class="orderedlist">
+        <li>
+          Primera: Incorporación una zona libre de aranceles o una zona de
+          impuestos, donde los Estados signatarios establecen los sectores
+          libres de impuestos.
+        </li>
+        <li>
+          Segunda: Unión Aduanera, la cual se expresa a través de un arancel
+          común ante el resto del mundo.
+        </li>
+        <li>
+          Tercera: Mercado Común, no se establece libertad en intercambio de
+          bienes y servicios, libre movilidad de trabajo y capital. La expresión
+          más avanzada del mercado común es unión económica donde existe una
+          moneda común y la culminación de integración sería la integración
+          total, donde ya hay unidad en criterios de política económica,
+          cambiaria, tributaria y de precios.
+        </li>
+      </ul>
       <p class="justificar samesubtopic">
         Estos acuerdos se desarrollaron como parte de implementación del
         Neoliberalismo iniciado en el sexenio de Gorari. El primero de ellos fue
@@ -183,16 +267,26 @@
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Vicente Fox Quesada (2000-2006):</h3>
       <h4>Politica Economica</h4>
-      <section>
-        <ul class="orderedlist">
-          <li>Continua proyecta Neoliberal</li>
-          <li>Mexico enfoca comercio con EU y descuida a otros paises</li>
-          <li />
-          <li />
-        </ul>
-      </section>
+      <ul class="orderedlist">
+        <li>Continua proyecta Neoliberal</li>
+        <li>Mexico enfoca comercio con EU y descuida a otros paises.</li>
+        <li />
+        <li />
+      </ul>
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Felipe Calderón Hinojosa (2006-2012):</h3>
+      <h4>Hechos</h4>
+      <ul class="orderedlist">
+        <li>Enfoco su gobierno en educación. empleo y fuerzas armadas.</li>
+        <li>
+          Realiza campañas contra el narco, involucra al Ejército Mexicano.
+        </li>
+        <li>
+          Crea "Programa y estrategias nacionales de seguridad" y el proyecto
+          "Plataforma México" con la finalidad de llevar un sistema único
+          criminal en el país.
+        </li>
+      </ul>
       <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
       <h3>Gobierno de Enrique Peña Nieto (2012-2018) (2006-2012):</h3>
       <p class="justificar samesubtopic" />
