@@ -26,6 +26,7 @@
 </script>
 
 <div id="indicecont-sv">
+  <button class="openindice">X</button>
   <nav>
     <ul class="rmlist indicebox-sv">
       {#if links}
@@ -38,6 +39,12 @@
 <style>
   nav {
     width: 100%;
+  }
+  .openindice {
+    background-color: cyan;
+    color:red;
+    height: 32px;
+    width: 3px;
   }
 
   #indicecont-sv {
@@ -113,6 +120,10 @@
     .indicebox-sv {
       overflow: hidden;
       height: 50px;
+      display:none;
+    }
+    #indicecont-sv {
+      display:block;
     }
   }
 </style>
