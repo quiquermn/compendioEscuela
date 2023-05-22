@@ -180,7 +180,6 @@
       return;
     }
     isMobileNavOpen = !isMobileNavOpen;
-    console.log("open");
   }
 
   function estirar(node, { duration }) {

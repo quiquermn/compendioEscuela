@@ -1,7 +1,12 @@
 <script>
   import { onMount } from "svelte";
+  import { cubicOut } from "svelte/easing";
 
   let links = [];
+  let screenSize;
+
+  const mobilesize = 790;
+  let isOpen = false;
 
   onMount(() => {
     // Obtiene todos los headers
@@ -17,23 +22,59 @@
         indice;
       for (let i = 1; i <= 6; i++) {
         if (header.tagName === `H${i}`) {
-          console.log(header.tagName);
           links += `<li class="listh${i}" style="width: 100%; text-align: left;"><a class="ish${i}" href="#${header.id}">${header.textContent}</a></li>`;
         }
       }
     });
   });
+
+  function openmobileindex() {
+    isOpen = !isOpen;
+    console.log(isOpen);
+  }
+  function estirar(node, { duration }) {
+    return {
+      duration,
+      css: (t) => {
+        const eased = cubicOut(t);
+        const o = +getComputedStyle(node)
+          .getPropertyValue("height")
+          .replace("px", "");
+        return `height: ${o * eased}px`;
+      },
+    };
+  }
 </script>
 
+<svelte:window bind:innerWidth={screenSize} />
+
 <div id="indicecont-sv">
-  <button class="openindice">X</button>
-  <nav>
-    <ul class="rmlist indicebox-sv">
-      {#if links}
-        {@html links}
-      {/if}
-    </ul>
-  </nav>
+  {#if screenSize < mobilesize}
+    <button class="openindice" on:click={() => openmobileindex()}>
+      <svg
+        width="64"
+        height="64"
+        fill="none"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        style="-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .1));
+      filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .1));"
+        ><path
+          d="M3.5 16.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4 .5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.993L7.5 17h13.503H7.5Zm-4-6.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4 .5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.993L7.5 11h13.503H7.5Zm-4-6.492a1.5 1.5 0 1 1 0 2.999 1.5 1.5 0 0 1 0-3ZM7.5 5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.994l.116-.006h13.503H7.5Z"
+          fill="currentColor"
+        /></svg
+      >
+    </button>
+  {/if}
+  {#if (screenSize > mobilesize) | isOpen}
+    <nav transition:estirar={{ duration: 200 }}>
+      <ul class="rmlist indicebox-sv">
+        {#if links}
+          {@html links}
+        {/if}
+      </ul>
+    </nav>
+  {/if}
 </div>
 
 <style>
@@ -41,10 +82,23 @@
     width: 100%;
   }
   .openindice {
-    background-color: cyan;
-    color:red;
-    height: 32px;
-    width: 3px;
+    background-color: var(--indice-color);
+    color: white;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4em;
+    padding: 0.35em;
+    box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 10px 0px;
+
+    margin-bottom: 1em;
+
+    transition: transform 0.1s ease-in-out;
+  }
+  .openindice:active {
+    transform: translateY(2px);
   }
 
   #indicecont-sv {
@@ -55,6 +109,8 @@
     height: max-content;
     justify-content: center;
     align-content: center;
+
+    position: relative;
   }
   .rmlist {
     list-style-type: none;
@@ -119,11 +175,10 @@
     }
     .indicebox-sv {
       overflow: hidden;
-      height: 50px;
-      display:none;
+      position: sticky;
     }
     #indicecont-sv {
-      display:block;
+      display: block;
     }
   }
 </style>
