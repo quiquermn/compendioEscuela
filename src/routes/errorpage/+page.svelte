@@ -9,7 +9,7 @@
       <!--Es importante que estos contenidos se encuentren dentro de la etiqueta article, y con el id main article, usualmente solo habrá uno de estos por cada página, debido a que contienen un h1, no es recomendado utilizarlo más de una vez-->
 
       <h1 class="centrar">
-        Error 404: Página no encontrada
+        Error 404: Página no encontrada UWU
         <!--Insertar el título de la página en general, por ejemplo: "Actividades de Álgebra"-->
       </h1>
       <!--Para la correcta visualización del índice, deberá de estar separada cada sección con un h2, recuerda iniciar con un h1 para marcar la jerarquía de la página (es muy importante para los lectores de pantalla o un visualizador en modo lectura como el de Safari)-->
@@ -19,7 +19,7 @@
       </h2>
       <p class="justificar samesubtopic">
         Si crees que es un error favor de contactar a cualquiera de los
-        creadores del sitio.
+        creadores del sitio mostrados en la parte inferior del sitio.
         <!--Existen diversas clases para organizar el parrafo, una de ellas es "justificar", como su nombre lo dice, justifica el texto dentro del párrafo-->
         <!--Si el párrafo no es el último, agregale la clase "samesubtopic", esta remueve los padding para que se sienta continuo el documento-->
 

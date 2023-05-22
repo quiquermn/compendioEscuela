@@ -25,7 +25,7 @@
       </p>
 
       <p class="justificar">
-        Apreciariamos mucho cualquier aporte de material o sugerencia.
+        Apreciaríamos mucho cualquier aporte de material o sugerencia.
       </p>
 
       <h2>¿Cómo navegar dentro de la página?</h2>
