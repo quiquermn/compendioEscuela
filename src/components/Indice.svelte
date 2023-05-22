@@ -18,7 +18,7 @@
       for (let i = 1; i <= 6; i++) {
         if (header.tagName === `H${i}`) {
           console.log(header.tagName);
-          links += `<li  style="width: 100%; text-align: left;"><a class="ish${i}" href="#${header.id}">${header.textContent}</a></li>`;
+          links += `<li class="listh${i}" style="width: 100%; text-align: left;"><a class="ish${i}" href="#${header.id}">${header.textContent}</a></li>`;
         }
       }
     });
@@ -59,7 +59,7 @@
     border-radius: 1em;
     width: 100%;
     display: flex;
-    gap: 1em;
+    gap: 0.25em;
     padding: 1.5em;
 
     flex-direction: column;
@@ -72,6 +72,36 @@
   }
   :global(.ish2) {
     font-weight: 700;
+  }
+  :global(.ish3) {
+    font-weight: 400;
+  }
+  :global(.ish4) {
+    font-weight: 300;
+    font-style: italic;
+  }
+  :global(.ish5) {
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  :global(.listh2:not(:first-of-type)) {
+    width: 100%;
+    padding-top: 0.25em;
+    margin-top: 1em;
+    border-top: solid 2px #fff;
+  }
+  :global(.listh3) {
+    list-style: disc;
+    margin-left: 1.75em;
+  }
+  :global(.listh4) {
+    list-style: none;
+    margin-left: 4em;
+  }
+  :global(.listh5) {
+    list-style: none;
+    margin-left: 5.5em;
   }
 
   @media (max-width: 790px) {

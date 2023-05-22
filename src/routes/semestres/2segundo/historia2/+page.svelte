@@ -302,8 +302,10 @@
         </li>
       </ul>
       <h3>Gobierno de Enrique Peña Nieto (2012-2018) (2006-2012):</h3>
-      <li>Se firma "Pacto por México" con el PAN y PRD,</li>
-      <li>Se aprueba la Reforma Laboral,</li>
+      <ul class="orderedlist">
+        <li>Se firma "Pacto por México" con el PAN y PRD,</li>
+        <li>Se aprueba la Reforma Laboral,</li>
+      </ul>
     </article>
   </main>
 </DefaultLayout>

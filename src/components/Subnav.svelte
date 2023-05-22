@@ -3,8 +3,6 @@
   let isOpen = false;
   import { cubicOut } from "svelte/easing";
 
-  const varToString = (varObj) => Object.keys(varObj)[0];
-
   function openSubMenu() {
     isOpen = !isOpen;
   }
@@ -60,7 +58,7 @@
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 100%;
+    top: 2.5em;
     transform: translate(-50%, 0);
     width: 8em;
     padding: 0.5em 0.5em;
