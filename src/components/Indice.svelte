@@ -2,15 +2,15 @@
   import { onMount } from "svelte";
   import { cubicOut } from "svelte/easing";
 
-  let links = [];
   let screenSize;
 
   const mobilesize = 790;
   let isOpen = false;
 
-  onMount(() => {
+  function generateLinks() {
     // Obtiene todos los headers
-    const headers = Array.from(document.querySelectorAll("h2, h3, h4, h5, h6"));
+    let headers = Array.from(document.querySelectorAll("h2, h3, h4, h5, h6"));
+    let links = [];
 
     headers.forEach((header, indice) => {
       header.id =
@@ -26,7 +26,9 @@
         }
       }
     });
-  });
+
+    return links;
+  }
 
   function openmobileindex() {
     isOpen = !isOpen;
@@ -44,6 +46,9 @@
       },
     };
   }
+  onMount(() => {
+    generateLinks();
+  });
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
@@ -69,9 +74,7 @@
   {#if (screenSize > mobilesize) | isOpen}
     <nav transition:estirar={{ duration: 200 }}>
       <ul class="rmlist indicebox-sv">
-        {#if links}
-          {@html links}
-        {/if}
+        {@html generateLinks()}
       </ul>
     </nav>
   {/if}

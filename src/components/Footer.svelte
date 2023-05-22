@@ -1,7 +1,10 @@
 <footer id="footer">
-  <span>
-    Creado por <a href="https://github.com/KalebManzanita">Kaleb</a> y
-    <a href="https://github.com/ZorvShadow">Quique</a>
+  <span style="text-align:left;">
+    Creado por <a class="alink" href="https://github.com/KalebManzanita"
+      >Kaleb</a
+    >
+    y
+    <a class="alink" href="https://github.com/ZorvShadow">Quique</a>
   </span>
   <div class="sendtoright">
     <a
@@ -37,5 +40,9 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+  }
+  .alink {
+    color: var(--linkcolor);
+    font-weight: 700;
   }
 </style>
