@@ -5,11 +5,6 @@
 
 <DefaultLayout title="Error en la página">
   <main class="mainpart">
-    <div class="indicebox">
-      <ul class="indice">
-        <!-- <li>El índice de la página será autogenerado por el javascript dentro de /js/blog.js</li> -->
-      </ul>
-    </div>
     <article id="mainarticle">
       <!--Es importante que estos contenidos se encuentren dentro de la etiqueta article, y con el id main article, usualmente solo habrá uno de estos por cada página, debido a que contienen un h1, no es recomendado utilizarlo más de una vez-->
 

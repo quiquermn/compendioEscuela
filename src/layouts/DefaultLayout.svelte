@@ -18,6 +18,7 @@
 </svelte:head>
 <div id="mainpage">
   <Header />
+  <div><span>uwu</span></div>
   <slot />
   <Footer />
 </div>

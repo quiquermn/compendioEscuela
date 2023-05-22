@@ -5,9 +5,6 @@
 
 <DefaultLayout title="Página de inicio">
   <main class="mainpart">
-    <div class="indicebox">
-      <ul class="indice" />
-    </div>
     <article id="mainarticle">
       <h1 class="centrar">Bienvenido al Compendio Bátiz</h1>
       <h2>Introducción</h2>
