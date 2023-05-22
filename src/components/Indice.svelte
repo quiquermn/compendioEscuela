@@ -66,6 +66,7 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 10px 0px;
   }
+
   :global(.indicebox-sv a) {
     text-decoration: none;
     color: white;
@@ -108,6 +109,10 @@
     #indicecont-sv {
       min-width: 100%;
       max-width: 100%;
+    }
+    .indicebox-sv {
+      overflow: hidden;
+      height: 50px;
     }
   }
 </style>
