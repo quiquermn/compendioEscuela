@@ -1,12 +1,12 @@
 :root {
-  --backgroundcolor: #2c3333;
-  --headercolor: #ffffff;
-  --textcolor: #cbe4de;
-  --hovercolor: #494e00;
-  --linkcolor: #036d2b;
-  --subnavcolor: #394242;
+  --backgroundcolor: #070e18;
+  --headercolor: #fffbee;
+  --textcolor: #fffef9;
+  --hovercolor: #001279;
+  --linkcolor: #000c4e;
+  --subnavcolor: hsl(215, 35%, 20%);
   --max-width-mbl: 790px;
-  --indice-color: #353b3b;
+  --indice-color: var(--subnavcolor);
   --padding: 54px;
 }
 
