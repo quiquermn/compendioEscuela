@@ -1,5 +1,6 @@
 <!-- src/routes/semestres/1primero/algebra/+page.svelte -->
 <script>
+  import LatexSvg from "../../../../components/LatexSvg.svelte";
   import Spoiler from "/src/components/Spoiler.svelte";
   import DefaultLayout from "/src/layouts/DefaultLayout.svelte";
   import Katex from "svelte-katex";
@@ -82,9 +83,9 @@
             las leyes de los exponentes:
           </p>
           <p class="justificar samesubtopic">
-            <Katex>
-              {"\\left ( \\frac{4x^{1/4}y^{-3}}{yx^{-1/2}w}\\right )^{3/2} \\div\\left ( w^{2/3}x^{-3} \\right )"}
-            </Katex>
+            <LatexSvg
+              latex={"\\left ( \\frac{4x^{1/4}y^{-3}}{yx^{-1/2}w}\\right )^{3/2} \\div\\left ( w^{2/3}x^{-3} \\right )"}
+            />
           </p>
           <p>
             <strong>Respuesta:&nbsp;</strong>
@@ -96,17 +97,17 @@
             3. Simplifica al máximo la siguiente expresión algebraíca
           </p>
           <p class="justificar samesubtopic">
-            <Katex>
-              {`
-                                \\frac{9}{2}b - 2\\left [ a-a\\left ( 5-b \\right ) \\right ] - \\left
-                            \\{ -b\\left [ 2\\left ( a-5 \\right )+\\frac{1}{2} \\right ]
-                            +\\frac{1}{3} \\right \\}
-                                `}
-            </Katex>
+            <LatexSvg
+              latex={`\\frac{9}{2}b - 2\\left [ a-a\\left ( 5-b \\right ) \\right ] - 
+                      \\left\\{ -b\\left [ 2\\left ( a-5 \\right )+\\frac{1}{2} \\right ]
+                      +\\frac{1}{3} \\right \\}`}
+              alt=""
+            />
           </p>
+
           <p>
             <strong>Respuesta:&nbsp;</strong>
-            <Spoiler><Katex>-5b+8a-\frac{1}{3}</Katex></Spoiler>
+            <Spoiler><LatexSvg latex={`-5b+8a-\\frac{1}{3}`} /></Spoiler>
           </p>
         </section>
         <section class="ejercicio">
@@ -141,15 +142,16 @@
         </section>
         <section class="ejercicio">
           <p class="justificar samesubtopic">
-            6. Tenemos un pentágono irregular cuyos lados son <Katex
-              >a, b, c, d</Katex
-            > y
-            <Katex>e</Katex>. Se sabe que los lados <Katex>a</Katex> y <Katex
-              >b</Katex
-            > son iguales entre sí, y cada uno de ellos mide
-            <Katex
-              >{"\\frac{1}{4}x^{3}+\\frac{2}{3}x^{2}y + \\frac{1}{2}y^{3}"}</Katex
-            >
+            6. Tenemos un pentágono irregular cuyos lados son <LatexSvg
+              latex="a, b, c, d"
+            />
+            y <LatexSvg latex="e" />. Se sabe que los lados <LatexSvg
+              latex="a"
+            /> y
+            <LatexSvg latex="b" /> son iguales entre sí, y cada uno de ellos mide
+            <LatexSvg
+              latex={"\\frac{1}{4}x^{3}+\\frac{2}{3}x^{2}y + \\frac{1}{2}y^{3}"}
+            />
             no terminé
           </p>
           <p class="justificar samesubtopic">

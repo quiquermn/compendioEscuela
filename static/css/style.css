@@ -445,6 +445,9 @@ a:focus {
     position: absolute;
   }
 }
+.katex {
+  z-index: -1;
+}
 .katex-display > .katex {
   white-space: normal;
 }
@@ -461,6 +464,8 @@ a:focus {
   display: inline-block;
   margin: 0;
   padding: 0;
+
+  z-index: 0;
 }
 
 @media (max-width: 625px) {

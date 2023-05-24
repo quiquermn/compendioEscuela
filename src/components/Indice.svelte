@@ -22,7 +22,9 @@
         indice;
       for (let i = 1; i <= 6; i++) {
         if (header.tagName === `H${i}`) {
-          links += `<li class="listh${i}" style="width: 100%; text-align: left;"><a class="ish${i}" href="#${header.id}">${header.textContent}</a></li>`;
+          links += `<li class="listh${i}" style="width: 100%; text-align: left;">
+                      <a class="ish${i}" href="#${header.id}">${header.textContent}</a>
+                    </li>`;
         }
       }
     });
@@ -54,23 +56,21 @@
 <svelte:window bind:innerWidth={screenSize} />
 
 <div id="indicecont-sv">
-  {#if screenSize < mobilesize}
-    <button class="openindice" on:click={() => openmobileindex()}>
-      <svg
-        width="64"
-        height="64"
-        fill="none"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        style="-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .1));
+  <button class="openindice" on:click={() => openmobileindex()}>
+    <svg
+      width="64"
+      height="64"
+      fill="none"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      style="-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .1));
       filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .1));"
-        ><path
-          d="M3.5 16.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4 .5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.993L7.5 17h13.503H7.5Zm-4-6.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4 .5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.993L7.5 11h13.503H7.5Zm-4-6.492a1.5 1.5 0 1 1 0 2.999 1.5 1.5 0 0 1 0-3ZM7.5 5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.994l.116-.006h13.503H7.5Z"
-          fill="currentColor"
-        /></svg
-      >
-    </button>
-  {/if}
+      ><path
+        d="M3.5 16.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4 .5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.993L7.5 17h13.503H7.5Zm-4-6.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4 .5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.993L7.5 11h13.503H7.5Zm-4-6.492a1.5 1.5 0 1 1 0 2.999 1.5 1.5 0 0 1 0-3ZM7.5 5h13.503a1 1 0 0 1 .117 1.993l-.117.007H7.5a1 1 0 0 1-.116-1.994l.116-.006h13.503H7.5Z"
+        fill="currentColor"
+      /></svg
+    >
+  </button>
   {#if (screenSize > mobilesize) | isOpen}
     <nav transition:estirar={{ duration: 200 }}>
       <ul class="rmlist indicebox-sv">
@@ -89,7 +89,7 @@
     color: white;
     height: 45px;
     width: 45px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     border-radius: 0.4em;
@@ -112,8 +112,6 @@
     height: max-content;
     justify-content: center;
     align-content: center;
-
-    position: relative;
   }
   .rmlist {
     list-style-type: none;
@@ -175,13 +173,18 @@
     #indicecont-sv {
       min-width: 100%;
       max-width: 100%;
+      display: block;
+      position: fixed;
     }
     .indicebox-sv {
       overflow: hidden;
       position: sticky;
+
+      z-index: calc(97987979878979879878 * 787);
     }
-    #indicecont-sv {
-      display: block;
+    .openindice {
+      display: flex;
+      position: sticky;
     }
   }
 </style>

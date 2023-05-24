@@ -26,7 +26,7 @@
     <span class="naventry">{@html uwulink.name}</span>
   </button>
   {#if isOpen}
-    <ul class={"dropdown"} transition:estirar={{ duration: 400 }}>
+    <ul class="dropdown" transition:estirar={{ duration: 400 }}>
       {#each Object.entries(uwulink.materias) as [key, uwumateria], index}
         <li>
           <a
