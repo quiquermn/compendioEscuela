@@ -34,7 +34,6 @@
 
   function openmobileindex() {
     isOpen = !isOpen;
-    console.log(isOpen);
   }
   function estirar(node, { duration }) {
     return {
@@ -175,16 +174,16 @@
       max-width: 100%;
       display: block;
       position: fixed;
+      z-index: 1;
     }
     .indicebox-sv {
       overflow: hidden;
-      position: sticky;
-
-      z-index: calc(97987979878979879878 * 787);
+      max-width: 90vw;
+      border: white solid 2px;
+      box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 10px 0px;
     }
     .openindice {
       display: flex;
-      position: sticky;
     }
   }
 </style>

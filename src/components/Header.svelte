@@ -288,6 +288,10 @@
 </header>
 
 <style>
+  header {
+    z-index: 2;
+  }
+
   button {
     font: inherit;
     background-color: transparent;
@@ -314,7 +318,8 @@
 
     background-color: #ffffffb4;
     backdrop-filter: blur(var(--blur));
-    z-index: 1;
+    z-index: 99999;
+    opacity: 1;
     -webkit-backdrop-filter: blur(var(--blur));
     display: flex;
     flex-direction: column;

@@ -445,9 +445,7 @@ a:focus {
     position: absolute;
   }
 }
-.katex {
-  z-index: -1;
-}
+
 .katex-display > .katex {
   white-space: normal;
 }

@@ -1,23 +1,7 @@
 <script>
   export let latex;
-  export let bgcolor = "transparent";
-  export let color = "white";
-  export let alt;
-
-  const baseurl = "https://math.vercel.app/";
-
-  const url = new URL(baseurl);
-  url.searchParams.set("color", color);
-  url.searchParams.set("bgcolor", bgcolor);
-  url.searchParams.set("from", latex);
-
-  const src = url.toString();
+  import { createEventDispatcher, onMount } from "svelte";
+  import Katex from "svelte-katex";
 </script>
 
-<img {src} {alt} />
-
-<style>
-  img {
-    display: inline;
-  }
-</style>
+<Katex>{latex}</Katex>
