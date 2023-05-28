@@ -1,11 +1,13 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import { cubicOut } from "svelte/easing";
 
   let screenSize;
 
   const mobilesize = 790;
   let isOpen = false;
+
+  let uwulinks;
 
   function generateLinks() {
     // Obtiene todos los headers
@@ -48,7 +50,7 @@
     };
   }
   onMount(() => {
-    generateLinks();
+    uwulinks = generateLinks();
   });
 </script>
 
@@ -73,7 +75,7 @@
   {#if (screenSize > mobilesize) | isOpen}
     <nav transition:estirar={{ duration: 200 }}>
       <ul class="rmlist indicebox-sv">
-        {@html generateLinks()}
+        {@html uwulinks}
       </ul>
     </nav>
   {/if}

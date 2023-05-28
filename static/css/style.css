@@ -5,6 +5,7 @@
   --hovercolor: #001279;
   --linkcolor: #000c4e;
   --subnavcolor: hsl(215, 35%, 20%);
+  --hcolors: #fffbee;
   --max-width-mbl: 790px;
   --indice-color: var(--subnavcolor);
   --padding: 54px;
@@ -121,7 +122,7 @@ main h1,
 main h2,
 main h3,
 main h4 {
-  color: rgb(255, 255, 255);
+  color: var(--hcolors);
 }
 main h2 {
   margin-bottom: 0.5em;
@@ -132,77 +133,6 @@ main h3 {
 main h4 {
   margin-bottom: 0.25em;
 }
-
-/* Estilos para el índice del blog 
-.indice {
-  color: white;
-  text-decoration: none;
-  transition: color 0.2s;
-
-  margin: auto 0;
-  gap: 1em;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  list-style: none;
-}
-
-.h2link {
-  text-align: right;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  font-size: 1.1em;
-  padding-top: 0.5em;
-}
-.h2link:not(:first-child) {
-  border-top: solid 1px #c0c0c0;
-}
-
-.h2link > a {
-  font-weight: 700;
-}
-
-.h3link {
-  text-align: right;
-  width: auto;
-  font-size: 1em;
-  font-weight: normal;
-  border-bottom: transparent;
-  padding: 0;
-  margin: 0;
-}
-.h3link > a {
-  text-align: right;
-  font-weight: 400;
-}
-
-.indice a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.indice a:hover,
-.indice a:focus {
-  color: var(--textcolor);
-}
-.indicebox {
-  flex: 0 0 min(10vw, 200px);
-  background-color: transparent;
-  padding: calc(var(--padding) * 0.5);
-  border-radius: 1em;
-  margin-top: calc(var(--padding) * 1.5);
-  color: white;
-
-  height: fit-content;
-}
-
-article {
-  width: 100%;
-}*/
-
-/*---------------------------------------------*/
 
 /*Estilos para el footer*/
 footer {
@@ -503,37 +433,3 @@ button {
   position: relative;
   z-index: 1;
 }
-/*prefers light mode
-@media (prefers-color-scheme: light) {
-  :root {
-    --backgroundcolor: #ffffff;
-    --headercolor: #363d3c;
-    --textcolor: #2c3333;
-    --hovercolor: #a7a7a7;
-    --linkcolor: #fafff0;
-    --subnavcolor: #1f2727;
-    --indice-color: #363d3c;
-  }
-  .white,
-  .white:hover,
-  .white:focus {
-    color: #181818;
-  }
-  main h1,
-  main h2,
-  main h3 {
-    color: #252525;
-  }
-  .indice a:hover,
-  .indice a:focus {
-    color: var(--hovercolor);
-  }
-  .subsectionsnav {
-    background-color: var(--backgroundcolor);
-    border: 2px solid #2c2c2c;
-  }
-  .subsectionsnav > li {
-    border-color: #717171;
-  }
-}
-*/
