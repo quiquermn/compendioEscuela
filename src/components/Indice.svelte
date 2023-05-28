@@ -183,7 +183,9 @@
       z-index: 1;
     }
     .indicebox-sv {
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      max-height: 60svh;
       max-width: 90vw;
       border: white solid 2px;
       box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 10px 0px;
