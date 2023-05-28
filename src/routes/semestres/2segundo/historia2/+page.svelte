@@ -102,7 +102,7 @@
         <li>Fronteras se abren pero no en el mejor momento.</li>
       </ul>
       <h3>Gobierno de Miguel de la Madrid Hurtado (1982-1988):</h3>
-      <h4>Politica Economica</h4>
+      <h4>Politica Economica:</h4>
       <ul class="orderedlist">
         <li>
           Superar crisis económica para integrar un modelo de apertura comercial
@@ -138,7 +138,7 @@
         </li>
         <li>
           Surge corriente democratizadora, se exigían métodos más democráticos
-          para elegir a candidatos del partido
+          para elegir a candidatos del partido.
         </li>
         <li>Surge Partido Minoritarios de Izquierda.</li>
       </ul>
@@ -150,10 +150,10 @@
           Se deiblita el Corporativismo: El estado ya no inteviene como mediador
           y salvaguarda de los derechos obreros.
         </li>
-        <li>Relación directa de sindicatos con las empresas</li>
+        <li>Relación directa de sindicatos con las empresas.</li>
         <li>Debilidad de organizaciones sindicales.</li>
       </ul>
-      <h4>Aspectos clave</h4>
+      <h4>Aspectos clave:</h4>
       <ul class="orderedlist">
         <li>Reconversión industrial.</li>
         <li>Desincorporación de empresas paraestatales.</li>
@@ -161,16 +161,19 @@
         <li>Adelgazamiento del Estado.</li>
       </ul>
       <h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
-      <h4>Política Interna</h4>
+      <h4>Política Interna:</h4>
       <ul class="orderedlist">
-        <li>Reformas Constitucinales</li>
+        <li>Reformas Constitucinales.</li>
         <li>
           Artículo 3: sube nivel escolar a secundaria obligatoria, impartida por
-          el Estado, laica y gratuita
+          el Estado, laica y gratuita.
         </li>
         <li>
           Artículo 27: promovió la extinción del "ejido", justo que los
-          campesinos tuvieran propiedad de la tierras que cultivaban
+          campesinos tuvieran propiedad de la tierras que cultivaban.
+        </li>
+        <li>
+          Articulo 82: requisitos para aspirar a la presidencia de la república.
         </li>
         <li>
           Artículo 130: reconocimeinto de personalidad jurídica de la iglesia,
@@ -182,32 +185,59 @@
           Estado ponia una parte, la comunidad se comprometia con la mano de
           obra.
         </li>
-        <li>Se privatiza la Banca</li>
+        <li>Se privatiza la Banca en 1990.</li>
         <li>
           Creación del IFE, TFE, COFIPE, búsqueda de legitimidad en elecciones
-          formadas por ciudadanos independientes
-        </li>
-        <li>
-          Modernización industrial, capacitación a obreros, disminución de la
-          fuerza sindical
+          formadas por ciudadanos independientes.
         </li>
       </ul>
-      <h4>Politica Agropecuaria</h4>
+      <h4>Politica Agropecuaria:</h4>
       <ul class="orderedlist">
         <li>
           PROCAMPO: impulsa la productividad del campo, fortalecer al campo
-          frente al TLC
+          frente al TLC.
         </li>
-        <li>Apoyo al campo mediante PRONASOL</li>
+        <li>Apoyo al campo mediante PRONASOL.</li>
         <li>
           Fracaso de PROCAMPO en siguientes sexenios al no atacar causas
-          importantes
+          importantes.
         </li>
       </ul>
-      <h4>Movimiento Guerrillero/Zapatista</h4>
+      <h4>Movimiento Guerrillero/Zapatista:</h4>
       <ul class="orderedlist">
-        <li>Levantamiento del E</li>
+        <li>
+          Levantamiento del EZLN en 1994, que contradice a lo que prometía el
+          TLC.
+        </li>
+        <li>Lucha por recursos naturales.</li>
+        <li>Problemas derivados de la diversidad religiosa.</li>
       </ul>
+      <h4>Política Obrera</h4>
+      <ul class="orderedlist">
+        <li>Venta de empresas paraestatales.</li>
+        <li>Huelgas por reflejo de afectación del Modelo Neoliberal.</li>
+        <li>
+          Modernización industrial, capacitación a obreros, disminución de la
+          fuerza sindical.
+        </li>
+      </ul>
+      <h4>Política Exterior</h4>
+      <ul class="orderedlist">
+        <li>Firma del Tratado de Libre Comercio (TLC).</li>
+        <li>Mayor presencia en el comercio internacional.</li>
+        <li>Fracaso del acuerdo migratorio con Estados Unidos.</li>
+        <li>Imposibilidad para el control del narcotráfico.</li>
+        <li>Primera Cumbre Liberoamericana.</li>
+      </ul>
+      <h4>Implementación del Modelo Neoliberal:</h4>
+      <ul class="orderedlist">
+        <li>Desregulación de la economía.</li>
+        <li>Adelgazamiento del Estado.</li>
+        <li>Conversión Industrial.</li>
+        <li>Productividad Laboral.</li>
+        <li>Privatización de la economía.</li>
+      </ul>
+
       <h3>Regionalización en el contexto de la globalización:</h3>
       <p class="justificar samesubtopic">
         La década de los 90s fueron una conyuntura Mundial y un cambio de
@@ -278,7 +308,59 @@
         conubernio con la elite politica se enriquecen desproporcionalmente.
       </p>
       <h3>Gobierno de Ernesto Zedillo Ponce de León (1994-2000):</h3>
-      <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
+      <h4>Política Económica:</h4>
+      <ul class="orderedlist">
+        <li>FOBAPROGA:</li>
+        <li>"Error de Diciembre":</li>
+        <li>
+          Efecto Tequila: la crisis afecta la economía de todas las naciones
+          ligadas a México.
+        </li>
+        <li>Privatización de empresas paraestatales.</li>
+        <li>Apoyo del gobierno de Estados Unidos.</li>
+      </ul>
+      <h4>Política Interna:</h4>
+      <ul class="orderedlist">
+        <li>Elevar competitividad, afianzar el modelo económico neoliberal.</li>
+        <li>Autonomía del IFE.</li>
+        <li>Fortalecimiento del PAN.</li>
+        <li>
+          Reforma del poder Judicial Federal (Creación del Consejo de la
+          Judicatura).
+        </li>
+        <li>Autonomía del IFE.</li>
+        <li>División del PRI, Tecnócratas y Políticos tradicionales.</li>
+        <li>Crecimiento de inseguridad y delicuencia organizada.</li>
+        <li>Huelga de la UNAM</li>
+      </ul>
+      <h4>Política Agrícola:</h4>
+      <ul class="orderedlist">
+        <li>a.</li>
+        <li>a.</li>
+        <li>a</li>
+        <li>Aa.</li>
+      </ul>
+      <h4>Política Social:</h4>
+      <ul class="orderedlist">
+        <li>a.</li>
+        <li>a.</li>
+        <li>a</li>
+        <li>Aa.</li>
+      </ul>
+      <h4>Política Laboral:</h4>
+      <ul class="orderedlist">
+        <li>a.</li>
+        <li>a.</li>
+        <li>a</li>
+        <li>Aa.</li>
+      </ul>
+      <h4>Política Exterior:</h4>
+      <ul class="orderedlist">
+        <li>a.</li>
+        <li>a.</li>
+        <li>a</li>
+        <li>Aa.</li>
+      </ul>
       <h3>Gobierno de Vicente Fox Quesada (2000-2006):</h3>
       <h4>Politica Economica</h4>
       <ul class="orderedlist">
