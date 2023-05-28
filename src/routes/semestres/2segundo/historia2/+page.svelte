@@ -10,18 +10,14 @@
       <h1 class="centrar">Historia de México II</h1>
       <!--Para la correcta visualización del índice, deberá de estar separada cada sección con un h2, recuerda iniciar con un h1 para marcar la jerarquía de la página (es muy importante para los lectores de pantalla o un visualizador en modo lectura como el de Safari)-->
       <section>
-        <h2>Breve Introducción</h2>
-        <p class="justificar samesubtopic">cambiar uwu.</p>
-        <p class="justificar">cambiar uwu.</p>
+        <h2>Breve Introducción (En desarrollo)</h2>
       </section>
       <section>
-        <h2>Primer Parcial</h2>
-        <h3>Ejercicios</h3>
-        <br />
+        <h2>Primer Parcial (En desarrollo)</h2>
         <!-- Cambiar -->
       </section>
       <section>
-        <h2>Segundo Parcial</h2>
+        <h2>Segundo Parcial (En desarrollo)</h2>
       </section>
       <!-- Cambiar -->
       <section>
