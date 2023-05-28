@@ -1,13 +1,16 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
+  import { onMount, onDestroy, afterUpdate } from "svelte";
   import { cubicOut } from "svelte/easing";
+  import { writable } from "svelte/store";
 
   let screenSize;
 
   const mobilesize = 790;
   let isOpen = false;
 
-  let uwulinks;
+  let uwulinks = writable({});
+
+  let indiceconts;
 
   function generateLinks() {
     // Obtiene todos los headers
@@ -30,7 +33,6 @@
         }
       }
     });
-
     return links;
   }
 
@@ -49,8 +51,10 @@
       },
     };
   }
-  onMount(() => {
-    uwulinks = generateLinks();
+  afterUpdate(() => {
+    uwulinks.set(generateLinks());
+    console.log(indiceconts);
+    indiceconts.innerHTML = $uwulinks;
   });
 </script>
 
@@ -74,8 +78,8 @@
   </button>
   {#if (screenSize > mobilesize) | isOpen}
     <nav transition:estirar={{ duration: 200 }}>
-      <ul class="rmlist indicebox-sv">
-        {@html uwulinks}
+      <ul class="rmlist indicebox-sv" bind:this={indiceconts}>
+        {@html $uwulinks}
       </ul>
     </nav>
   {/if}
