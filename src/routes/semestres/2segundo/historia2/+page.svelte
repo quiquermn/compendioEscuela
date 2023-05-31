@@ -327,7 +327,7 @@
         <li>Autonomía del IFE.</li>
         <li>División del PRI, Tecnócratas y Políticos tradicionales.</li>
         <li>Crecimiento de inseguridad y delicuencia organizada.</li>
-        <li>Huelga de la UNAM</li>
+        <li>Huelga de la UNAM.</li>
       </ul>
       <h4>Política Agrícola:</h4>
       <ul class="orderedlist">
