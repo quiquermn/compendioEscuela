@@ -31,50 +31,32 @@
       <h2>¿Cómo navegar dentro de la página?</h2>
       <p class="justificar">
         El compendio esta hecho para que se pueda navegar en cualquier
-        dispositivo, ya sea móvil, computadora o laptob (si tu chingadera es de
-        la era del caldo obvio no va a correr XD)
+        dispositivo, ya sea móvil, computadora o laptob. Ésta navegación en
+        ambos tipos de dispositivos es bastante sencilla de reconocer y
+        utilizar. A continuación se mostrará el manejo de la página para ambos
+        dispositivos.
       </p>
       <p class="justificar">
-        La navegación en ambos tipos de dispositivos es bastante sencilla de
-        reconocer y utilizar. En teléfonos celulares se encuentra un menú
-        desplegable en la parte superior derecha que, al hacer clic se mostrarán
-        los seis semestres y al hacer clic en cada semestre saldrán sus
-        respectivas unidades de aprendizaje. Por otro lado, en las computadoras
-        y laptobs la forma de navegación es más sencilla de ver, ya que los
-        semestres se encuentran en la parte superior de la página y al pasar el
-        cursor sobre ellos, se mostrarán cada una de las unidades con su
-        respectivo semestre.
+        En teléfonos celulares se encuentra un menú desplegable en la parte
+        superior derecha que, al hacer clic se mostrarán los seis semestres y al
+        hacer clic en cada semestre saldrán sus respectivas unidades de
+        aprendizaje. Por otro lado, en las computadoras y laptobs la forma de
+        navegación es más sencilla de ver, ya que los semestres se encuentran en
+        la parte superior de la página y al pasar el cursor sobre ellos, se
+        mostrarán cada una de las unidades con su respectivo semestre.
       </p>
       <p class="justificar">
         No olvides contactar a alguno de los creadores del sitio si encuentras
-        un error al navegar dentro del compendio.
+        algún tipo de error al navegar dentro del compendio.
       </p>
-      <h2>¿Por qué?</h2>
-      <p class="justificar">pq no uwu</p>
-      <h2>¿xd?</h2>
-      <p class="justificar">xd</p>
-      <h2>Aenean quis efficitur nisl</h2>
-      <p class="justificar">
-        Sed ultrices, urna sit amet mollis posuere, mi tellus ornare tellus,
-        eget luctus eros nibh in mauris. Proin nunc massa, vestibulum vel
-        interdum id, pulvinar sit amet nisi. In congue sodales tempus. Nam velit
-        magna, cursus in iaculis id, consequat sagittis sem. Integer sed rutrum
-        tellus. Sed vitae placerat orci. Fusce ultricies massa ut mi tristique
-        lacinia. Mauris bibendum risus non lacus ultricies varius.
-      </p>
-      <h2>Pellentesque in sem euismod</h2>
-      <p class="justificar">
-        Pellentesque in sem euismod, egestas neque vel, finibus felis. Mauris
-        ultrices vestibulum augue non pharetra. Fusce tristique lectus sit amet
-        ex eleifend malesuada eget sed nibh. Maecenas tempor faucibus
-        pellentesque. Nullam varius condimentum nunc non auctor. Nulla blandit,
-        dui eu auctor porta, ante nisl venenatis nunc, vitae tincidunt nibh
-        nulla in leo. Interdum et malesuada fames ac ante ipsum primis in
-        faucibus. Morbi et nunc feugiat justo imperdiet euismod auctor a ligula.
-        Phasellus vel arcu vel diam semper aliquet. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Aliquam a vestibulum tortor, at consequat
-        mi.
-      </p>
+      <h2>En desarrollo</h2>
+      <p class="justificar">Podrás consultar de este contenido más tarde...</p>
+      <h2>En desarrollo</h2>
+      <p class="justificar">Podrás consultar de este contenido más tarde...</p>
+      <h2>En desarrollo</h2>
+      <p class="justificar">Podrás consultar de este contenido más tarde...</p>
+      <h2>En desarrollo</h2>
+      <p class="justificar">Podrás consultar de este contenido más tarde...</p>
       <h2>Dato curioso</h2>
       <p class="justificar">Pasa tu cursor y da clic a los gatos que veas.</p>
     </article>
