@@ -53,8 +53,6 @@
   }
   afterUpdate(() => {
     uwulinks.set(generateLinks());
-    console.log(indiceconts);
-    indiceconts.innerHTML = $uwulinks;
   });
 </script>
 

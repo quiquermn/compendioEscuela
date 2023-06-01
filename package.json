@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite dev --host",
     "build": "vite build",
-    "deploy": "echo .>> build.nojekyll && gh-pages -d build -t true"
+    "deploy": "echo .>> build.nojekyll && gh-pages -d build -t true",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^2.0.2",

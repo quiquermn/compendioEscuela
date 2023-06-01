@@ -5,7 +5,7 @@ const dev = process.argv.includes("dev");
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({ precompress: true }),
     paths: {
       base: dev ? "" : "",
     },
