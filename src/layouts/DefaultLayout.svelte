@@ -1,43 +1,43 @@
 <!-- src/layouts/DefaultLayout.svelte -->
 <script>
-  export let title;
-  import Katex from "svelte-katex";
-  import Spoiler from "/src/components/Spoiler.svelte";
-  import Header from "/src/components/Header.svelte";
-  import Footer from "/src/components/Footer.svelte";
-  import { page } from "$app/stores";
-  import Indice from "/src/components/Indice.svelte";
+    export let title;
+    import Header from "/src/components/Header.svelte";
+    import Footer from "/src/components/Footer.svelte";
+    import {page} from "$app/stores";
+    import Indice from "/src/components/Indice.svelte";
 </script>
 
 <svelte:head>
-  <link
-    rel="canonical"
-    href={"https://compendio.quiqueso.com" + $page.url.pathname}
-  />
-  <meta property="og:title" content={"Compendio Bátiz - " + title} />
-  <title>{"Compendio Bátiz - " + title}</title>
+    <link
+            rel="canonical"
+            href={"https://compendio.quiqueso.com" + $page.url.pathname}
+    />
+    <meta property="og:title" content={"Compendio Bátiz - " + title}/>
+    <title>{"Compendio Bátiz - " + title}</title>
 </svelte:head>
 <div id="mainpage">
-  <Header />
-  <div id="pagecontainer">
-    <Indice />
-    <div style="width:100%">
-      <slot />
+    <Header/>
+    <div id="pagecontainer">
+        <Indice/>
+        <span style="position: absolute; top: 0; right: 0; color: red;z-index: 3">{title}</span>
+        <div style="width:100%">
+            <slot/>
+        </div>
     </div>
-  </div>
-  <Footer />
+    <Footer/>
 </div>
 
 <style>
-  #pagecontainer {
-    padding: var(--padding);
-    padding-top: calc(var(--padding) / 2);
-    display: flex;
-    gap: calc(var(--padding) / 2);
-  }
-  @media (max-width: 790px) {
     #pagecontainer {
-      flex-direction: column;
+        padding: var(--padding);
+        padding-top: calc(var(--padding) / 2);
+        display: flex;
+        gap: calc(var(--padding) / 2);
     }
-  }
+
+    @media (max-width: 790px) {
+        #pagecontainer {
+            flex-direction: column;
+        }
+    }
 </style>
