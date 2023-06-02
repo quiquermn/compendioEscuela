@@ -19,7 +19,6 @@
     <Header/>
     <div id="pagecontainer">
         <Indice/>
-        <span style="position: absolute; top: 0; right: 0; color: red;z-index: 3">{title}</span>
         <div style="width:100%">
             <slot/>
         </div>
