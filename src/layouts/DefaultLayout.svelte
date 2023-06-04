@@ -1,10 +1,22 @@
 <!-- src/layouts/DefaultLayout.svelte -->
 <script>
+<<<<<<< HEAD
     export let title;
     import Header from "/src/components/Header.svelte";
     import Footer from "/src/components/Footer.svelte";
     import {page} from "$app/stores";
     import Indice from "/src/components/Indice.svelte";
+=======
+  export let title;
+  import Katex from "svelte-katex";
+  import Spoiler from "/src/components/Spoiler.svelte";
+  import Header from "/src/components/Header.svelte";
+  import Footer from "/src/components/Footer.svelte";
+  import { page } from "$app/stores";
+  import Indice from "/src/components/Indice.svelte";
+
+  let uwu = $page.url.pathname;
+>>>>>>> 44bf3cb (xdxdxddd)
 </script>
 
 <svelte:head>
