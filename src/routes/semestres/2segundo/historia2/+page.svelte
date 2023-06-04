@@ -312,6 +312,7 @@
           Efecto Tequila: la crisis afecta la economía de todas las naciones
           ligadas a México.
         </li>
+        <li>Sube IVA del 10 al 16% y causa la pauperización.</li>
         <li>Privatización de empresas paraestatales.</li>
         <li>Apoyo del gobierno de Estados Unidos.</li>
       </ul>
@@ -331,41 +332,79 @@
       </ul>
       <h4>Política Agrícola:</h4>
       <ul class="orderedlist">
-        <li>a.</li>
-        <li>a.</li>
-        <li>a</li>
-        <li>Aa.</li>
+        <li>Se elimina CONASUPO.</li>
+        <li>Disminución de créditos al campo.</li>
+        <li>Apoyo a través de PROCAMPO.</li>
+        <li>Liberación de productos básicos.</li>
       </ul>
       <h4>Política Social:</h4>
       <ul class="orderedlist">
-        <li>a.</li>
-        <li>a.</li>
-        <li>a</li>
-        <li>Aa.</li>
+        <li>Cancelación de PRONASOL.</li>
+        <li>
+          Matanza de Acteal: En 1997, se registra una incursión de un grupo
+          paramilitar en Acteal, Chiapas, donde irrumpieron en una pequeña
+          iglesia donde indígenas tzotziles se encontraban orando, dejando a 45
+          muertos incluyendo niños y mujeres.
+        </li>
+        <li>
+          Matanza de Aguas Blancas: campesinos del municipio Coyuca de Benítez
+          en Guerrero, se dirigieron a un mítin político en protesta de un
+          compañero desaparecido, acceso a agua y mejora en los servicios, donde
+          posteriormente, fueron atacados por la policía del Estado.
+        </li>
       </ul>
       <h4>Política Laboral:</h4>
       <ul class="orderedlist">
-        <li>a.</li>
-        <li>a.</li>
-        <li>a</li>
-        <li>Aa.</li>
+        <li>Se debilita el corporativismo sindical. a.</li>
+        <li>
+          Nace Unión Nacional de Trabajadores (UNT) y rechaza al sindicalismo
+          oficial.
+        </li>
+        <li>Reforma Sistmea de Pensiones del IMSS (AFORES).</li>
+        <li>
+          Huelga UNAM: Rechazo al Aumento de Costos y Disminución de recursos
+          educativos...
+        </li>
+        <li>...La PFP ocupa instalaciones.</li>
       </ul>
       <h4>Política Exterior:</h4>
       <ul class="orderedlist">
-        <li>a.</li>
-        <li>a.</li>
-        <li>a</li>
-        <li>Aa.</li>
+        <li>Dependencia de EU por el TLC.</li>
+        <li>
+          TLC no soluciona la política migratoria y no redujo los incentivos de
+          los mexicanos para emigrar.
+        </li>
+        <li>Problema migratorio se transforma de regional a nacional.</li>
       </ul>
       <h3>Gobierno de Vicente Fox Quesada (2000-2006):</h3>
-      <h4>Politica Economica</h4>
+      <h4>Politica Economica:</h4>
       <ul class="orderedlist">
         <li>Continua proyecta Neoliberal</li>
         <li>Mexico enfoca comercio con EU y descuida a otros paises.</li>
-        <li />
-        <li />
+        <li>
+          Reformas estructurales siguen en proyecto (Energética, Laboral y
+          Fiscal)
+        </li>
+        <li>
+          Disminuye déficit fiscal, control de inflación, crecimiento económico
+          incipiente.
+        </li>
       </ul>
-      <p class="justificar samesubtopic">Lorem ipsum dolor sit amet.</p>
+      <h4>Politica Social:</h4>
+      <ul class="orderedlist">
+        <li>a.</li>
+        <li>A.</li>
+      </ul>
+      <h4>Politica Exterior:</h4>
+      <ul class="orderedlist">
+        <li>a.</li>
+        <li>A.</li>
+      </ul>
+      <h4>Politica Interior</h4>
+      <ul class="orderedlist">
+        <li>a.</li>
+        <li>A.</li>
+      </ul>
       <h3>Gobierno de Felipe Calderón Hinojosa (2006-2012):</h3>
       <h4>Hechos</h4>
       <ul class="orderedlist">
@@ -380,9 +419,30 @@
         </li>
       </ul>
       <h3>Gobierno de Enrique Peña Nieto (2012-2018) (2006-2012):</h3>
+      <h4>Educación</h4>
+      <ul class="orderedlist">
+        <li />
+      </ul>
+      <ul class="orderedlist">
+        <h4>Política Económica</h4>
+        <li>
+          Gasolinazo: incremento del 20% en precios de combustibles y causan
+          protestas sociales.
+        </li>
+      </ul>
       <ul class="orderedlist">
         <li>Se firma "Pacto por México" con el PAN y PRD,</li>
-        <li>Se aprueba la Reforma Laboral,</li>
+        <li>
+          Se aprueba la Reforma Laboral, la cual prometía la creación de nuevos
+          empleos por medio de el "outsourcing" o "subcontratación", permitiendo
+          explotación laboral
+        </li>
+      </ul>
+      <ul class="orderedlist">
+        <h4>Política Exterior:</h4>
+        <li>Problemas con EU, Trump, que quiere cancelar el TLCAN.</li>
+        <li>Compra de la "Casa Blanca" a "HIGA"</li>
+        <li>Gobernadores corruptos.</li>
       </ul>
     </article>
   </main>
