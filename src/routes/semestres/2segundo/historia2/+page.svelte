@@ -306,8 +306,17 @@
       <h3>Gobierno de Ernesto Zedillo Ponce de León (1994-2000):</h3>
       <h4>Política Económica:</h4>
       <ul class="orderedlist">
-        <li>FOBAPROGA:</li>
-        <li>"Error de Diciembre":</li>
+        <li>
+          <strong>Error de Diciembre</strong>: Causó un daño monstruoso a la
+          población que había adquirido una deuda con tasas de interés variable,
+          sus deudas se multiplicaban mientras los bancos no disponían de
+          dinero. Se crea el FOBAPROA.
+        </li>
+        <li>
+          <strong>FOBAPROA</strong>: El Fondo Bancario de Protección al Ahorro
+          Bancario, creado para absorver las deudas ante los bancos y garantizar
+          el dinero de los ahorradores.
+        </li>
         <li>
           Efecto Tequila: la crisis afecta la economía de todas las naciones
           ligadas a México.
@@ -392,18 +401,26 @@
       </ul>
       <h4>Politica Social:</h4>
       <ul class="orderedlist">
-        <li>a.</li>
-        <li>A.</li>
+        <li>
+          Ataque a la pobreza mediante por medio del Programa de Oportunidades,
+          proyecto enfocado a combatir la pobreza extrma.
+        </li>
+        <li>Conflicto en Oaxaca, APPO.</li>
       </ul>
       <h4>Politica Exterior:</h4>
       <ul class="orderedlist">
-        <li>a.</li>
-        <li>A.</li>
+        <li>Principal enfoque a EU descuidando a relaciones a Latam.</li>
+        <li>Debilidad ante el problema del narcotráfico.</li>
+        <li>Política migratoria</li>
       </ul>
       <h4>Politica Interior</h4>
       <ul class="orderedlist">
-        <li>a.</li>
-        <li>A.</li>
+        <li>
+          Se crea el Programa Nacional de Educación (PRONAE) y tiene como
+          estrategias: El programa Escuela, Educación preescolar obligatoria y
+          Enciclomedia.
+        </li>
+        <li>.</li>
       </ul>
       <h3>Gobierno de Felipe Calderón Hinojosa (2006-2012):</h3>
       <h4>Hechos</h4>
