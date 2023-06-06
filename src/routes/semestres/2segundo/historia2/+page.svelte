@@ -154,7 +154,6 @@
       <h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
       <h4>Política Interna:</h4>
       <ul class="orderedlist">
-        <li>Reformas Constitucinales:</li>
         <li>
           Artículo 3: sube nivel escolar a secundaria obligatoria, impartida por
           el Estado, laica y gratuita.
@@ -199,14 +198,12 @@
         </li>
       </ul>
       <h4>Movimiento Guerrillero/Zapatista:</h4>
-      <ul class="orderedlist">
-        <li>
-          Levantamiento del EZLN en 1994, que contradice a lo que prometía el
-          TLC debido a que la iniciativa ignoraba por completo a sectores
-          indígenas y campesinos de la población y evidenciaba condiciones de
-          migración y pobreza de los mexicanos.
-        </li>
-      </ul>
+      <p class="justificar samesubtopic">
+        Levantamiento del EZLN en 1994, que contradice a lo que prometía el TLC
+        debido a que la iniciativa ignoraba por completo a sectores indígenas y
+        campesinos de la población y evidenciaba condiciones de migración y
+        pobreza de los mexicanos.
+      </p>
       <h4>Política Obrera</h4>
       <ul class="orderedlist">
         <li>Venta de empresas paraestatales.</li>
@@ -222,7 +219,7 @@
         <li>Mayor presencia en el comercio internacional.</li>
         <li>Fracaso del acuerdo migratorio con Estados Unidos.</li>
         <li>Imposibilidad para el control del narcotráfico.</li>
-        <li>Primera Cumbre Liberoamericana.</li>
+        <li>Asesinan a Juan José Posadas, 24 mayo 1993.</li>
       </ul>
       <h4>Implementación del Modelo Neoliberal:</h4>
       <ul class="orderedlist">
@@ -232,7 +229,6 @@
         <li>Productividad Laboral.</li>
         <li>Privatización de la economía.</li>
       </ul>
-
       <h3>Regionalización en el contexto de la globalización:</h3>
       <p class="justificar samesubtopic">
         La década de los 90s fueron una conyuntura Mundial y un cambio de
@@ -322,7 +318,6 @@
         </li>
         <li>Sube IVA del 10 al 16% y causa la pauperización.</li>
         <li>Privatización de empresas paraestatales.</li>
-        <li>Apoyo del gobierno de Estados Unidos.</li>
       </ul>
       <h4>Política Interna:</h4>
       <ul class="orderedlist">
