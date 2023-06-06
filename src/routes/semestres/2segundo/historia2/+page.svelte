@@ -154,7 +154,7 @@
       <h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
       <h4>Política Interna:</h4>
       <ul class="orderedlist">
-        <li>Reformas Constitucinales.</li>
+        <li>Reformas Constitucinales:</li>
         <li>
           Artículo 3: sube nivel escolar a secundaria obligatoria, impartida por
           el Estado, laica y gratuita.
@@ -175,6 +175,10 @@
           desarrollo de obras de infraestructura a la población, mientras que el
           Estado ponia una parte, la comunidad se comprometia con la mano de
           obra.
+        </li>
+        <li>
+          Surge Grupo Compacto: jóvenes, tenía afamados estudios en prestigiadas
+          universidades del extranjero y tendencia ideológica, neoliberalismo.
         </li>
         <li>Se privatiza la Banca en 1990.</li>
         <li>
@@ -198,10 +202,10 @@
       <ul class="orderedlist">
         <li>
           Levantamiento del EZLN en 1994, que contradice a lo que prometía el
-          TLC.
+          TLC debido a que la iniciativa ignoraba por completo a sectores
+          indígenas y campesinos de la población y evidenciaba condiciones de
+          migración y pobreza de los mexicanos.
         </li>
-        <li>Lucha por recursos naturales.</li>
-        <li>Problemas derivados de la diversidad religiosa.</li>
       </ul>
       <h4>Política Obrera</h4>
       <ul class="orderedlist">
