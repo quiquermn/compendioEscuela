@@ -75,6 +75,28 @@ header a {
   color: var(--linkcolor);
   font-weight: 700;
 }
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ffffff5e;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 1em;
+  border-left: 0.25em solid #ffffff5e;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -436,4 +458,19 @@ button {
   padding: 0;
   position: relative;
   z-index: 1;
+}
+
+@media print {
+  header {
+    display: none;
+  }
+  .indicebox {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
 }
