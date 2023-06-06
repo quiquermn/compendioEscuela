@@ -5,21 +5,16 @@
 <DefaultLayout title="Historia II">
   <main class="mainpart">
     <article id="mainarticle">
-      <!--Es importante que estos contenidos se encuentren dentro de la etiqueta article, y con el id main article, usualmente solo habrá uno de estos por cada página, debido a que contienen un h1, no es recomendado utilizarlo más de una vez-->
-
       <h1 class="centrar">Historia de México II</h1>
-      <!--Para la correcta visualización del índice, deberá de estar separada cada sección con un h2, recuerda iniciar con un h1 para marcar la jerarquía de la página (es muy importante para los lectores de pantalla o un visualizador en modo lectura como el de Safari)-->
       <section>
         <h2>Breve Introducción (En desarrollo)</h2>
       </section>
       <section>
         <h2>Primer Parcial (En desarrollo)</h2>
-        <!-- Cambiar -->
       </section>
       <section>
         <h2>Segundo Parcial (En desarrollo)</h2>
       </section>
-      <!-- Cambiar -->
       <section>
         <h2>Tercer Parcial</h2>
         <h3>Temas a tratar</h3>
@@ -109,7 +104,6 @@
           Crea el Programa Intensivo de Recuperación Económica (PIRE) para
           controlar la crisis del país.
         </li>
-        <li>Programa de Aliento y Crecimiento (PAC).</li>
         <li>
           Pacto de solaridad (PSE) proponía detener la inflación mediante la
           restricción de aumentos salariales y disminución de precios de la
@@ -118,9 +112,10 @@
         <li>Desincorporación de empresas públicas.</li>
         <li>
           Adhesión de México al GATT (Acuerdo General sobre Aranceles Aduaneros
-          y Comercio) y cambia nombre a OMC (Organización Mundial de Comercio).
+          y Comercio) y cambia nombre a OMC (Organización Mundial de
+          Comercio)...
         </li>
-        <li>Se reducen barreras al comercio internacional.</li>
+        <li>...Se reducen barreras al comercio internacional.</li>
       </ul>
       <h4>Politica Interna:</h4>
       <ul class="orderedlist">
