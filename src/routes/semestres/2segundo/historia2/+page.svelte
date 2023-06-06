@@ -435,30 +435,84 @@
           criminal en el país.
         </li>
       </ul>
-      <h3>Gobierno de Enrique Peña Nieto (2012-2018) (2006-2012):</h3>
-      <h4>Educación</h4>
+      <h3>Gobierno de Enrique Peña Nieto (2012-2018):</h3>
+      <h4>Política Económica</h4>
       <ul class="orderedlist">
-        <li />
-      </ul>
-      <ul class="orderedlist">
-        <h4>Política Económica</h4>
         <li>
           Gasolinazo: incremento del 20% en precios de combustibles y causan
           protestas sociales.
         </li>
-      </ul>
-      <ul class="orderedlist">
-        <li>Se firma "Pacto por México" con el PAN y PRD,</li>
         <li>
-          Se aprueba la Reforma Laboral, la cual prometía la creación de nuevos
-          empleos por medio de el "outsourcing" o "subcontratación", permitiendo
-          explotación laboral
+          Se promueve el neoliberalismo con una combinación de corrupción, y
+          permite:
+        </li>
+        <li>
+          Recursos económicos se desvían mediante proyectos como el tren
+          suburbano, la estela de luz, convenios con Universidades que nunca se
+          realizaron.
+        </li>
+        <li>
+          Se promueve el Instituto Nacional de Evaluación Educativa (INEE), cuyo
+          propósito solo fue contrarar más docentes, creando condiciones
+          desfavorables, ignorando contratos colectivos y sin resultados
+          favorables en ningún nivel educativo.
+        </li>
+        <li>
+          Al menos, 41 dependencias y organismos del Gobierno Federal utilizaron
+          a universidades y sistemas de televisión para desviar 9 mil 605
+          millones de pesos de recursos públicos, por medio del esquema conocido
+          como "La Estafa Maestra".
         </li>
       </ul>
+      <h4>Política Interior:</h4>
       <ul class="orderedlist">
-        <h4>Política Exterior:</h4>
+        <li>
+          Se firma el "Pacto por México" con los partidos PAN y PRD, quienes
+          respaldaron el sexenio y las reformas estructurales...
+        </li>
+        <li>
+          ...Asi lograron aprobar la Reforma Laboral, que prometía la creación
+          de miles de nuevos empleos mediante el "outsourcing" o
+          "subcontratación", permitiendo explotación laboral descarada.
+        </li>
+        <li>Reformas:</li>
+        <li>
+          Reforma Energética: con ella se permitió la inversión extranjera en la
+          paraestatal.
+        </li>
+        <li>
+          Reforma educativa: solo culpa de la crisis educativa a l@s docentes
+          del país, sin invetir en la infraestructura educativa.
+        </li>
+        <li>
+          "Reforma Hacendaria", gravó con impuestos a múltiples actividades y
+          productos como compra benta de casas, transportes foráneos, etc, y
+          creó un impuesto especial a los depósitos en efectivo.
+        </li>
+        <li>
+          Caso Odebrecht: Ernesto Lozayo, titular de Pemex, recibió múltiples
+          sobornos a cambio de contratos.
+        </li>
+        <li>
+          "Avión Presidencial": gasto inmoral en un país con más de 60 millones
+          de pobres cuyo valor se cotizaba como el avión presidencial más caro
+          del mundo.
+        </li>
+      </ul>
+      <h4>Política Social:</h4>
+      <ul class="orderedlist">
+        <li>
+          Desaparición de los 43 normalistas de Ayotzinapa, los cuales fueron
+          asesinados, hasta la fecha sigue sin resolverse.
+        </li>
+        <li>
+          Compra de la "Casa Blanca" a grupo "HIGA" consorcio beneficiado por la
+          administración de Peña en el Estado de México.
+        </li>
+      </ul>
+      <h4>Política Exterior:</h4>
+      <ul class="orderedlist">
         <li>Problemas con EU, Trump, que quiere cancelar el TLCAN.</li>
-        <li>Compra de la "Casa Blanca" a "HIGA"</li>
         <li>Gobernadores corruptos.</li>
       </ul>
     </article>
