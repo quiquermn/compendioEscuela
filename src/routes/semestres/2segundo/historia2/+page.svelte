@@ -398,12 +398,14 @@
           Disminuye déficit fiscal, control de inflación, crecimiento económico
           incipiente.
         </li>
+        <li>Propuso privatizar industria eléctrica y petroquímica.</li>
+        <li>Impulsó propuesta para poner IVA a alimentos y medicinas.</li>
       </ul>
       <h4>Politica Social:</h4>
       <ul class="orderedlist">
         <li>
-          Ataque a la pobreza mediante por medio del Programa de Oportunidades,
-          proyecto enfocado a combatir la pobreza extrma.
+          Ataque a la pobreza por medio del Programa de Oportunidades, proyecto
+          enfocado a combatir la pobreza extrma.
         </li>
         <li>Conflicto en Oaxaca, APPO.</li>
       </ul>
@@ -420,10 +422,9 @@
           estrategias: El programa Escuela, Educación preescolar obligatoria y
           Enciclomedia.
         </li>
-        <li>.</li>
       </ul>
       <h3>Gobierno de Felipe Calderón Hinojosa (2006-2012):</h3>
-      <h4>Hechos</h4>
+      <h4>Hechos:</h4>
       <ul class="orderedlist">
         <li>Enfoco su gobierno en educación. empleo y fuerzas armadas.</li>
         <li>
@@ -433,6 +434,45 @@
           Crea "Programa y estrategias nacionales de seguridad" y el proyecto
           "Plataforma México" con la finalidad de llevar un sistema único
           criminal en el país.
+        </li>
+      </ul>
+      <h4>Política Económica:</h4>
+      <ul class="orderedlist">
+        <li>
+          Se basó en resolver uno de los problemas más graves del país, el
+          desempleo...
+        </li>
+        <li>...Por lo que se hizo llamar, el "Presidente del Empleo".</li>
+        <li>
+          Pobreza crece y las condiciones económicas de más de la mitad de la
+          población eran desfavorables.
+        </li>
+        <li>
+          Inversiones favorecen la creación de infraestructura carretera,
+          mantiene deuda pública estable.
+        </li>
+        <li>
+          Acumulación récord en reservas internacionales, con relativa
+          estabilidad económica en general.
+        </li>
+      </ul>
+      <h4>Política Interna:</h4>
+      <ul class="orderedlist">
+        <li>Modifica Ley del ISSSTE.</li>
+        <li>Pandemia Influenza H1N1.</li>
+        <li>Desaparece Paraestatal Luz y Fuerza del centro.</li>
+        <li>Aumento de 60% en la violencia.</li>
+        <li>
+          Pérdida de empleos por la quiebra de la empresa más grande de
+          aviación, Mexicana de Aviación...
+        </li>
+        <li>
+          ...Entró en concurso mercantil que dejó a mas de 40 mil personas sin
+          empleo.
+        </li>
+        <li>
+          Promueve las Reformas Estructurales, apuntando a la privatización de
+          actividades económicas del país.
         </li>
       </ul>
       <h3>Gobierno de Enrique Peña Nieto (2012-2018):</h3>
