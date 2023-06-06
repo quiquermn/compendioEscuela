@@ -1,9 +1,8 @@
 <footer id="footer">
   <span style="text-align:left;">
-    Creado por <a class="alink" href="https://github.com/KalebManzanita"
-      >Kaleb</a
-    >
-    y
+    Creado por
+    <a class="alink" href="https://github.com/KalebManzanita">Kaleb</a>
+    <span>y</span>
     <a class="alink" href="https://github.com/ZorvShadow">Quique</a>
   </span>
   <div class="sendtoright">

@@ -26,6 +26,10 @@
 .italic {
   font-style: italic;
 }
+.serif {
+  font-weight: 600;
+  font-style: italic;
+}
 .justificar {
   text-align: justify;
 }

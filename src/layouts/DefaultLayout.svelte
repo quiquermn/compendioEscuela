@@ -25,7 +25,6 @@
   </div>
   <Footer />
 </div>
-y
 
 <style>
   #pagecontainer {

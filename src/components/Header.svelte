@@ -69,6 +69,9 @@
         orientacion2: {
           name: "Orientación <span class='italic'>II</span>",
         },
+        biologia: {
+          name: "Biología Básica",
+        },
         filo2: {
           name: "Filosofía <span class='italic'>II</span>",
         },
