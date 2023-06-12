@@ -116,7 +116,7 @@ body,
   margin: 0;
   background-color: var(--backgroundcolor);
   color: var(--textcolor);
-  font-family: "Lexend", "Roboto", sans-serif;
+  font-family: "Outfit", "Roboto", sans-serif;
   transition: color 0.2s, background-color 0.2s;
 
   overflow-x: hidden;
