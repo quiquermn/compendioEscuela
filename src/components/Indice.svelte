@@ -1,7 +1,6 @@
 <script>
   import { cubicOut } from 'svelte/easing';
-  import { generateLinks } from '/src/utils.js';
-  import { onMount } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
 
   let screenSize;
 
@@ -9,11 +8,31 @@
   let isOpen = false;
 
   let links;
-  onMount(() => {
-    links = generateLinks();
-  });
 
-  $: links = $links;
+  function generateLinks() {
+    if (typeof document !== 'undefined') {
+      let headers = Array.from(document.querySelectorAll('h2, h3, h4, h5, h6'));
+      let links = [];
+
+      headers.forEach((header, indice) => {
+        header.id =
+          header.textContent
+            .toLowerCase()
+            .replace(/ /g, '-')
+            .replace(/[^\w-]+/g, '') +
+          '-' +
+          indice;
+        for (let i = 1; i <= 6; i++) {
+          if (header.tagName === `H${i}`) {
+            links += `<li class="listh${i}" style="text-align: left;">
+                      <a class="ish${i}" href="#${header.id}">${header.textContent}</a>
+                    </li>`;
+          }
+        }
+      });
+      return links;
+    }
+  }
 
   function openmobileindex() {
     isOpen = !isOpen;
@@ -31,6 +50,10 @@
       },
     };
   }
+
+  onMount(() => {
+    links = generateLinks();
+  });
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
@@ -52,10 +75,10 @@
       />
     </svg>
   </button>
-  {#if (screenSize > mobilesize) | isOpen}
+  {#if screenSize > mobilesize || isOpen}
     <nav transition:estirar={{ duration: 200 }}>
       <ul class="rmlist indicebox-sv">
-        {@html links}
+        {@html generateLinks()}
       </ul>
     </nav>
   {/if}
@@ -95,6 +118,8 @@
     height: max-content;
     justify-content: center;
     align-content: center;
+
+    position: absolute;
   }
 
   .rmlist {

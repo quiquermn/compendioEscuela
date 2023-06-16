@@ -1,15 +1,17 @@
+'use strict';
+
 export function generateLinks() {
-  if (typeof document !== "undefined") {
-    let headers = Array.from(document.querySelectorAll("h2, h3, h4, h5, h6"));
+  if (typeof document !== 'undefined') {
+    let headers = Array.from(document.querySelectorAll('h2, h3, h4, h5, h6'));
     let links = [];
 
     headers.forEach((header, indice) => {
       header.id =
         header.textContent
           .toLowerCase()
-          .replace(/ /g, "-")
-          .replace(/[^\w-]+/g, "") +
-        "-" +
+          .replace(/ /g, '-')
+          .replace(/[^\w-]+/g, '') +
+        '-' +
         indice;
       for (let i = 1; i <= 6; i++) {
         if (header.tagName === `H${i}`) {
