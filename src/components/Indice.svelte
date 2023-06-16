@@ -1,7 +1,7 @@
 <script>
-  import { cubicOut } from "svelte/easing";
-  import { generateLinks } from "/src/utils.js";
-  import { onMount } from "svelte";
+  import { cubicOut } from 'svelte/easing';
+  import { generateLinks } from '/src/utils.js';
+  import { onMount } from 'svelte';
 
   let screenSize;
 
@@ -25,8 +25,8 @@
       css: (t) => {
         const eased = cubicOut(t);
         const o = +getComputedStyle(node)
-          .getPropertyValue("height")
-          .replace("px", "");
+          .getPropertyValue('height')
+          .replace('px', '');
         return `height: ${o * eased}px`;
       },
     };
