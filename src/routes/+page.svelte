@@ -1,8 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<article class="prose prose-invert max-w-none text-justify">
-	<h1>ola</h1>
+<article class="prose prose-invert max-w-none">
+	<h1>Welcome to SvelteKit</h1>
+	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 	<p>
 		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quis modi ipsam, cum veritatis
 		ullam quam necessitatibus blanditiis voluptatibus saepe perspiciatis itaque sapiente, voluptatum

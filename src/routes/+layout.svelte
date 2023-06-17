@@ -1,14 +1,18 @@
 <script lang="ts">
 	import '../app.css'
+
+	import Header from '$lib/Header.svelte'
 </script>
 
-<header class="bg-primaryinverse-50 w-full p-5 h-20 flex items-center">ola uwu</header>
+<div class="min-h-[100svh] flex flex-col relative">
+	<Header />
 
-<div class="text-primaryinverse-50">
-	<slot />
+	<div>
+		<slot />
+	</div>
+
+	<footer class="bg-primaryinverse-50 mt-auto">ola</footer>
 </div>
-
-<footer>ola</footer>
 
 <style lang="postcss">
 </style>
