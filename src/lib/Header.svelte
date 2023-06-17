@@ -52,15 +52,15 @@
 								{link.name}° Semestre
 							</span>
 							<div
-								class="absolute cursor-default duration-500 bg-primary-700 grid grid-rows-fr0 transition-gridrows rounded-xl shadow-md mt-2 left-0 right-0 group-focus:grid-rows-fr1"
+								class="static cursor-default duration-500 lg:bg-primary-700 grid grid-rows-fr0 transition-gridrows rounded-xl lg:shadow-md mt-2 left-0 right-0 lg:absolute group-focus:grid-rows-fr1"
 							>
-								<div class="overflow-hidden text-primaryinverse-50 font-normal text-base leading-5">
+								<div class="overflow-hidden font-normal text-base leading-5">
 									<ul class="flex flex-col gap-0">
 										{#each Object.entries(link.materias) as [key2, sublink]}
-											<li class="pt-1 pb-1 border-b last:border-b-0">
+											<li class="pt-1 pb-1 lg:border-b lg:last:border-b-0">
 												<a
 													tabindex="0"
-													class="hover:text-primary-50 drop-shadow-xl"
+													class="text-primary-950 hover:text-primary-800 lg:hover:text-primary-50 drop-shadow-xl lg:text-primaryinverse-50"
 													href={link.url + '/' + key2}>{sublink.name}</a
 												>
 											</li>
