@@ -6,6 +6,7 @@
 
 :root {
 	color-scheme: only dark;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .sups {
@@ -15,6 +16,16 @@
 	font-weight: inherit;
 }
 
-html {
+body {
 	overflow-x: hidden;
+}
+
+@layer components {
+	article {
+		@apply prose prose-invert max-w-2xl text-justify prose-headings:text-left prose-h1:text-center;
+	}
+}
+
+.min56rem {
+	width: min(56rem, 100%);
 }
