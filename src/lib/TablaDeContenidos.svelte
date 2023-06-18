@@ -27,7 +27,6 @@
 				const classes = classGiver(header.tagName)
 				links.push([classes, header.innerHTML, header.id])
 			})
-			console.log(links)
 			return links
 		}
 		return null
@@ -38,7 +37,6 @@
 	onMount(() => {
 		tableofcontents = generateLinks()
 	})
-	console.log(tableofcontents)
 </script>
 
 <aside
