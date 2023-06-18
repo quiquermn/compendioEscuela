@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { browser } from '$app/environment'
 	import { onMount } from 'svelte'
+	import IndexIcon from '~icons/fluent/text-bullet-list-ltr-16-filled'
+
+	function delay(ms: number) {
+		return new Promise((resolve) => setTimeout(resolve, ms))
+	}
 
 	type Truplet<T, K, R> = [T, K, R]
 
@@ -34,25 +39,58 @@
 
 	let tableofcontents: null | Truplet<string, string, string>[] = null
 
+	let gridHeight: HTMLElement
+	let aside: HTMLElement
+	let isOpen = false
+
+	function toggleAside() {
+		if (!isOpen) {
+			gridHeight.classList.remove('grid-rows-fr0')
+			gridHeight.classList.add('grid-rows-fr1')
+			gridHeight.classList.toggle('p-4')
+		} else {
+			gridHeight.classList.remove('grid-rows-fr1')
+			gridHeight.classList.add('grid-rows-fr0')
+			delay(450).then(() => {
+				gridHeight.classList.toggle('p-4')
+			})
+		}
+		isOpen = !isOpen
+	}
+
 	onMount(() => {
 		tableofcontents = generateLinks()
 	})
 </script>
 
+{#if tableofcontents !== null && tableofcontents.length > 1}
+	<button
+		class="bg-primary-800 fixed top-32 left-5 flex items-center justify-center content-center w-10 h-10 rounded-lg md:hidden"
+		on:click={() => toggleAside()}
+	>
+		<IndexIcon class="w-8 h-8" />
+	</button>
+{/if}
 <aside
-	class="mt-24 hidden w-64 bg-primary-800 rounded-2xl p-4 h-max sticky top-24 left-5 max-h-[75svh] overflow-y-scroll overflow-x-hidden md:block"
+	class="mt-24 right-5 bg-primary-800 rounded-2xl p-0 h-max fixed top-20 left-5 max-h-[75svh] overflow-y-scroll overflow-x-hidden md:block md:sticky md:top-24 md:p-4 md:w-64"
+	bind:this={aside}
 >
-	<nav>
-		<ul class="flex flex-col">
-			{#if tableofcontents !== null}
-				{#each tableofcontents as uwu}
-					<li class="{uwu[0]} max-w-full">
-						<a href={`#${uwu[2]}`}>{uwu[1]}</a>
-					</li>
-				{/each}
-			{/if}
-		</ul>
-	</nav>
+	<div
+		class="grid grid-rows-fr0 transition-gridrows duration-500 md:contents"
+		bind:this={gridHeight}
+	>
+		<nav class="overflow-hidden">
+			<ul class="flex flex-col">
+				{#if tableofcontents !== null}
+					{#each tableofcontents as uwu}
+						<li class="{uwu[0]} max-w-full">
+							<a href={`#${uwu[2]}`}>{uwu[1]}</a>
+						</li>
+					{/each}
+				{/if}
+			</ul>
+		</nav>
+	</div>
 </aside>
 
 <style lang="postcss">

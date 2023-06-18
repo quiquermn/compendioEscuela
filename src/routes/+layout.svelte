@@ -12,7 +12,7 @@
 	<Header />
 
 	<div class="mx-auto min56rem">
-		<div class="flex gap-5">
+		<div class="flex gap-5 justify-center">
 			{#key data.url}
 				<TablaDeContenidos />
 			{/key}
