@@ -51,7 +51,7 @@
 	<!-- Desktop -->
 	<div class="flex items-center text-primary-900 lg:contents">
 		<button class="h-10 w-10 lg:hidden" on:click={() => toggleMenu()}>
-			<HamburgerIcon class="h-10 w-10" />
+			<HamburgerIcon aria-label="Abrir Navegación primaria" class="h-10 w-10" />
 		</button>
 
 		<nav aria-label="Navegación primaria" class="contents">
@@ -59,9 +59,11 @@
 				class="absolute right-0 top-0 flex h-full max-w-0 flex-col items-center gap-1 overflow-hidden overflow-y-scroll border-l-4 border-primary-800 bg-white bg-opacity-60 pb-16 pt-16 text-2xl backdrop-blur-sm transition-[max-width] lg:not-sr-only lg:static lg:h-auto lg:w-auto lg:max-w-none lg:translate-x-0 lg:flex-row lg:border-0 lg:bg-transparent lg:pb-0 lg:text-base"
 				bind:this={navigation}
 			>
-				<button on:click={() => toggleMenu()} class="absolute left-0 top-0 p-4 lg:hidden">
-					<Close class="h-10 w-10" />
-				</button>
+				<li>
+					<button on:click={() => toggleMenu()} class="absolute left-0 top-0 p-4 lg:hidden">
+						<Close class="h-10 w-10" />
+					</button>
+				</li>
 
 				<li
 					class="mb-6 w-5/6 border-b-2 border-primary-950 pb-3 text-center lg:m-0 lg:w-auto lg:border-0 lg:p-0"

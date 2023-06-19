@@ -22,7 +22,7 @@
 			class="aspect-square rounded-xl shadow-lg"
 			src="/icons/winkymilly.webp"
 			width="50px"
-			alt=""
+			alt="Winky Milly"
 		/>
 	</div>
 </footer>

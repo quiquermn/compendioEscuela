@@ -8,6 +8,10 @@
 	export let data
 </script>
 
+<svelte:head>
+	<link rel="canonical" href="https://compendio.quiqueso.com{data.url}" />
+</svelte:head>
+
 <div class="relative flex min-h-[100svh] flex-col">
 	<Header />
 
