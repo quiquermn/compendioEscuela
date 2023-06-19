@@ -6,15 +6,13 @@
 	import TablaDeContenidos from '$lib/TablaDeContenidos.svelte'
 
 	export let data
-
-	console.log('data.url: ' + data.url)
 </script>
 
 <div class="relative flex min-h-[100svh] flex-col">
 	<Header />
 
 	<div class="mx-auto">
-		<div class="flex gap-5 justify-center mr-auto min56rem">
+		<div class="flex gap-5 justify-center mr-auto mt-8 min56rem">
 			{#key data.url}
 				<TablaDeContenidos />
 			{/key}

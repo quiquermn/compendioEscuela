@@ -1,0 +1,4 @@
+.katex-display > .katex {
+	white-space: normal;
+}
+/* Add space between broken lines: */

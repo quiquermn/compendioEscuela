@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import '@fontsource/lexend/100.css';
+@import '@fontsource/lexend/200.css';
+@import '@fontsource/lexend/300.css';
+@import '@fontsource/lexend/400.css';
+@import '@fontsource/lexend/500.css';
+@import '@fontsource/lexend/600.css';
+@import '@fontsource/lexend/700.css';
+@import '@fontsource/lexend/800.css';
+@import '@fontsource/lexend/900.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +29,7 @@ body {
 
 @layer components {
 	article {
-		@apply prose prose-invert max-w-2xl text-justify prose-headings:text-left prose-headings:scroll-mt-6 prose-h1:text-center;
+		@apply prose prose-invert max-w-2xl text-justify prose-headings:scroll-mt-6 prose-headings:text-left prose-h1:text-center;
 	}
 }
 
