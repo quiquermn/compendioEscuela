@@ -1,5 +1,5 @@
-<article id="mainarticle">
-	<h1 class="centrar">Historia de México II</h1>
+<article>
+	<h1>Historia de México II</h1>
 	<section>
 		<h2>Breve Introducción (En desarrollo)</h2>
 	</section>
@@ -12,12 +12,12 @@
 	<section>
 		<h2>Tercer Parcial</h2>
 		<h3>Temas a tratar</h3>
-		<p class="justificar samesubtopic" style="margin-bottom: 0.5em">
+		<p>
 			De acuerdo al "Cronograma para el Tercer Departamental" del 2023, se trataran los siguientes
 			temas:
 		</p>
 		<strong> RAP 1:</strong>
-		<ol class="orderedlist">
+		<ol>
 			<li>¿Qué es el neoliberalismo y la globalización? Antecedentes.</li>
 			<li>El neoliberalismo en México (1982-1994).</li>
 			<li>Gobierno de Miguel de la Madrid Hurtado (1982-1988).</li>
@@ -27,7 +27,7 @@
 	</section>
 	<section>
 		<strong> RAP 2:</strong>
-		<ol class="orderedlist">
+		<ol>
 			<li>El neoliberalismo y la globalización en México (1994-2018).</li>
 			<li>Gobierno de Ernesto Zedillo Ponce de León (1994-2000).</li>
 			<li>Gobierno de Vicente Fox Quesada (2000-2006).</li>
@@ -36,15 +36,15 @@
 		</ol>
 	</section>
 	<h3>Neoliberalismo y Globalización y sus antecedentes:</h3>
-	<p class="justificar samesubtopic">
+	<p>
 		En el siglo XX, a causa del socialismo, se conformó un nuevo orden político y económico regido
 		por bloques hegemónicos, uno por EU, y el otro por la Unión Soviética, quienes se confrontan en
 		toodos los órdenes durante la posguerra.
 	</p>
-	<p class="samesubtopic">
+	<p>
 		<strong>Surgimiento de bloques económicos:</strong>
 	</p>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			<strong>Capitalista:</strong> bajo el creciente liderazgo de EU, países como Gran Bretaña, Canadá,
 			Francia, Italia, Japón y entre otros, se consituyeron en las naciones más poderosas.
@@ -54,20 +54,20 @@
 			Corea de Norte, Cuba y entre otros países.
 		</li>
 	</ul>
-	<p class="justificar samesubtopic">
+	<p>
 		El neoliberalismo es una doctrina filosófica que sostiene que la libre competencia garantiza
 		mejor resultado económico, por lo que el mercado no debe de tener límites, el bienestar llega
 		cuando las empresas en competencia libre garantizan la mejor calidad al mejor precio posible.
 		Por eso la "competitividad" es uno de los pilares del neoliberalismo.
 	</p>
-	<p class="justificar samesubtopic">
+	<p>
 		La globalización se refiere al proceso de interdependencia creciente en órdenes económicos,
 		políticos y socioculturales que se han registrado a nivel mundial a partir de finales de la
 		década de los 70s. Los avances tecnológicos y la interconexión mundial favorecen relaciones en
 		todos los sentidos posibles entre los países.
 	</p>
 	<h3>Neoliberalismo en México (1982-1994):</h3>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Modelo del Estado Benefactor llega a su fin debido a mala administración de recursos del páis.
 		</li>
@@ -83,7 +83,7 @@
 	</ul>
 	<h3>Gobierno de Miguel de la Madrid Hurtado (1982-1988):</h3>
 	<h4>Politica Economica:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Superar crisis económica para integrar un modelo de apertura comercial en un mundo
 			globalizado.
@@ -104,7 +104,7 @@
 		<li>...Se reducen barreras al comercio internacional.</li>
 	</ul>
 	<h4>Politica Interna:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			En el temblor del 85, sociedad civil se hace cargo del desastre debido a parálisis en el
 			gobierno.
@@ -117,7 +117,7 @@
 		<li>Surge Partido Minoritarios de Izquierda.</li>
 	</ul>
 	<h4>Politica Laboral:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Cambio de modelo económico "Neoliberalismo".</li>
 		<li>Privatización de la economía.</li>
 		<li>
@@ -128,7 +128,7 @@
 		<li>Debilidad de organizaciones sindicales.</li>
 	</ul>
 	<h4>Aspectos clave:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Reconversión industrial.</li>
 		<li>Desincorporación de empresas paraestatales.</li>
 		<li>Privatización de empresas públicas.</li>
@@ -136,7 +136,7 @@
 	</ul>
 	<h3>Gobierno de Carlos Salinas de Gortari (1988-1994):</h3>
 	<h4>Política Interna:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Artículo 3: sube nivel escolar a secundaria obligatoria, impartida por el Estado, laica y
 			gratuita.
@@ -166,25 +166,25 @@
 		</li>
 	</ul>
 	<h4>Politica Agropecuaria:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>PROCAMPO: impulsa la productividad del campo, fortalecer al campo frente al TLC.</li>
 		<li>Apoyo al campo mediante PRONASOL.</li>
 		<li>Fracaso de PROCAMPO en siguientes sexenios al no atacar causas importantes.</li>
 	</ul>
 	<h4>Movimiento Guerrillero/Zapatista:</h4>
-	<p class="justificar samesubtopic">
+	<p>
 		Levantamiento del EZLN en 1994, que contradice a lo que prometía el TLC debido a que la
 		iniciativa ignoraba por completo a sectores indígenas y campesinos de la población y evidenciaba
 		condiciones de migración y pobreza de los mexicanos.
 	</p>
 	<h4>Política Obrera</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Venta de empresas paraestatales.</li>
 		<li>Huelgas por reflejo de afectación del Modelo Neoliberal.</li>
 		<li>Modernización industrial, capacitación a obreros, disminución de la fuerza sindical.</li>
 	</ul>
 	<h4>Política Exterior</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Firma del Tratado de Libre Comercio (TLC).</li>
 		<li>Mayor presencia en el comercio internacional.</li>
 		<li>Fracaso del acuerdo migratorio con Estados Unidos.</li>
@@ -192,7 +192,7 @@
 		<li>Asesinan a Juan José Posadas, 24 mayo 1993.</li>
 	</ul>
 	<h4>Implementación del Modelo Neoliberal:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Desregulación de la economía.</li>
 		<li>Adelgazamiento del Estado.</li>
 		<li>Conversión Industrial.</li>
@@ -200,7 +200,7 @@
 		<li>Privatización de la economía.</li>
 	</ul>
 	<h3>Regionalización en el contexto de la globalización:</h3>
-	<p class="justificar samesubtopic">
+	<p>
 		La década de los 90s fueron una conyuntura Mundial y un cambio de estructuras en las actividades
 		económicos en todo el mundo derivados de la creciente internacionalización y la globalización ,
 		la cual se refleja a través del aumento en el comercio y de la producción mundial, desregulación
@@ -208,14 +208,14 @@
 		servicios. Esto radico en la aparición de bloques en el mundo cuyo objetivo era consolidar el
 		intercambio e integración, surgiendo 3 regiones o bloques principales.
 	</p>
-	<p class="justificar samesubtopic">
+	<p>
 		De esta forma surgen tratados y acuerdos que intentan crear mejores condiciones de intercambio y
 		competitividad, pero para la mayoría de los países subdesarrollados significó aumentar
 		dependencia hacia los países desarrollados y relaciones comerciales aprovechadas por un pequeño
 		sector empresarial.
 	</p>
 	<strong> Etapas:</strong>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Primera: Incorporación una zona libre de aranceles o una zona de impuestos, donde los Estados
 			signatarios establecen los sectores libres de impuestos.
@@ -231,12 +231,12 @@
 			donde ya hay unidad en criterios de política económica, cambiaria, tributaria y de precios.
 		</li>
 	</ul>
-	<p class="justificar samesubtopic">
+	<p>
 		Estos acuerdos se desarrollaron como parte de implementación del Neoliberalismo iniciado en el
 		sexenio de Gorari. El primero de ellos fue el Tratado de Libre Comercio de América del Norte
 		(TLCAN).
 	</p>
-	<p class="justificar samesubtopic">
+	<p>
 		El cual esta integrado por EU, Canadá y México. Inició en 1994 y fue sustituido por el Tratado
 		de México, EU y Canadá (TMEC) a partir de 2018, aunque no se han acordado todos los apartados y
 		seguirá vigente hasta su aprobación total. Este acuerdo integra a la región reduciendo el costo
@@ -245,13 +245,13 @@
 		como en la Unión Europea, por la disparidad de las economías.
 	</p>
 	<h3>El neoliberalismo y la globalización en México (1994-2018):</h3>
-	<p class="justificar samesubtopic">
+	<p>
 		En 1994 el entorno económico mundial se encontraba inserto en la globalización y el modelo
 		económico predominante era el Neoliberalismo. La imposicion de las circunstancias economicas en
 		Mexico causo serios estragos como en sectores sociales vulnerables, que en 30 anos no han tenido
 		ninguna oportunidad de desarrollo y sus condiciones se han complicado considerablemente
 	</p>
-	<p class="justificar samesubtopic">
+	<p>
 		Tras la falta de oportunidades de empleo, la perdida de derechos colectivos y la crisis del
 		campo mexicano, la migracion hacia EU ha sido cada vez mayor, la pobreza y la pobreza extrema ha
 		crecido significativamente, una elite empresasrial (nacional y extranjera) en conubernio con la
@@ -259,7 +259,7 @@
 	</p>
 	<h3>Gobierno de Ernesto Zedillo Ponce de León (1994-2000):</h3>
 	<h4>Política Económica:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			<strong>Error de Diciembre</strong>: Causó un daño monstruoso a la población que había
 			adquirido una deuda con tasas de interés variable, sus deudas se multiplicaban mientras los
@@ -274,7 +274,7 @@
 		<li>Privatización de empresas paraestatales.</li>
 	</ul>
 	<h4>Política Interna:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Elevar competitividad, afianzar el modelo económico neoliberal.</li>
 		<li>Autonomía del IFE.</li>
 		<li>Fortalecimiento del PAN.</li>
@@ -285,14 +285,14 @@
 		<li>Huelga de la UNAM.</li>
 	</ul>
 	<h4>Política Agrícola:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Se elimina CONASUPO.</li>
 		<li>Disminución de créditos al campo.</li>
 		<li>Apoyo a través de PROCAMPO.</li>
 		<li>Liberación de productos básicos.</li>
 	</ul>
 	<h4>Política Social:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Cancelación de PRONASOL.</li>
 		<li>
 			Matanza de Acteal: En 1997, se registra una incursión de un grupo paramilitar en Acteal,
@@ -306,7 +306,7 @@
 		</li>
 	</ul>
 	<h4>Política Laboral:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Se debilita el corporativismo sindical. a.</li>
 		<li>Nace Unión Nacional de Trabajadores (UNT) y rechaza al sindicalismo oficial.</li>
 		<li>Reforma Sistmea de Pensiones del IMSS (AFORES).</li>
@@ -314,7 +314,7 @@
 		<li>...La PFP ocupa instalaciones.</li>
 	</ul>
 	<h4>Política Exterior:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Dependencia de EU por el TLC.</li>
 		<li>
 			TLC no soluciona la política migratoria y no redujo los incentivos de los mexicanos para
@@ -324,7 +324,7 @@
 	</ul>
 	<h3>Gobierno de Vicente Fox Quesada (2000-2006):</h3>
 	<h4>Politica Economica:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Continua proyecta Neoliberal</li>
 		<li>Mexico enfoca comercio con EU y descuida a otros paises.</li>
 		<li>Reformas estructurales siguen en proyecto (Energética, Laboral y Fiscal)</li>
@@ -333,7 +333,7 @@
 		<li>Impulsó propuesta para poner IVA a alimentos y medicinas.</li>
 	</ul>
 	<h4>Politica Social:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Ataque a la pobreza por medio del Programa de Oportunidades, proyecto enfocado a combatir la
 			pobreza extrma.
@@ -341,13 +341,13 @@
 		<li>Conflicto en Oaxaca, APPO.</li>
 	</ul>
 	<h4>Politica Exterior:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Principal enfoque a EU descuidando a relaciones a Latam.</li>
 		<li>Debilidad ante el problema del narcotráfico.</li>
 		<li>Política migratoria</li>
 	</ul>
 	<h4>Politica Interior</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Se crea el Programa Nacional de Educación (PRONAE) y tiene como estrategias: El programa
 			Escuela, Educación preescolar obligatoria y Enciclomedia.
@@ -355,7 +355,7 @@
 	</ul>
 	<h3>Gobierno de Felipe Calderón Hinojosa (2006-2012):</h3>
 	<h4>Hechos:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Enfoco su gobierno en educación. empleo y fuerzas armadas.</li>
 		<li>Realiza campañas contra el narco, involucra al Ejército Mexicano.</li>
 		<li>
@@ -364,7 +364,7 @@
 		</li>
 	</ul>
 	<h4>Política Económica:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Se basó en resolver uno de los problemas más graves del país, el desempleo...</li>
 		<li>...Por lo que se hizo llamar, el "Presidente del Empleo".</li>
 		<li>
@@ -380,7 +380,7 @@
 		</li>
 	</ul>
 	<h4>Política Interna:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Modifica Ley del ISSSTE.</li>
 		<li>Pandemia Influenza H1N1.</li>
 		<li>Desaparece Paraestatal Luz y Fuerza del centro.</li>
@@ -397,7 +397,7 @@
 	</ul>
 	<h3>Gobierno de Enrique Peña Nieto (2012-2018):</h3>
 	<h4>Política Económica</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Gasolinazo: incremento del 20% en precios de combustibles y causan protestas sociales.</li>
 		<li>Se promueve el neoliberalismo con una combinación de corrupción, y permite:</li>
 		<li>
@@ -416,7 +416,7 @@
 		</li>
 	</ul>
 	<h4>Política Interior:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Se firma el "Pacto por México" con los partidos PAN y PRD, quienes respaldaron el sexenio y
 			las reformas estructurales...
@@ -447,7 +447,7 @@
 		</li>
 	</ul>
 	<h4>Política Social:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>
 			Desaparición de los 43 normalistas de Ayotzinapa, los cuales fueron asesinados, hasta la fecha
 			sigue sin resolverse.
@@ -458,7 +458,7 @@
 		</li>
 	</ul>
 	<h4>Política Exterior:</h4>
-	<ul class="orderedlist">
+	<ul>
 		<li>Problemas con EU, Trump, que quiere cancelar el TLCAN.</li>
 		<li>Gobernadores corruptos.</li>
 	</ul>
