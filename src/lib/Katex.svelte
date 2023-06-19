@@ -1,12 +1,18 @@
 <script lang="ts">
 	import katex from 'katex'
 	import 'katex/dist/katex.min.css'
+	export let math: string
+	let html: string
 
-	let html = katex.renderToString('c = \\pm\\sqrt{a^2 + b^2}', {
-		throwOnError: true
-	})
+	console.log('uwu: ' + math)
 
-	console.log('Rendering to HTML -- KaTex')
+	if (math) {
+		html = katex.renderToString(math, {
+			throwOnError: true
+		})
+	} else {
+		html = ''
+	}
 </script>
 
 {@html html}

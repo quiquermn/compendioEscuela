@@ -22,7 +22,7 @@ body {
 
 @layer components {
 	article {
-		@apply prose prose-invert max-w-2xl text-justify prose-headings:text-left prose-h1:text-center;
+		@apply prose prose-invert max-w-2xl text-justify prose-headings:text-left prose-headings:scroll-mt-6 prose-h1:text-center;
 	}
 }
 
