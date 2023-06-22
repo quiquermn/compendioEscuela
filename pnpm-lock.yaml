@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@fontsource-variable/lexend':
     specifier: ^5.0.3
@@ -14,8 +10,8 @@ dependencies:
 
 devDependencies:
   '@iconify-json/fluent':
-    specifier: ^1.1.23
-    version: 1.1.23
+    specifier: ^1.1.24
+    version: 1.1.24
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
     version: 2.1.0(@sveltejs/kit@1.20.4)
@@ -374,8 +370,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/fluent@1.1.23:
-    resolution: {integrity: sha512-JnoPSSD6oycyCEFvLGK9f91NDyQw6V8WgA1mGS7L/G8dD2N9fVZwn50Z7IIbfm79fMyNq6xn4AYEqPtnQYNncQ==}
+  /@iconify-json/fluent@1.1.24:
+    resolution: {integrity: sha512-fu5oHLpWVGZclldI4dL7v4dXtzPbAcLByHifuaX4VnZsPlUSKR1HO7mkA5GHbFDKSlD1FTY6BtwcalMwjVWJIQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -2470,3 +2466,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
