@@ -65,14 +65,14 @@
 
 {#if tableofcontents !== null && tableofcontents.length > 1}
 	<button
-		class="bg-primary-800 fixed top-32 left-5 flex items-center justify-center content-center w-10 h-10 rounded-lg md:hidden"
+		class="fixed left-5 top-32 flex h-10 w-10 content-center items-center justify-center rounded-lg bg-primary-800 md:hidden"
 		on:click={() => toggleAside()}
 	>
-		<IndexIcon class="w-8 h-8" />
+		<IndexIcon class="h-8 w-8" />
 	</button>
 {/if}
 <aside
-	class="mt-24 right-5 bg-primary-800 rounded-2xl p-0 h-max fixed top-20 left-5 max-h-[75svh] overflow-y-scroll overflow-x-hidden md:block md:sticky md:top-24 md:p-4 md:w-64"
+	class="fixed left-5 right-5 top-20 mt-24 h-max max-h-[75svh] overflow-x-hidden overflow-y-scroll rounded-2xl bg-primary-800 p-0 md:sticky md:top-24 md:block md:w-64 md:p-4"
 	bind:this={aside}
 >
 	<div
