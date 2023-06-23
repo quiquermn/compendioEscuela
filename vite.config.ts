@@ -22,6 +22,8 @@ export default defineConfig({
 				short_name: 'Compendio Bátiz',
 				description: 'Una aplicación creada para la ayuda de los alumnos',
 				theme_color: '#070e18',
+				background_color: '#070e18',
+				display: 'standalone',
 				icons: [
 					{
 						src: 'pwa-192x192.png',
