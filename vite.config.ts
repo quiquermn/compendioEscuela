@@ -24,6 +24,7 @@ export default defineConfig({
 				theme_color: '#070e18',
 				background_color: '#070e18',
 				display: 'standalone',
+				lang: 'es-mx',
 				icons: [
 					{
 						src: 'pwa-192x192.png',
