@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@fontsource/lexend':
     specifier: ^5.0.3
@@ -49,8 +53,8 @@ devDependencies:
     specifier: ^2.31.0
     version: 2.31.0(eslint@8.43.0)(svelte@4.0.0)
   katex:
-    specifier: ^0.16.7
-    version: 0.16.7
+    specifier: ^0.16.8
+    version: 0.16.8
   postcss:
     specifier: ^8.4.24
     version: 8.4.24
@@ -3508,8 +3512,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /katex@0.16.7:
-    resolution: {integrity: sha512-Xk9C6oGKRwJTfqfIbtr0Kes9OSv6IFsuhFGc7tW4urlpMJtuh+7YhzU6YEG9n8gmWKcMAFzkp7nr+r69kV0zrA==}
+  /katex@0.16.8:
+    resolution: {integrity: sha512-ftuDnJbcbOckGY11OO+zg3OofESlbR5DRl2cmN8HeWeeFIV7wTXvAOx8kEjZjobhA+9wh2fbKeO6cdcA9Mnovg==}
     hasBin: true
     dependencies:
       commander: 8.3.0
@@ -5306,7 +5310,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
