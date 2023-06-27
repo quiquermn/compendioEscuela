@@ -3,8 +3,7 @@
 	<h2>Introducción</h2>
 	<p class="justificar samesubtopic">
 		Hola ¿qué tal?. Hace un tiempo, junto a un amigo, decidímos crear este sitio, para compartir
-		algunos recursos y materiales para <em> llevarsela </em> más fácil en su estancia en Bátiz, puesto
-		que las cosas se puedenen complicar seguido y bastante.
+		algunos recursos y materiales para facilitar su consulta y uso.
 	</p>
 
 	<p class="justificar samesubtopic">
