@@ -7,7 +7,9 @@
 @import '@fontsource/lexend/700.css';
 @import '@fontsource/lexend/800.css';
 @import '@fontsource/lexend/900.css';
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
 	color-scheme: only dark;
@@ -25,6 +27,11 @@ body {
 	overflow-x: hidden;
 }
 
+@layer components {
+	article {
+		@apply prose prose-invert max-w-2xl text-justify prose-headings:scroll-mt-6 prose-headings:text-left prose-h1:text-center;
+	}
+}
 
 .min56rem {
 	width: min(56rem, 100%);
