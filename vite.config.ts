@@ -57,7 +57,15 @@ export default defineConfig({
 					{
 						name: 'Algebra',
 						url: '/semestres/1primero/algebra',
-						description: 'Ingresar a Álgebra'
+						description: 'Ingresar a Álgebra',
+
+						icons: [
+							{
+								src: 'pwa-64x64.png',
+								sizes: '64x64',
+								type: 'image/png'
+							}
+						]
 					}
 				],
 				categories: ['education', 'entertainment']
