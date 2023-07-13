@@ -7,6 +7,6 @@
 	</p>
 	<p class="text-center">
 		(Las páginas no mostradas siguen en desarrollo, pronto podrás consultarlas, agradecemos su
-		comprensión y paciencia).
+		comprensión y paciencia)🤓👆.
 	</p>
 </article>
