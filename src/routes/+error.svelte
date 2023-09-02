@@ -1,5 +1,9 @@
+<script lang="ts">
+	import { page } from '$app/stores'
+</script>
+
 <article>
-	<h1>Error 404: Página no encontrada 🤓👆</h1>
+	<h1>Error {$page.status}: Página no encontrada 🤓👆</h1>
 	<h2>¿Qué Puedes Hacer?</h2>
 	<p>
 		Si crees que es un error favor de contactar a cualquiera de los creadores del sitio mostrados en
