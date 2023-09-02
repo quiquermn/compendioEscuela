@@ -51,7 +51,7 @@
 
 		<nav aria-label="Navegación primaria" class="contents">
 			<ul
-				class="absolute right-0 top-0 flex h-full max-w-xs origin-right scale-x-0 transform-gpu flex-col items-center gap-1 overflow-hidden overflow-y-scroll border-l-4 border-primary-800 bg-white bg-opacity-60 pb-16 pt-16 text-2xl backdrop-blur-sm transition-transform duration-200 lg:not-sr-only lg:static lg:h-auto lg:w-auto lg:max-w-none lg:translate-x-0 lg:flex-row lg:border-0 lg:bg-transparent lg:pb-0 lg:text-base"
+				class="absolute right-0 top-0 flex h-full max-w-xs origin-right scale-x-0 transform-gpu flex-col items-center gap-1 overflow-hidden overflow-y-scroll border-l-4 border-primary-800 bg-white bg-opacity-60 pb-16 pt-16 text-2xl backdrop-blur-sm transition-transform duration-200 lg:not-sr-only lg:static lg:h-auto lg:w-auto lg:max-w-none lg:translate-x-0 lg:scale-x-100 lg:flex-row lg:border-0 lg:bg-transparent lg:pb-0 lg:text-base"
 				bind:this={navigation}
 			>
 				<li>
