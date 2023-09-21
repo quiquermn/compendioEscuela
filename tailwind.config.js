@@ -7,7 +7,7 @@ export default {
 		extend: {
 			colors: {
 				primary: colors.slate,
-				primaryinverse: colors.amber
+				primaryinverse: colors.neutral,
 			},
 			transitionProperty: {
 				gridrows: 'grid-template-rows'
