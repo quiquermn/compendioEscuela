@@ -78,9 +78,6 @@ export const links = {
 			quimica1: {
 				name: 'Química I'
 			},
-			dibujo1: {
-				name: 'Dibujo I'
-			},
 			socioeco: {
 				name: 'Entorno Socieconómico de México'
 			},
