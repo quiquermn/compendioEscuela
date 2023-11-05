@@ -18,4 +18,4 @@
 	}
 </script>
 
-<div class={className}>{@html html}</div>
+<div class={!className ? 'inline-block' : className}>{@html html}</div>
