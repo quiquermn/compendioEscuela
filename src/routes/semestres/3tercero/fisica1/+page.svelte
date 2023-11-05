@@ -22,20 +22,19 @@
 		<p>
 			Un cuerpo está en <span class="font-bold">equilibrio traslacional</span> si la suma vectorial
 			de las fuerzas que actúan sobre dicho cuerpo es 0. Es decir: <br />
-			<Katex math={String.raw`\sum \tau _{o} = 0`} />
+			<Katex math={String.raw`\sum \vec{F} = 0`} />
 		</p>
 
 		<h4>2° Condición</h4>
 		<p>
 			Un cuerpo está en <span class="font-bold">equilibrio rotacional</span> si la suma vectorial de
 			los torques que actúan sobre dicho cuerpo es 0. <br />
-			<Katex math={String.raw`\sum \vec{F} = 0`} />
+			<Katex math={String.raw`\sum \tau _{o} = 0`} />
 		</p>
 	</section>
 	<section>
 		<h2>Tercer Parcial</h2>
 
 		<h3>Movimiento Parabólico</h3>
-		<h4 />
 	</section>
 </article>
