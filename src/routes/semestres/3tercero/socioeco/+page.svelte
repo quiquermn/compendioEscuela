@@ -7,6 +7,7 @@
 			ullam temporibus ipsa sunt aliquam obcaecati ipsam recusandae, harum, similique iure, nemo
 			corrupti dignissimos eaque modi voluptate dolorum.
 		</p>
+		<p>Este material fue extraido del "Cuaderno de apuntes compilados y cuaderno de trabajo" de la unidad de Entorno Socioeconómico de México.</p>
 	</section>
 	<section>
 		<h2>Primer Parcial (En desarrollo)</h2>
@@ -35,9 +36,7 @@
 		</ol>
 	</section>
 	<h3>Globalización</h3>
-	<p>
-		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum molestiae assumenda eum repellat quod modi cumque totam, dicta nam natus! Exercitationem quis dolorum voluptatibus dolor nobis rerum ex beatae iure.
-	</p>
+	<p>Proceso donde se registra el aumento de comunicación e interdependencia entre los diversos países del mundo, donde unifican mercados, sociedades y culturas a través de una consecución de transformación sociales económicas y políticas que dan un carácter mundial.</p>
 	<p>
 		<strong>Características:</strong>
 	</p>

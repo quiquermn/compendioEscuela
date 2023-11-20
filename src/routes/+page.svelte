@@ -42,5 +42,5 @@
 	<h2>En desarrollo</h2>
 	<p class="justificar">Podrás consultar de este contenido más tarde...</p>
 	<h2>Dato curioso</h2>
-	<p class="justificar">Pasa tu cursor y da clic a los gatos que veas.</p>
+	<p class="justificar">Pasa tu cursor y da clic a los gatos que veas. 😺</p>
 </article>
