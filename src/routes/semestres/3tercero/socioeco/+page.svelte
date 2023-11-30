@@ -66,5 +66,11 @@
 		<li>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aperiam quia itaque illo laboriosam sapiente nulla, distinctio recusandae voluptatum delectus necessitatibus velit beatae placeat quaerat? Deserunt quos est harum voluptatum!
 		</li>
-	
+		<h3>Organizaciones Sociales</h3>
+		<h3>Organizaciones No Gubernamentales</h3>
+		<h3>Partidos Políticos</h3>
+		<h3>Derechos Humanos</h3>
+		<h3>Estructura del Estado</h3>
+		<h3>Apertura Democrática en México</h3>
+		
 </article>
