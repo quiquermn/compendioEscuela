@@ -9,7 +9,7 @@
 		Si crees que es un error favor de contactar a cualquiera de los creadores del sitio mostrados en
 		la parte inferior.
 	</p>
-	<p class="text-center">
+	<p>
 		(Las páginas no mostradas siguen en desarrollo, pronto podrás consultarlas, agradecemos su
 		comprensión y paciencia).
 	</p>
