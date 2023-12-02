@@ -3,7 +3,7 @@
 </script>
 
 <article>
-	<h1>Física</h1>
+	<h1>Física I</h1>
 	<section>
 		<h2>Breve Introducción (En desarrollo)</h2>
 		<p>
