@@ -5,8 +5,6 @@
 	import Footer from '$lib/Footer.svelte'
 	import TablaDeContenidos from '$lib/TablaDeContenidos.svelte'
 
-	import { onMount } from 'svelte'
-
 	export let data
 </script>
 

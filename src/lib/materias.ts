@@ -1,152 +1,106 @@
-export const links = {
-	primero: {
-		url: '/semestres/1primero',
-		name: '1',
-		materias: {
-			algebra: {
-				name: 'Álgebra'
-			},
-			compu1: {
-				name: 'Computación Básica I'
-			},
-			orientacion1: {
-				name: 'Orientación I'
-			},
-			filo1: {
-				name: 'Filosofía I'
-			},
-			historia1: {
-				name: 'Historia de México I'
-			},
-			ingles1: {
-				name: 'Inglés I'
-			},
-			dhp: {
-				name: 'D.H.P.'
-			},
-			dp: {
-				name: 'Desarrollo Personal'
-			},
-			expresion1: {
-				name: 'Expresión Oral y Escrita I'
-			}
-		}
-	},
-	segundo: {
-		url: '/semestres/2segundo',
-		name: '2',
-		materias: {
-			trigo: {
-				name: 'Geometría y Trigonometría'
-			},
-			compu2: {
-				name: 'Computación Básica II'
-			},
-			orientacion2: {
-				name: 'Orientación II'
-			},
-			biologia: {
-				name: 'Biología Básica'
-			},
-			filo2: {
-				name: 'Filosofía II'
-			},
-			historia2: {
-				name: 'Historia de México II'
-			},
-			ingles2: {
-				name: 'Inglés II'
-			},
-			expresion2: {
-				name: 'Expresión Oral y Escrita II'
-			},
-			tic: {
-				name: 'T.I.C.'
-			}
-		}
-	},
-	tercero: {
-		url: '/semestres/3tercero',
-		name: '3',
-		materias: {
-			analitica: {
-				name: 'Geometría Analítica'
-			},
-			fisica1: {
-				name: 'Física I'
-			},
-			quimica1: {
-				name: 'Química I'
-			},
-			socioeco: {
-				name: 'Entorno Socieconómico de México'
-			},
-			ingles3: {
-				name: 'Inglés III'
-			}
-		}
-	},
-	cuarto: {
-		url: '/semestres/4cuarto',
-		name: '4',
-		materias: {
-			diferencial: {
-				name: 'Cálculo Diferencial'
-			},
-			fisica2: {
-				name: 'Física II'
-			},
-			quimica2: {
-				name: 'Química II'
-			},
-			dibujo2: {
-				name: 'Dibujo II'
-			},
-			ingles4: {
-				name: 'Inglés IV'
-			}
-		}
-	},
-	quinto: {
-		url: '/semestres/5quinto',
-		name: '5',
-		materias: {
-			integral: {
-				name: 'Cálculo Integral'
-			},
-			fisica3: {
-				name: 'Física III'
-			},
-			quimica3: {
-				name: 'Química III'
-			},
-			orientacion3: {
-				name: 'Orientación III'
-			},
-			ingles5: {
-				name: 'Inglés V'
-			}
-		}
-	},
-	sexto: {
-		url: '/semestres/6sexto',
-		name: '6',
-		materias: {
-			probabilidad: {
-				name: 'Probabilidad y Estadística'
-			},
-			fisica4: {
-				name: 'Física IV'
-			},
-			quimica4: {
-				name: 'Química IV'
-			},
-			orientacion4: {
-				name: 'Orientación IV'
-			},
-			ingles6: {
-				name: 'Inglés VI'
-			}
-		}
+class Materia {
+	nombre: string
+	url: string
+
+	constructor(nombre: string, url: string) {
+		this.nombre = nombre
+		this.url = url
 	}
 }
+class Semestre {
+	url: string
+	nombre: string
+	numero: number
+
+	materias: Materia[]
+
+	constructor(numero: number, url: string, nombre: string, materias: Materia[]) {
+		this.url = url
+		this.nombre = nombre
+		this.numero = numero
+		this.materias = materias
+	}
+}
+
+const algebra = new Materia('Álgebra', 'algebra')
+const compu1 = new Materia('Computación Básica I', 'compu1')
+const filo1 = new Materia('Filosofía I', 'filo1')
+
+const historia1 = new Materia('Historia de México I', 'historia1')
+const ingles1 = new Materia('Inglés I', 'ingles1')
+
+const semestre1: Semestre = new Semestre(1, '/semestres/1primero', 'Primero', [
+	algebra,
+	compu1,
+	filo1,
+	historia1,
+	ingles1
+])
+
+const trigo = new Materia('Geometría y Trigonometría', 'trigo')
+const compu2 = new Materia('Computación Básica II', 'compu2')
+const biologia = new Materia('Biología Básica', 'biologia')
+const filo2 = new Materia('Filosofía II', 'filo2')
+const historia2 = new Materia('Historia de México II', 'historia2')
+const ingles2 = new Materia('Inglés II', 'ingles2')
+
+const semestre2: Semestre = new Semestre(2, '/semestres/2segundo', 'Segundo', [
+	trigo,
+	compu2,
+	biologia,
+	filo2,
+	historia2,
+	ingles2
+])
+
+const analitica = new Materia('Geometría Analítica', 'analitica')
+const fisica1 = new Materia('Física I', 'fisica1')
+const quimica1 = new Materia('Química I', 'quimica1')
+const socioeco = new Materia('Entorno Socieconómico de México', 'socioeco')
+const ingles3 = new Materia('Inglés III', 'ingles3')
+
+const semestre3 = new Semestre(3, '/semestres/3tercero', 'Tercero', [
+	analitica,
+	fisica1,
+	quimica1,
+	socioeco,
+	ingles3
+])
+
+const diferencial = new Materia('Cálculo Diferencial', 'diferencial')
+const fisica2 = new Materia('Física II', 'fisica2')
+const quimica2 = new Materia('Química II', 'quimica2')
+const ingles4 = new Materia('Inglés IV', 'ingles4')
+
+const semestre4 = new Semestre(4, '/semestres/4cuarto', 'Cuarto', [
+	diferencial,
+	fisica2,
+	quimica2,
+	ingles4
+])
+
+const integral = new Materia('Cálculo Integral', 'integral')
+const fisica3 = new Materia('Física III', 'fisica3')
+const quimica3 = new Materia('Química III', 'quimica3')
+const ingles5 = new Materia('Inglés V', 'ingles5')
+
+const semestre5 = new Semestre(5, '/semestres/5quinto', 'Quinto', [
+	integral,
+	fisica3,
+	quimica3,
+	ingles5
+])
+
+const probabilidad = new Materia('Probabilidad y Estadística', 'probabilidad')
+const fisica4 = new Materia('Física IV', 'fisica4')
+const quimica4 = new Materia('Química IV', 'quimica4')
+const ingles6 = new Materia('Inglés VI', 'ingles6')
+
+const semestre6 = new Semestre(6, '/semestres/6sexto', 'Sexto', [
+	probabilidad,
+	fisica4,
+	quimica4,
+	ingles6
+])
+
+export const semestres = [semestre1, semestre2, semestre3, semestre4, semestre5, semestre6]
