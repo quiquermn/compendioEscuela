@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/stores'
+
 	let isSerious = false
 	let isJolly = false
 

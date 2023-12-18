@@ -24,6 +24,9 @@
 	function generateLinks() {
 		if (browser) {
 			let headers = Array.from(document.querySelectorAll('h2, h3, h4, h5, h6'))
+			if (headers.length <= 0) {
+				return null
+			}
 			let links: Truplet<string, string, string>[] = [['', '', '']]
 			links.pop()
 
@@ -37,7 +40,7 @@
 		return null
 	}
 
-	let tableofcontents: null | Truplet<string, string, string>[] = null
+	let tableofcontents: any | null | Truplet<string, string, string>[] = null
 
 	let gridHeight: HTMLElement
 	let aside: HTMLElement
@@ -70,28 +73,29 @@
 	>
 		<IndexIcon class="h-8 w-8" />
 	</button>
-{/if}
-<aside
-	class="fixed left-5 right-5 top-20 mt-24 h-max max-h-[75svh] overflow-x-hidden overflow-y-scroll rounded-2xl bg-primary-800 p-0 md:sticky md:top-24 md:block md:w-64 md:p-4"
-	bind:this={aside}
->
-	<div
-		class="grid grid-rows-fr0 transition-gridrows duration-500 md:contents"
-		bind:this={gridHeight}
+
+	<aside
+		class="fixed left-5 right-5 top-20 z-10 mt-24 h-max max-h-[75svh] overflow-x-hidden overflow-y-scroll rounded-2xl bg-primary-800 p-0 md:sticky md:top-24 md:block md:w-64 md:p-4"
+		bind:this={aside}
 	>
-		<nav class="overflow-hidden">
-			<ul class="flex flex-col">
-				{#if tableofcontents !== null}
-					{#each tableofcontents as uwu}
-						<li class="{uwu[0]} max-w-full">
-							<a href={`#${uwu[2]}`}>{uwu[1]}</a>
-						</li>
-					{/each}
-				{/if}
-			</ul>
-		</nav>
-	</div>
-</aside>
+		<div
+			class="grid grid-rows-fr0 transition-gridrows duration-500 md:contents"
+			bind:this={gridHeight}
+		>
+			<nav class="overflow-hidden">
+				<ul class="flex flex-col">
+					{#if tableofcontents !== null}
+						{#each tableofcontents as uwu}
+							<li class="{uwu[0]} max-w-full">
+								<a href={`#${uwu[2]}`}>{uwu[1]}</a>
+							</li>
+						{/each}
+					{/if}
+				</ul>
+			</nav>
+		</div>
+	</aside>
+{/if}
 
 <style lang="postcss">
 	aside {
