@@ -22,7 +22,6 @@
 	$: {
 		$page.url.pathname
 		abierto = false
-		console.log('uwu2')
 	}
 
 	let abierto = false
