@@ -17,10 +17,11 @@
 				src="/icons/CC-BY-NC-SA-4.svg"
 			/>
 		</a>
-		<enhanced:img
+		<img
 			aria-hidden="true"
-			class="aspect-square h-[50px] w-[50px] rounded-xl shadow-lg"
-			src="./winkymilly.webp"
+			class="aspect-square rounded-xl shadow-lg"
+			src="/icons/winkymilly.webp"
+			width="50px"
 			alt="Winky Milly"
 		/>
 	</div>
