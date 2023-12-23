@@ -29,6 +29,8 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.30.0",
 		"katex": "^0.16.9",
+		"marked": "^11.1.0",
+		"marked-linkify-it": "^3.1.8",
 		"postcss": "8.4.32",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",

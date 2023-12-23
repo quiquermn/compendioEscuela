@@ -1,6 +1,18 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script lang="ts">
+	import { mdToSvelte } from '$lib/mdToSvelte'
+	let value = String.raw`## Markdown Basic Syntax
 
+I just love **bold text**. Italicized text is the _cat's meow_. At the command prompt, type ${'`'}nano${'`'}.
 
+My favorite markdown editor is [ByteMD](https://github.com/bytedance/bytemd).
+
+1. First item
+2. Second item
+3. Third item
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+`
+</script>
 
 <div class="container mx-auto flex h-full items-center justify-center">
 	<div class="space-y-5">
@@ -13,6 +25,7 @@
 				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
 			</li>
 		</ul>
-		
+		<textarea class="textarea" bind:value />
+		{@html mdToSvelte(value)}
 	</div>
 </div>
