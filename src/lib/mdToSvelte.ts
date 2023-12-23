@@ -22,7 +22,9 @@ class CustomRenderer extends Renderer {
 	override heading(text: string, level: number) {
 		const id = `${text}_${makeID(5)}`
 		this.headings.push({ text, level })
-		return `<h${level} id="${id}" class="h${level}">${text}</h${level}>`
+		return `<h${level} id="${id}" class="h${level} ${
+			level == 1 ? 'text-center' : 'text-start'
+		}">${text}</h${level}>`
 	}
 
 	override blockquote(quote: string) {

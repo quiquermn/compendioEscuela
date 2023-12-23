@@ -10,7 +10,7 @@
 </script>
 
 <AppShell>
-	<svelte:fragment slot="header">
+	<svelte:fragment slot="pageHeader">
 		<Header></Header>
 	</svelte:fragment>
 	<div class="p-4">
