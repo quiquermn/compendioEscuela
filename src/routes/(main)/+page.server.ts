@@ -2,7 +2,7 @@ import { mdToSvelte } from '$lib/mdToSvelte'
 import type { PageServerLoad } from './$types'
 
 export const load = (async () => {
-	const md = String.raw`# Entra al editor por favor
+	const md = String.raw`# Lorem Ipsum 
 
 [editor](/editor)
 
@@ -36,8 +36,9 @@ Podrás consultar de este contenido más tarde...
 Pasa tu cursor y da clic a los gatos que veas. 😺
 `
 
-	const html = await mdToSvelte(md)
+	const { html, headings } = await mdToSvelte(md)
 	return {
-		html
+		html,
+		headings
 	}
 }) satisfies PageServerLoad

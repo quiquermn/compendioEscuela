@@ -13,8 +13,7 @@
 	<svelte:fragment slot="pageHeader">
 		<Header></Header>
 	</svelte:fragment>
-	<div class="p-4">
-		<slot />
-	</div>
+	<slot />
+
 	<!-- ... -->
 </AppShell>

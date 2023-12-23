@@ -2,26 +2,15 @@ import { marked, Renderer } from 'marked'
 import katex from 'katex'
 import markedLinkifyIt from 'marked-linkify-it'
 
-function makeID(length: number) {
-	let result = ''
-	const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-	const charactersLength = characters.length
-	let counter = 0
-	while (counter < length) {
-		result += characters.charAt(Math.floor(Math.random() * charactersLength))
-		counter += 1
-	}
+function makeID(text: string) {
+	let result = text.replace(/ /g, '-').toLowerCase()
 	return result
 }
 
 class CustomRenderer extends Renderer {
-	headings: { text: string; level: number }[] = []
-	currentListType = ''
-
 	// Overriding parent method.
 	override heading(text: string, level: number) {
-		const id = `${text}_${makeID(5)}`
-		this.headings.push({ text, level })
+		const id = makeID(text)
 		return `<h${level} id="${id}" class="h${level} ${
 			level == 1 ? 'text-center' : 'text-start'
 		}">${text}</h${level}>`
@@ -107,7 +96,21 @@ marked.setOptions({ renderer: customRenderer })
 marked.use(markedLinkifyIt())
 
 export async function mdToSvelte(md: string) {
-	const html = await marked.parse(md)
-
-	return html
+	const tokens = marked.lexer(md)
+	const headings: {
+		depth: number
+		text: string
+		id: string
+	}[] = []
+	tokens.map((token) => {
+		if (token.type === 'heading') {
+			headings.push({
+				depth: token.depth,
+				text: token.text,
+				id: makeID(token.text)
+			})
+		}
+	})
+	const html = marked.parser(tokens)
+	return { html, headings }
 }
