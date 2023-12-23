@@ -42,6 +42,19 @@ class CustomRenderer extends Renderer {
 		return `<${tag} start="${start}" class="${listClass}"> ${body} </${tag}>`
 	}
 
+	override listitem(text: string, task: boolean, checked: boolean): string {
+		const check = `<input disabled type="checkbox" ${
+			checked && 'checked'
+		} class="mr-2 checkbox cursor-default">`
+
+		return `<li class="${task ? 'list-none flex items-center' : ''} ">
+		${task ? check : ''}<span>${text}</span></li>`
+	}
+
+	override checkbox(checked: boolean): string {
+		return ``
+	}
+
 	override table(header: string, body: string): string {
 		return `<div class="table-container"><table class="table table-hover"><thead>${header}</thead><tbody>${body}</tbody></table></div>`
 	}
@@ -81,7 +94,7 @@ class CustomRenderer extends Renderer {
 			}
 		}
 		// wrap in paragraph tag
-		result = `<p class="paragraph">${result}</p>`
+		result = `<p>${result}</p>`
 
 		return result
 	}
@@ -91,9 +104,8 @@ const customRenderer = new CustomRenderer()
 marked.setOptions({ renderer: customRenderer })
 marked.use(markedLinkifyIt())
 
-export function mdToSvelte(md: string) {
-	const tokens = marked.lexer(md)
-	const html = marked.parser(tokens)
-	console.log(html)
+export async function mdToSvelte(md: string) {
+	const html = await marked.parse(md)
+
 	return html
 }
