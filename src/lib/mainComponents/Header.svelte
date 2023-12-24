@@ -13,6 +13,7 @@
 		width: 'w-[280px]',
 		padding: 'p-0',
 		rounded: 'rounded-l-xl',
+		position: 'right',
 		meta: {
 			semestres
 		}

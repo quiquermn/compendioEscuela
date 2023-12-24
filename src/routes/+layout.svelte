@@ -48,7 +48,7 @@
 <svelte:head>
 	<link rel="canonical" href="https://compendio.quiqueso.com{data.url}" />
 </svelte:head>
-<Drawer position={$drawerStore.id == 'navigation' ? 'right' : 'left'}>
+<Drawer>
 	{#if $drawerStore.id === 'navigation'}
 		{@const semestres = $drawerStore.meta.semestres}
 		<a
