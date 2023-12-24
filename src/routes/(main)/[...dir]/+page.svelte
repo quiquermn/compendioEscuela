@@ -7,7 +7,7 @@
 
 <div class="relative mx-auto flex justify-center gap-8 p-4">
 	<TableContents headings={data.headings}></TableContents>
-	<div class="container mt-8 flex h-full max-w-2xl items-center justify-center">
+	<div class="mt-8 flex h-full w-full max-w-xl items-center justify-center">
 		<article>
 			{@html data.html}
 		</article>

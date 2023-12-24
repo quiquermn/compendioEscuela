@@ -1,9 +1,24 @@
 <script lang="ts">
+	import { getDrawerStore, type DrawerSettings } from '@skeletonlabs/skeleton'
+	const drawerStore = getDrawerStore()
+
 	export let headings: {
 		depth: number
 		text: string
 		id: string
 	}[]
+
+	const drawerSettings: DrawerSettings = {
+		id: 'table-contents',
+		bgDrawer: 'bg-surface-200 bg-opacity-10 backdrop-blur-lg p-4 py-8',
+		bgBackdrop: 'bg-transparent',
+		width: 'w-[280px]',
+		padding: 'p-0',
+		rounded: 'rounded-l-xl',
+		meta: {
+			headings: headings
+		}
+	}
 
 	function classGiver(depth: number) {
 		switch (depth) {
@@ -19,15 +34,21 @@
 	}
 </script>
 
+<button class="absolute bg-black p-4" on:click={() => drawerStore.open(drawerSettings)}>
+	Abrir el índice xd
+</button>
+
 <aside
-	class="fixed left-5 right-5 top-20 z-10 mt-24 h-max max-h-[75svh] min-w-64 overflow-x-hidden overflow-y-scroll rounded-2xl bg-surface-200 p-0 opacity-0 shadow-md md:sticky md:top-24 md:block md:w-64 md:p-4 md:opacity-100 dark:bg-surface-900"
+	class="card mt-24 hidden h-max max-h-[75svh] overflow-x-hidden overflow-y-scroll rounded-2xl p-4 shadow-md md:sticky md:top-24 md:block md:w-56 md:min-w-56"
 >
 	<nav class="overflow-hidden">
 		<ul class="flex flex-col">
 			{#each headings as header}
-				<li class="{classGiver(header.depth)} max-w-full">
-					<a href={`#${header.id}`}>{header.text}</a>
-				</li>
+				{#if header.depth != 1}
+					<li class="{classGiver(header.depth)} max-w-full">
+						<a href={`#${header.id}`}>{header.text}</a>
+					</li>
+				{/if}
 			{/each}
 		</ul>
 	</nav>
