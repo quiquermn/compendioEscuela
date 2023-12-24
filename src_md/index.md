@@ -2,6 +2,8 @@
 
 ## Introducción
 
+[Física I](/semestres/3tercero/fisica1)
+
 Hola ¿qué tal?. Hace un tiempo, junto a un amigo, decidímos crear este sitio, para compartir algunos recursos y materiales para facilitar su consulta y uso.
 
 En estos espacios podrás encontrar apuntes, resúmenes, exámenes y otros materiales que hemos recopilado durante nuestra estancia en la escuela, además de materiales donados por compañeros y excompañeros. Estos recursos nos han ayudado a comprender mejor algunos temas, y esperamos que también puedan ser útiles para ustedes.
