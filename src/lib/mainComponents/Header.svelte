@@ -6,6 +6,6 @@
 
 <AppBar>
 	<svelte:fragment slot="lead"><MillyTheSilly></MillyTheSilly></svelte:fragment>
-	<span class="text-center text-3xl font-bold"> Test Épico 1234 </span>
+	<a href="/" class="text-center text-3xl font-bold"> Test Épico 1234 </a>
 	<svelte:fragment slot="trail"><LightSwitch></LightSwitch></svelte:fragment>
 </AppBar>

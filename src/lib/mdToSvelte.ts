@@ -1,6 +1,7 @@
 import { marked, Renderer } from 'marked'
 import katex from 'katex'
 import markedLinkifyIt from 'marked-linkify-it'
+import { parseHTML } from 'linkedom'
 
 function makeID(text: string) {
 	let result = text.replace(/ /g, '-').toLowerCase()
@@ -11,9 +12,7 @@ class CustomRenderer extends Renderer {
 	// Overriding parent method.
 	override heading(text: string, level: number) {
 		const id = makeID(text)
-		return `<h${level} id="${id}" class="h${level} ${
-			level == 1 ? 'text-center' : 'text-start'
-		}">${text}</h${level}>`
+		return `<h${level} id="${id}">${text}</h${level}>`
 	}
 
 	override blockquote(quote: string) {
@@ -28,7 +27,7 @@ class CustomRenderer extends Renderer {
 
 	override list(body: string, ordered: boolean, start: number | ''): string {
 		const tag = ordered ? 'ol' : 'ul'
-		const listClass = ordered ? 'list-decimal list-inside' : 'list-disc list-inside'
+		const listClass = ordered ? 'list' : 'list-disc list-inside'
 
 		return `<${tag} start="${start}" class="${listClass}"> ${body} </${tag}>`
 	}
@@ -38,7 +37,7 @@ class CustomRenderer extends Renderer {
 			checked && 'checked'
 		} class="mr-2 checkbox cursor-default">`
 
-		return `<li class="${task ? 'list-none flex items-center' : ''} ">
+		return `<li${task ? ' class="list-none flex items-center"' : ''}>
 		${task ? check : ''}<span>${text}</span></li>`
 	}
 
@@ -85,7 +84,7 @@ class CustomRenderer extends Renderer {
 			}
 		}
 		// wrap in paragraph tag
-		result = `<p>${result}</p>`
+		result = `<p class="paragraph">${result}</p>`
 
 		return result
 	}
@@ -112,5 +111,30 @@ export async function mdToSvelte(md: string) {
 		}
 	})
 	const html = marked.parser(tokens)
-	return { html, headings }
+
+	const { document } = parseHTML(html)
+
+	const orderedLists = document.querySelectorAll('ol')
+
+	orderedLists.forEach((list) => {
+		const items = list.querySelectorAll('li')
+		const start = list.getAttribute('start')
+
+		items.forEach((item, index) => {
+			const text = item.innerText.trim()
+			item.innerHTML = ''
+
+			const number = document.createElement('span')
+			number.setAttribute('class', 'font-bold badge variant-filled')
+			number.textContent = `${Number(start) + index}`
+			item.appendChild(number)
+
+			const span = document.createElement('span')
+			span.textContent = text
+			span.setAttribute('class', 'flex-auto')
+			item.appendChild(span)
+		})
+	})
+
+	return { html: document.toString(), headings }
 }

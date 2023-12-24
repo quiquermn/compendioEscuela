@@ -1,34 +1,21 @@
+@import '@fontsource-variable/lexend/index.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
 
-/* modern theme */
-@font-face {
-	font-family: 'Quicksand';
-	src: url('/fonts/Quicksand.ttf');
-	font-display: swap;
+:root {
+	-webkit-tap-highlight-color: transparent;
 }
-
 html,
 body {
 	@apply h-full overflow-hidden;
+	font-family: 'Lexend Variable', sans-serif !important;
 }
-h1 {
-	@apply text-5xl font-bold;
-}
-h2 {
-	@apply text-2xl font-bold;
-}
-h3 {
-	@apply text-xl font-bold;
-}
-h4 {
-	@apply text-lg font-bold;
-}
-h5 {
-	@apply text-base font-bold;
-}
-h6 {
-	@apply text-base font-bold;
+
+@layer components {
+	article {
+		@apply prose max-w-2xl text-justify dark:prose-invert prose-headings:scroll-mt-6 prose-headings:text-left prose-h1:text-center;
+	}
 }
