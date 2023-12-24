@@ -34,7 +34,7 @@
 	}
 </script>
 
-<button class="absolute bg-black p-4" on:click={() => drawerStore.open(drawerSettings)}>
+<button class="fixed bg-black p-4" on:click={() => drawerStore.open(drawerSettings)}>
 	Abrir el índice xd
 </button>
 
