@@ -11,8 +11,14 @@
 
 	let direction = ''
 
+	const isTouchDevice = () => {
+		return 'ontouchstart' in window || navigator.maxTouchPoints > 0
+	}
+
 	function swipeHandler(event) {
 		direction = event.detail.direction
+
+		if (!isTouchDevice()) return
 
 		if (direction == 'left') {
 			if ($lastDrawer != 'table') drawerStore.open(navigationDrawer())
