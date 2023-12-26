@@ -1,6 +1,6 @@
 import { marked, Renderer } from 'marked'
 import katex from 'katex'
-import 'katex/contrib/mhchem'
+//import 'katex/contrib/mhchem'
 import markedLinkifyIt from 'marked-linkify-it'
 import { parseHTML } from 'linkedom'
 import type { Headings } from './drawers'
