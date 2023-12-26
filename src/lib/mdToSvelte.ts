@@ -2,6 +2,7 @@ import { marked, Renderer } from 'marked'
 import katex from 'katex'
 import markedLinkifyIt from 'marked-linkify-it'
 import { parseHTML } from 'linkedom'
+import type { Headings } from './drawers'
 
 function makeID(text: string) {
 	let result = text.replace(/ /g, '-').toLowerCase()
@@ -96,11 +97,8 @@ marked.use(markedLinkifyIt())
 
 export async function mdToSvelte(md: string) {
 	const tokens = marked.lexer(md)
-	const headings: {
-		depth: number
-		text: string
-		id: string
-	}[] = []
+	const headings: Headings[] = []
+
 	tokens.map((token) => {
 		if (token.type === 'heading') {
 			headings.push({

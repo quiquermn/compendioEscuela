@@ -17,11 +17,12 @@
 	} from '@skeletonlabs/skeleton'
 	import Header from '$lib/mainComponents/Header.svelte'
 	import Footer from '$lib/mainComponents/Footer.svelte'
-
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow })
+	import { tableOfContentsClassGiver } from '$lib/drawers'
 
 	initializeStores()
 	const drawerStore = getDrawerStore()
+
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow })
 
 	export let data: LayoutData
 
@@ -30,24 +31,12 @@
 			? 'translate-x-[-280px]'
 			: 'translate-x-[280px]'
 		: ''
-
-	function classGiver(depth: number) {
-		switch (depth) {
-			case 2:
-				return 'mt-1 pt-1 pb-1 dark:border-white border-black border-t font-bold  first:border-0 first:mt-0 first:pt-0'
-			case 3:
-				return 'ml-6 list-disc leading-4 mb-1 font-light'
-			case 4:
-				return 'ml-10 leading-4 mb-1 font-extralight italic'
-			default:
-				return 'hidden'
-		}
-	}
 </script>
 
 <svelte:head>
 	<link rel="canonical" href="https://compendio.quiqueso.com{data.url}" />
 </svelte:head>
+
 <Drawer>
 	{#if $drawerStore.id === 'navigation'}
 		{@const semestres = $drawerStore.meta.semestres}
@@ -82,7 +71,7 @@
 			<ul class="flex flex-col">
 				{#each headings as header}
 					{#if header.depth != 1}
-						<li class="{classGiver(header.depth)} max-w-full">
+						<li class="{tableOfContentsClassGiver(header.depth)} max-w-full">
 							<a href={`#${header.id}`}>{header.text}</a>
 						</li>
 					{/if}
@@ -91,6 +80,7 @@
 		</nav>
 	{/if}
 </Drawer>
+
 <AppShell class="transition-transform {positionClasses}" regionPage="scroll-smooth">
 	<svelte:fragment slot="pageHeader">
 		<Header></Header>
@@ -99,5 +89,4 @@
 	<svelte:fragment slot="pageFooter">
 		<Footer></Footer>
 	</svelte:fragment>
-	<!-- ... -->
 </AppShell>

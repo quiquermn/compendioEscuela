@@ -5,8 +5,12 @@ import { error } from '@sveltejs/kit'
 
 export const load = (async ({ params }) => {
 	const curDir = process.cwd()
-	const filePath = `${curDir}/src_md/${params.dir}/index.md`
-	let md = ''
+	let file = 'index.md'
+
+	if (params.dir) {
+		file = params.dir + '.md'
+	}
+	const filePath = `${curDir}/src_md/${file}`
 
 	try {
 		const contenido = await fsPromises.readFile(filePath, { encoding: 'utf-8' })

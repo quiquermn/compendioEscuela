@@ -1,23 +1,15 @@
 <script lang="ts">
-	import { AppBar, type DrawerSettings, getDrawerStore } from '@skeletonlabs/skeleton'
+	import { AppBar, getDrawerStore } from '@skeletonlabs/skeleton'
 	import MillyTheSilly from '$lib/components/MillyTheSilly.svelte'
 	import { semestres } from '$lib/materias'
 	import { page } from '$app/stores'
 
+	import Hamburger from '~icons/fluent/line-horizontal-3-20-filled'
+	import { navigationDrawer } from '$lib/drawers'
+
 	const drawerStore = getDrawerStore()
 
-	const drawerSettings: DrawerSettings = {
-		id: 'navigation',
-		bgDrawer: 'bg-surface-200 bg-opacity-10 backdrop-blur-lg p-4 py-8',
-		bgBackdrop: 'bg-transparent',
-		width: 'w-[280px]',
-		padding: 'p-0',
-		rounded: 'rounded-l-xl',
-		position: 'right',
-		meta: {
-			semestres
-		}
-	}
+	const drawerSettings = navigationDrawer()
 
 	let active: false | number = 1
 
@@ -77,6 +69,11 @@
 				{/each}
 			</ul>
 		</nav>
-		<button on:click={() => drawerStore.open(drawerSettings)} class="xl:hidden">Ham</button>
+		<button
+			on:click={() => drawerStore.open(drawerSettings)}
+			class="btn-icon !bg-transparent xl:hidden"
+		>
+			<Hamburger class="h-8 w-8"></Hamburger>
+		</button>
 	</svelte:fragment>
 </AppBar>
