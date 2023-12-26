@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores'
-
 	import jollyMilly from './milly_imgs/jollymilly.webp'
 	import seriousMilly from './milly_imgs/seriousmilly.webp'
 	import sillyMilly from './milly_imgs/sillymilly.webp'
@@ -24,9 +22,7 @@
 	}
 </script>
 
-<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <img
 	src={sillyMilly}

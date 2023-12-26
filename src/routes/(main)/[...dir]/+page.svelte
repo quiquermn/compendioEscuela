@@ -4,6 +4,7 @@
 	import { swipe } from 'svelte-gestures'
 	import { getDrawerStore } from '@skeletonlabs/skeleton'
 	import { navigationDrawer, tableOfContentsDrawer, lastDrawer } from '$lib/drawers'
+	import { isdeviceTouchFriendly } from '$lib/touchDetect'
 
 	export let data: PageData
 
@@ -11,14 +12,19 @@
 
 	let direction = ''
 
-	const isTouchDevice = () => {
-		return 'ontouchstart' in window || navigator.maxTouchPoints > 0
+	interface CustomEventDetail {
+		direction: string
+		target: EventTarget | null
 	}
 
-	function swipeHandler(event) {
+	interface SwipeEvent extends CustomEvent {
+		detail: CustomEventDetail
+	}
+
+	function swipeHandler(event: SwipeEvent) {
 		direction = event.detail.direction
 
-		if (!isTouchDevice()) return
+		if (!isdeviceTouchFriendly()) return
 
 		if (direction == 'left') {
 			if ($lastDrawer != 'table') drawerStore.open(navigationDrawer())

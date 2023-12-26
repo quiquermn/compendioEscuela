@@ -1,12 +1,21 @@
 import { marked, Renderer } from 'marked'
 import katex from 'katex'
+import 'katex/contrib/mhchem'
 import markedLinkifyIt from 'marked-linkify-it'
 import { parseHTML } from 'linkedom'
 import type { Headings } from './drawers'
 
 function makeID(text: string) {
-	let result = text.replace(/ /g, '-').toLowerCase()
+	const result = text.replace(/ /g, '-').toLowerCase()
 	return result
+}
+
+function decodeHtmlEntities(encodedString: string): string {
+	return decodeURIComponent(
+		encodedString.replace(/&#(\d+);/g, function (match, dec) {
+			return String.fromCharCode(dec)
+		})
+	)
 }
 
 class CustomRenderer extends Renderer {
@@ -42,8 +51,8 @@ class CustomRenderer extends Renderer {
 		${task ? check : ''}<span>${text}</span></li>`
 	}
 
-	override checkbox(checked: boolean): string {
-		return ``
+	override checkbox(): string {
+		return ''
 	}
 
 	override table(header: string, body: string): string {
@@ -59,8 +68,9 @@ class CustomRenderer extends Renderer {
 
 		while ((match = inlineMathPattern.exec(text)) !== null) {
 			const latex = match[1]
+			const decoded = decodeHtmlEntities(latex)
 			try {
-				const html = katex.renderToString(latex, { throwOnError: false })
+				const html = katex.renderToString(decoded, { throwOnError: false })
 				result = result.replace(`$${latex}$`, html)
 			} catch (error) {
 				console.error('Failed to render LaTeX:', error)
@@ -77,15 +87,17 @@ class CustomRenderer extends Renderer {
 		let match
 		while ((match = blockMathPattern.exec(text)) !== null) {
 			const latex = match[1]
+			const decoded = decodeHtmlEntities(latex)
+
 			try {
-				const html = katex.renderToString(latex, { displayMode: true, throwOnError: false })
+				const html = katex.renderToString(decoded, { displayMode: true, throwOnError: false })
 				result = result.replace(`$$${latex}$$`, `<div>${html}</div>`)
 			} catch (error) {
 				console.error('Failed to render LaTeX:', error)
 			}
 		}
 		// wrap in paragraph tag
-		result = `<p class="paragraph">${result}</p>`
+		result = `<p>${result}</p>`
 
 		return result
 	}

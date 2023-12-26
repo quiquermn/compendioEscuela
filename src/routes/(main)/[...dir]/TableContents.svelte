@@ -5,7 +5,7 @@
 		tableOfContentsClassGiver,
 		lastDrawer
 	} from '$lib/drawers'
-	import { getDrawerStore, type DrawerSettings } from '@skeletonlabs/skeleton'
+	import { getDrawerStore } from '@skeletonlabs/skeleton'
 	import ListIcon from '~icons/fluent/text-bullet-list-24-filled'
 
 	const drawerStore = getDrawerStore()

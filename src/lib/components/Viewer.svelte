@@ -6,7 +6,7 @@
 <article class="space-y-5 rounded-2xl bg-surface-800 p-4 shadow-md">
 	{#await mdToSvelte(markdown)}
 		cargando...
-	{:then { html, headings }}
+	{:then { html }}
 		{@html html}
 	{/await}
 </article>
