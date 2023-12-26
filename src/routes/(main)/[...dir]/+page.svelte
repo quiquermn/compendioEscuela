@@ -37,11 +37,6 @@
 	}
 </script>
 
-<svelte:body
-	use:swipe={{ timeframe: 300, minSwipeDistance: 100, touchAction: 'pan-y' }}
-	on:swipe={swipeHandler}
-/>
-
 <div class="relative mx-auto flex justify-center gap-8 p-4">
 	<TableContents headings={data.headings}></TableContents>
 	<div class="mt-8 flex h-full w-full max-w-xl items-center justify-center">
