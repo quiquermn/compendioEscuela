@@ -2,6 +2,21 @@ import { mdToSvelte } from '$lib/mdToSvelte'
 import type { PageServerLoad } from './$types'
 import { promises as fsPromises } from 'fs'
 import { error } from '@sveltejs/kit'
+import type { EntryGenerator } from './$types'
+import { semestres } from '$lib/materias'
+
+const dirs = semestres.flatMap((sem) => {
+	return sem.materias.map((materia) => {
+		const dir = `${sem.url}/${materia.url}`.substring(1)
+		return { dir }
+	})
+})
+
+export const entries: EntryGenerator = () => {
+	return dirs
+}
+
+export const prerender = true
 
 export const load = (async ({ params }) => {
 	const curDir = process.cwd()
@@ -20,7 +35,6 @@ export const load = (async ({ params }) => {
 			headings
 		}
 	} catch (e) {
-		console.error('Error leyendo archivo:', e)
 		error(404, { message: 'Not found' })
 	}
 }) satisfies PageServerLoad

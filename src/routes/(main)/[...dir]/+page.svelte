@@ -22,10 +22,9 @@
 	}
 
 	function swipeHandler(event: SwipeEvent) {
-		direction = event.detail.direction
-
 		if (!isdeviceTouchFriendly()) return
 
+		direction = event.detail.direction
 		if (direction == 'left') {
 			if ($lastDrawer != 'table') drawerStore.open(navigationDrawer())
 			else drawerStore.close()
