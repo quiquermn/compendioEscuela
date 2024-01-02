@@ -1,106 +1,88 @@
-class Materia {
+interface Materia {
 	nombre: string
 	url: string
-
-	constructor(nombre: string, url: string) {
-		this.nombre = nombre
-		this.url = url
-	}
 }
-class Semestre {
+interface Semestre {
 	url: string
 	nombre: string
 	numero: number
-
 	materias: Materia[]
-
-	constructor(numero: number, url: string, nombre: string, materias: Materia[]) {
-		this.url = url
-		this.nombre = nombre
-		this.numero = numero
-		this.materias = materias
-	}
 }
 
-const algebra = new Materia('Álgebra', 'algebra')
-const compu1 = new Materia('Computación Básica I', 'compu1')
-const filo1 = new Materia('Filosofía I', 'filo1')
+const semestre1: Semestre = {
+	url: '/semestres/1primero',
+	nombre: 'Primero',
+	numero: 1,
+	materias: [
+		{ nombre: 'Álgebra', url: 'algebra' },
+		{ nombre: 'Computación Básica I', url: 'compu1' },
+		{ nombre: 'Filosofía I', url: 'filo1' },
+		{ nombre: 'Historia de México I', url: 'historia1' },
+		{ nombre: 'Inglés I', url: 'ingles1' }
+	]
+}
 
-const historia1 = new Materia('Historia de México I', 'historia1')
-const ingles1 = new Materia('Inglés I', 'ingles1')
+const semestre2: Semestre = {
+	url: '/semestres/2segundo',
+	nombre: 'Segundo',
+	numero: 2,
+	materias: [
+		{ nombre: 'Geometría y Trigonometría', url: 'trigo' },
+		{ nombre: 'Computación Básica II', url: 'compu2' },
+		{ nombre: 'Biología Básica', url: 'biologia' },
+		{ nombre: 'Filosofía II', url: 'filo2' },
+		{ nombre: 'Historia de México II', url: 'historia2' },
+		{ nombre: 'Inglés II', url: 'ingles2' }
+	]
+}
 
-const semestre1: Semestre = new Semestre(1, '/semestres/1primero', 'Primero', [
-	algebra,
-	compu1,
-	filo1,
-	historia1,
-	ingles1
-])
+const semestre3: Semestre = {
+	url: '/semestres/3tercero',
+	nombre: 'Tercero',
+	numero: 3,
+	materias: [
+		{ nombre: 'Geometría Analítica', url: 'analitica' },
+		{ nombre: 'Física I', url: 'fisica1' },
+		{ nombre: 'Química I', url: 'quimica1' },
+		{ nombre: 'Entorno Socieconómico de México', url: 'socioeco' },
+		{ nombre: 'Inglés III', url: 'ingles3' }
+	]
+}
 
-const trigo = new Materia('Geometría y Trigonometría', 'trigo')
-const compu2 = new Materia('Computación Básica II', 'compu2')
-const biologia = new Materia('Biología Básica', 'biologia')
-const filo2 = new Materia('Filosofía II', 'filo2')
-const historia2 = new Materia('Historia de México II', 'historia2')
-const ingles2 = new Materia('Inglés II', 'ingles2')
+const semestre4: Semestre = {
+	url: '/semestres/4cuarto',
+	nombre: 'Cuarto',
+	numero: 4,
+	materias: [
+		{ nombre: 'Cálculo Diferencial', url: 'diferencial' },
+		{ nombre: 'Física II', url: 'fisica2' },
+		{ nombre: 'Química II', url: 'quimica2' },
+		{ nombre: 'Inglés IV', url: 'ingles4' }
+	]
+}
 
-const semestre2: Semestre = new Semestre(2, '/semestres/2segundo', 'Segundo', [
-	trigo,
-	compu2,
-	biologia,
-	filo2,
-	historia2,
-	ingles2
-])
+const semestre5: Semestre = {
+	url: '/semestres/5quinto',
+	nombre: 'Quinto',
+	numero: 5,
+	materias: [
+		{ nombre: 'Cálculo Integral', url: 'integral' },
+		{ nombre: 'Física III', url: 'fisica3' },
+		{ nombre: 'Química III', url: 'quimica3' },
+		{ nombre: 'Inglés V', url: 'ingles5' }
+	]
+}
 
-const analitica = new Materia('Geometría Analítica', 'analitica')
-const fisica1 = new Materia('Física I', 'fisica1')
-const quimica1 = new Materia('Química I', 'quimica1')
-const socioeco = new Materia('Entorno Socieconómico de México', 'socioeco')
-const ingles3 = new Materia('Inglés III', 'ingles3')
-
-const semestre3 = new Semestre(3, '/semestres/3tercero', 'Tercero', [
-	analitica,
-	fisica1,
-	quimica1,
-	socioeco,
-	ingles3
-])
-
-const diferencial = new Materia('Cálculo Diferencial', 'diferencial')
-const fisica2 = new Materia('Física II', 'fisica2')
-const quimica2 = new Materia('Química II', 'quimica2')
-const ingles4 = new Materia('Inglés IV', 'ingles4')
-
-const semestre4 = new Semestre(4, '/semestres/4cuarto', 'Cuarto', [
-	diferencial,
-	fisica2,
-	quimica2,
-	ingles4
-])
-
-const integral = new Materia('Cálculo Integral', 'integral')
-const fisica3 = new Materia('Física III', 'fisica3')
-const quimica3 = new Materia('Química III', 'quimica3')
-const ingles5 = new Materia('Inglés V', 'ingles5')
-
-const semestre5 = new Semestre(5, '/semestres/5quinto', 'Quinto', [
-	integral,
-	fisica3,
-	quimica3,
-	ingles5
-])
-
-const probabilidad = new Materia('Probabilidad y Estadística', 'probabilidad')
-const fisica4 = new Materia('Física IV', 'fisica4')
-const quimica4 = new Materia('Química IV', 'quimica4')
-const ingles6 = new Materia('Inglés VI', 'ingles6')
-
-const semestre6 = new Semestre(6, '/semestres/6sexto', 'Sexto', [
-	probabilidad,
-	fisica4,
-	quimica4,
-	ingles6
-])
+const semestre6: Semestre = {
+	url: '/semestres/6sexto',
+	nombre: 'Sexto',
+	numero: 6,
+	materias: [
+		{ nombre: 'Probabilidad y Estadística', url: 'probabilidad' },
+		{ nombre: 'Física IV', url: 'fisica4' },
+		{ nombre: 'Química IV', url: 'quimica4' },
+		{ nombre: 'Inglés VI', url: 'ingles6' }
+	]
+}
 
 export const semestres = [semestre1, semestre2, semestre3, semestre4, semestre5, semestre6]

@@ -1,0 +1,21 @@
+@import '@fontsource-variable/lexend/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+	-webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+	@apply h-full overflow-hidden;
+	font-family: 'Lexend Variable', sans-serif !important;
+}
+
+@layer components {
+	article {
+		@apply prose w-full text-justify dark:prose-invert prose-headings:scroll-mt-6 prose-headings:text-left prose-h1:text-center;
+	}
+}
