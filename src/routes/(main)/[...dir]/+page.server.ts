@@ -13,19 +13,21 @@ const dirs = semestres.flatMap((sem) => {
 })
 
 export const entries: EntryGenerator = () => {
-	return dirs
+  return dirs
 }
 
 export const prerender = true
+//export const csr = false
 
-export const load = (async ({ params }) => {
-	const curDir = process.cwd()
+export const load = (async ({ params }) => { 
+  const curDir = process.cwd()
 	let file = 'index.md'
 
 	if (params.dir) {
 		file = params.dir + '.md'
 	}
-	const filePath = `${curDir}/src_md/${file}`
+	
+  const filePath = `${curDir}/src_md/${file}`
 
 	try {
 		const contenido = await fsPromises.readFile(filePath, { encoding: 'utf-8' })

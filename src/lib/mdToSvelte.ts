@@ -1,6 +1,6 @@
 import { marked, Renderer } from 'marked'
 import katex from 'katex'
-//import 'katex/contrib/mhchem'
+import 'katex/contrib/mhchem'
 import markedLinkifyIt from 'marked-linkify-it'
 import { parseHTML } from 'linkedom'
 import type { Headings } from './drawers'
@@ -68,9 +68,13 @@ class CustomRenderer extends Renderer {
 
 		while ((match = inlineMathPattern.exec(text)) !== null) {
 			const latex = match[1]
-			const decoded = decodeHtmlEntities(latex)
+      //console.log(latex)
+
+      const decoded = decodeHtmlEntities(latex)
+      console.log(decoded)
+
 			try {
-				const html = katex.renderToString(decoded, { throwOnError: false })
+				const html = katex.renderToString(decoded, {output: 'html'})
 				result = result.replace(`$${latex}$`, html)
 			} catch (error) {
 				console.error('Failed to render LaTeX:', error)
@@ -87,10 +91,13 @@ class CustomRenderer extends Renderer {
 		let match
 		while ((match = blockMathPattern.exec(text)) !== null) {
 			const latex = match[1]
+      //console.log(latex)
+
 			const decoded = decodeHtmlEntities(latex)
+      console.log(decoded)
 
 			try {
-				const html = katex.renderToString(decoded, { displayMode: true, throwOnError: false })
+				const html = katex.renderToString(decoded, { displayMode: true, output: 'html'  })
 				result = result.replace(`$$${latex}$$`, `<div>${html}</div>`)
 			} catch (error) {
 				console.error('Failed to render LaTeX:', error)

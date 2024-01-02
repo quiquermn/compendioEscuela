@@ -5,8 +5,8 @@
 	import { getDrawerStore } from '@skeletonlabs/skeleton'
 	import { navigationDrawer, tableOfContentsDrawer, lastDrawer } from '$lib/drawers'
 	import { isdeviceTouchFriendly } from '$lib/touchDetect'
-
-	export let data: PageData
+	
+  export let data: PageData
 
 	const drawerStore = getDrawerStore()
 

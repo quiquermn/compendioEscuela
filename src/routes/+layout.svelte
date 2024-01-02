@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.postcss'
-	import 'katex/dist/katex.min.css'
 
 	import type { LayoutData } from './$types'
 
