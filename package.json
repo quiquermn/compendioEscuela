@@ -50,7 +50,7 @@
 		"@fontsource/lexend": "^5.0.18",
 		"katex": "^0.16.9",
 		"linkedom": "^0.16.5",
-		"marked": "^11.1.0",
+		"marked": "^11.2.0",
 		"marked-linkify-it": "^3.1.8",
 		"svelte-gestures": "^1.5.2"
 	}
