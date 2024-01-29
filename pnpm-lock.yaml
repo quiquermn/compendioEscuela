@@ -21,11 +21,11 @@ dependencies:
     specifier: ^0.16.5
     version: 0.16.5
   marked:
-    specifier: ^11.1.0
-    version: 11.1.0
+    specifier: ^11.2.0
+    version: 11.2.0
   marked-linkify-it:
     specifier: ^3.1.8
-    version: 3.1.8(marked@11.1.0)
+    version: 3.1.8(marked@11.2.0)
   svelte-gestures:
     specifier: ^1.5.2
     version: 1.5.2
@@ -2017,18 +2017,18 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /marked-linkify-it@3.1.8(marked@11.1.0):
+  /marked-linkify-it@3.1.8(marked@11.2.0):
     resolution: {integrity: sha512-hbqxk1cZPQzYoT8zaQ5rL+04YM60PPFW1ibF5m0DgxcxSykWA20SmK9aEqeLABRC1uP+Xf6u7pm9ya9Yb6YViQ==}
     peerDependencies:
       marked: '>=4 <12'
     dependencies:
       '@types/linkify-it': 3.0.5
       linkify-it: 5.0.0
-      marked: 11.1.0
+      marked: 11.2.0
     dev: false
 
-  /marked@11.1.0:
-    resolution: {integrity: sha512-fvKJWAPEafVj1dwGwcPI5mBB/0pvViL6NlCbNDG1HOIRwwAU/jeMoFxfbRLuirO1wRH7m4yPvBqD/O1wyWvayw==}
+  /marked@11.2.0:
+    resolution: {integrity: sha512-HR0m3bvu0jAPYiIvLUUQtdg1g6D247//lvcekpHO1WMvbwDlwSkZAX9Lw4F4YHE1T0HaaNve0tuAWuV1UJ6vtw==}
     engines: {node: '>= 18'}
     hasBin: true
     dev: false
